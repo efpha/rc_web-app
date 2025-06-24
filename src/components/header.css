@@ -1,0 +1,94 @@
+/* Color Cluster */
+:root {
+  /* --primary-color: #e780e7; */
+  --primary-text: #fff;
+  --link-color: #e780e7;
+  --link-hover-color: #fff;
+  --underline-color: #fff;
+  --primary-color: #4d006e;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 2.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
+}
+
+.lgo-txt a {
+  position: relative;
+  left: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.links {
+  width: 40%;
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  left: 40%;
+}
+
+.links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--primary-text);
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--underline-color);
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.links a:hover {
+  color: var(--link-hover-color);
+}
+
+.links a.active::after {
+  width: 100%;
+}
+
+.btn-cont {
+  width: 30%;
+  display: flex;
+  gap: 2rem;
+}
+
+.btn-cont button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: var(--link-hover-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.btn-cont button:hover{
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
