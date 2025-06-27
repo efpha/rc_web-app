@@ -1,6 +1,6 @@
 /* Color Cluster */
 :root {
-  /* --primary-color: #e780e7; */
+  --background-color: var(--primary-color);
   --primary-text: #fff;
   --link-color: #e780e7;
   --link-hover-color: #fff;
@@ -18,7 +18,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
 }
 
 .lgo-txt a {
@@ -54,7 +54,7 @@
   bottom: 5px;
   width: 0;
   height: 2px;
-  background-color: var(--underline-color);
+  background-color: var(--link-hover-color);
   transition: width 0.3s ease;
 }
 

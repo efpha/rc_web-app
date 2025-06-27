@@ -12,10 +12,10 @@ export default function Header() {
       </div>
 
       <nav className="links">
-        <Link href="/Lorem" className="hover:text-blue-600">Lorem</Link>
-        <Link href="/Lorem" className="hover:text-blue-600">Lorem</Link>
-        <Link href="/Lorem" className="hover:text-blue-600">Lorem</Link>
-        <Link href="/Lorem" className="hover:text-blue-600">Lorem</Link>
+        <Link href="/Lorem">Lorem</Link>
+        <Link href="/Lorem">Lorem</Link>
+        <Link href="/Lorem">Lorem</Link>
+        <Link href="/Lorem">Lorem</Link>
       </nav>
 
       <div className="btn-cont">

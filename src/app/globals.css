@@ -4,26 +4,27 @@
     src: url('/fonts/Titillium_Web font/TitilliumWeb-Bold.ttf') format('truetype');
 }
 
-/* ======= Color Variables Section (Optional for easy future edits) ======= */
+/* ======= Color Variables ======= */
 :root {
-    --text-white: #fff;
-}
-:root {
-  /* --primary-color: #e780e7; */
-  --primary-text: #fff;
-  --link-color: #e780e7;
-  --link-hover-color: #fff;
-  --underline-color: #fff;
-  --primary-color: #4d006e;
-  --card-bg: rgba(71, 71, 71, 0.7);
+    --purple-primary: #D8BFD8;     /* Electric Purple - vibrant highlights */
+    --purple-accent: #D580FF;      /* Lavender Neon - accents, backgrounds */
+    --purple-background: #E6CCFF;  /* Light Lavender - light sections */
+    --purple-dark: #6F2DA8;        /* Grape Purple - buttons, headers */
+    --purple-royal: #7851A9;       /* Royal Purple - text, icons */
+    --purple-orchid: #9932CC;      /* Deep Orchid - call-to-actions */
+    --purple-violet: #9F00FF;      /* Vivid Violet - headings, emphasis */
+    --purple-amethyst: #9966CC;    /* Amethyst - hover states, details */
+
+    --primary-color: #4d006e;
+    --primary-text: #fff;
+    --link-color: var(--purple-orchid);
+    --link-hover-color: var(--primary-text);
+    --underline-color: var(--primary-text);
+    --card-bg: rgba(0, 0, 0, 0.7);
 }
 
 /* ======= Main Styles ======= */
 body {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/rc.jpg') center/cover no-repeat;
-    height: 100vh;
     margin: 0;
     font-family: 'customFont', sans-serif;
     position: relative;
@@ -31,9 +32,12 @@ body {
 }
 
 .card-container {
-    position: absolute;
-    top: 50%;
-    left: 15%;
+    width: 100%;
+    height: 100vh;
+    margin-top: 15%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/images/home.jpeg') center/cover no-repeat;
     transform: translateY(-50%);
     display: flex;
     align-items: flex-end;
@@ -49,7 +53,10 @@ body {
 
 .card {
     width: 0;
-    height: 250px;
+    height: 60vh;
+    position: absolute;
+    top: 30%;
+    left: 10%;
     background: var(--card-bg);
     display: flex;
     align-items: left;
@@ -75,43 +82,51 @@ body {
 }
 
 .card-text h1 {
-    white-space: nowrap;
+    width: 21em;
     font-size: 3rem;
     position: relative;
-    left: 18px;
-    bottom: 20px;
+    left: 5%;
+    top: 0.5em;
+    /* bottom: 0em; */
     color: var(--primary-text);
 }
 
 .card-text h2 {
-    width: 400px;
+    width: 22em;
     word-wrap: break-word;
     font-size: 2rem;
     position: relative;
-    left: 18px;
-    bottom: 60px;
+    left: 5%;
+    bottom: .5em;
     color: var(--primary-text);
 }
 
 .action-start {
-    font-size: 20px;
+    font-size: 0.5em;
     background-color: var(--primary-text);
-    color: var(--primary-text);
-    padding: 10px 30px;
+    color: var(--primary-color);
+    padding: 13px 35px;
     border-radius: 10px;
     position: relative;
-    bottom: 4em;
-    left: 4em;
+    bottom: 2em;
+    left: 5%;
     border: none;
-    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.action-start:hover {
+    background-color: var(--purple-amethyst);
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+/* ======= Animations ======= */
 @keyframes borderGrow {
     0% {
         height: 0;
     }
     100% {
-        height: 250px;
+        height: 60vh;
     }
 }
 
@@ -120,7 +135,7 @@ body {
         width: 0;
     }
     100% {
-        width: 550px;
+        width: 80%;
     }
 }
 
@@ -133,4 +148,31 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/*About css*/
+.about{
+    background-color: #D580FF;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    top: 2em;
+}
+
+.card_cont{
+    background-color: antiquewhite;
+    width: 70%;
+    display: block;
+}
+.img{
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url('/images/about.png') center/cover no-repeat;
+    width: 100%;
+}
+section .content{
+    background-color: aliceblue;
+    width: 100%;
+    border: 1px solid green;
 }
