@@ -5,9 +5,6 @@ export default function Home() {
   return (
     <div className="pg_cont">
       <Hero />
-      <About />
     </div>
-    
-
   );
 };

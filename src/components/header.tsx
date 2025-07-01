@@ -12,15 +12,15 @@ export default function Header() {
       </div>
 
       <nav className="links">
-        <Link href="/Lorem">Lorem</Link>
-        <Link href="/Lorem">Lorem</Link>
-        <Link href="/Lorem">Lorem</Link>
-        <Link href="/Lorem">Lorem</Link>
+        <Link href="#about">About</Link>
+        <Link href="/lorem">Lorem</Link>
+        <Link href="/lorem">Lorem</Link>
+        <Link href="/lorem">Lorem</Link>
       </nav>
 
       <div className="btn-cont">
-        <button type='submit'>Login</button>
-        <button type='submit'>Sign Up</button>
+        <button type="submit">Login</button>
+        <button type="submit">Sign Up</button>
       </div>
     </header>
   );

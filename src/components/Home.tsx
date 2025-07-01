@@ -1,18 +1,77 @@
+import Image from 'next/image';
+import '@/components/home.css';
 
 export default function Home() {
   return (
-    <div className="card-container">
-      {/* <div className="left-border"></div> */}
+    <div>
+      <div className="card-container">
+        {/* <div className="left-border"></div> */}
         <div className="card">
           <div className="card-content">
             <div className="card-text">
               <h1>Responsible Computing Challenge</h1>
-              {/* <h1 className="chmp_2">Challenge</h1> */}
-              <h2>Championing for ethical computing practices and their impacts to the environment and the society</h2>
+              <h2>
+                Championing for ethical computing practices and their impacts to
+                the environment and the society
+              </h2>
               <button className="action-start">Get started</button>
             </div>
           </div>
         </div>
       </div>
-  )
+      <div className="partn">
+        <div className="roll_cont">
+            <span className='roll'>
+
+              <span className="image_cont">
+                <Image
+                  src='/images/ksu.png'
+                  alt='ksu logo'
+                  width={1020}
+                  height={600}
+                />
+                <label htmlFor="">Kisii University</label>
+              </span>
+              
+              <span className="image_cont">
+                  <Image
+                    src='/images/mozilla.png'
+                    className='mozilla_lg'
+                    alt='mozilla foundation logo'
+                    width={1020}
+                    height={600}
+                  />
+                  <label htmlFor="">Mozilla Foundation</label>
+              </span>
+          </span>
+        </div>
+
+      </div>
+      <div className="about" id="about">
+        <div className="card_cont">
+          <div className="about_card">
+            <section className="img">
+              <Image
+                src="/images/about.jpeg"
+                alt="Kisii University"
+                width={1200}
+                height={600}
+              />
+            </section>
+
+            <section className="content">
+              Kisii University community led by The Deputy Vice Chancellor Prof. F. Mzee Awour partnering
+              with the Mozilla Foundation and USAID Kenya for a transformative project worth $62,500.
+              The Responsible Computing Challenge aims to embed ethical computing practices into academic
+              curricula and professional practices. Faculty and students are being trained to navigate
+              ethical concerns such as data privacy, cybersecurity, and algorithmic bias.
+              Through workshops, academic programs, and industry collaborations, the University is shaping
+              a new generation of tech professionals who are not only skilled in technology but also aware
+              of its societal and environmental implications.
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
