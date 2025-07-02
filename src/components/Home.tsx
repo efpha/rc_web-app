@@ -26,11 +26,12 @@ export default function Home() {
               <span className="image_cont">
                 <Image
                   src='/images/ksu.png'
+                  className='ksu_lg'
                   alt='ksu logo'
                   width={1020}
                   height={600}
                 />
-                <label htmlFor="">Kisii University</label>
+                <label className='ksu_labl' htmlFor="ksu_lg">Kisii University</label>
               </span>
               
               <span className="image_cont">
@@ -41,7 +42,7 @@ export default function Home() {
                     width={1020}
                     height={600}
                   />
-                  <label htmlFor="">Mozilla Foundation</label>
+                  <label className='moz_labl' htmlFor="mozilla_lg">Mozilla Foundation</label>
               </span>
           </span>
         </div>
