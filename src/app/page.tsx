@@ -1,5 +1,5 @@
 import Hero from '@/app/Hero/Home'
-import About from '@/app/about/About';
+// import About from '@/app/about/About';
 
 export default function Home() {
   return (
