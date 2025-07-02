@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import '@/components/home.css';
+import '@/app/home.css'
 import { MoveUpRight } from 'lucide-react';
 
 export default function Home() {
@@ -47,7 +47,6 @@ export default function Home() {
               </span>
           </span>
         </div>
-
       </div>
       <div className="about" id="about">
         <div className="card_cont">
@@ -69,6 +68,56 @@ export default function Home() {
               <div className="workshop_ttle">
                 Workshop
               </div>
+              <div className="wrkshp_cont">
+                <section className='card'>
+                  <Image 
+                      src="/images/prj1.jpg"
+                      alt="Kisii University"
+                      width={1200}
+                      height={600}
+                  />
+                  <div className="card_dsc">
+                    <div className='heading'>Rearch</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                  </div>
+                </section>
+                <section className='card'>
+                  <Image 
+                      src="/images/prj2.jpeg"
+                      alt="Kisii University"
+                      width={1200}
+                      height={600}
+                  />
+                  <div className="card_dsc">
+                    <div className='heading'>Rearch</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                  </div>
+                </section>
+                <section className='card'>
+                  <Image 
+                      src="/images/prj3.jpg"
+                      alt="Kisii University"
+                      width={1200}
+                      height={600}
+                  />
+                  <div className="card_dsc">
+                    <div className='heading'>Rearch</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                  </div>
+                </section>
+                <section className='card'>
+                  <Image 
+                      src="/images/prj4.jpg"
+                      alt="Kisii University"
+                      width={1200}
+                      height={600}
+                  />
+                  <div className="card_dsc">
+                    <div className='heading'>Rearch</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                  </div>
+                </section>
+              </div>
             </section>
 
             <section className="img">
@@ -78,6 +127,10 @@ export default function Home() {
                 width={1200}
                 height={600}
               />
+                  <div className="card_dsc">
+                    <div className='heading'>Rearch</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                  </div>              
             </section>
           </div>
         </div>

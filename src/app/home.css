@@ -232,8 +232,47 @@
     color: var(--primary-text);
 }
 
+.wrkshp_cont{
+    display: flex;
+    gap: 2em;
+}
+
+.wrkshp_cont .card{
+    width: 30%;
+    background-color: var(--primary-text);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    border-radius: 10px;
+}
+.card:hover img, .card_dsc{
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card .card_dsc{
+    /* background-color: var(--primary-color); */
+    height: 100vh;
+    padding: 10px;
+}
+
+.card .card_dsc .heading{
+    color: maroon;
+    font-weight: bold;
+}
+
+
+
+
+
 
 .about_card section img{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
