@@ -163,16 +163,24 @@
   animation: slideLeft 10s linear infinite;
 }
 
-.image_cont{
-    display: block;
-
-}
-.image_cont label{
-    background-color: green;
+.image_cont {
     position: relative;
-    top: 20px;
-    right: 4em;
+    display: inline-block;
+    text-align: center;
 }
+
+.image_cont label {
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
 .partn .roll img {
   width: 5em;
   height: auto;
