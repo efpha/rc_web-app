@@ -85,11 +85,11 @@
 }
 
 .action-start {
-    font-size: 0.5em;
+    font-size: .5em;
     font-weight: bold;
     background-color: var(--primary-text);
     color: var(--primary-color);
-    padding: 13px 35px;
+    padding: 1em 5em;
     border-radius: 10px;
     border: none;
     transition: background-color 0.3s, color 0.3s;
@@ -232,17 +232,47 @@
     color: var(--primary-text);
 }
 
-.wrkshp_cont{
-    display: flex;
-    gap: 2em;
+
+.workshop{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: -12em;
+    background-color: #f3f3f3;
+    padding-bottom: 2em;
+
+
+}
+.workshop_container{
+    width: 90%;
+    margin: auto;
 }
 
+.workshop_ttle{
+    font-size: 3.5em;
+    text-align: center;
+    /* background-color: rgb(30, 94, 62); */
+    color: var(--primary-color);
+}
+
+.wrkshp_cont{
+    display: flex;
+    gap: 1em;
+    margin: 2em 0;
+
+}
+
+
 .wrkshp_cont .card{
-    width: 30%;
+    width: 20em;
+    height: 65vh;
     background-color: var(--primary-text);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: block;
-    border-radius: 10px;
+    border-radius: 4px;
+}
+.wrkshp_cont .card.master{
+    width: 41em;
 }
 .card:hover img, .card_dsc{
     transform: scale(1.03);
@@ -267,6 +297,21 @@
     font-weight: bold;
 }
 
+.more_wrksp{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    font-size: 1.5em;
+    border: none;
+    position: relative;
+    left: 43%;
+    transition: transform 0.3s ease, background-color 0.3s;
+
+}
+
+.more_wrksp:hover{
+    background-color: #06121f;
+}
 
 
 
