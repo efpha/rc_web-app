@@ -43,77 +43,89 @@ export default function Home() {
 
       {/* Workshop section */}
       <section className="workshop">
-            <div className="workshop_container">
+            <div className="wrkshp_cont">
               <div className="workshop_ttle">
                 Workshops
-              </div>
-              <div className="wrkshp_cont">
-                <section className='card master'>
-                  <Image 
-                      src="/images/prj1.jpg"
-                      alt="Kisii University"
-                      width={1200}
-                      height={600}
-                  />
-                </section>
-                <section className='card'>
-                  <Image 
-                      src="/images/prj2.jpeg"
-                      alt="Kisii University"
-                      width={1200}
-                      height={600}
-                  />
-                  <div className="card_dsc">
-                    <div className='heading'>Rearch</div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                  </div>
-                </section>
-                <section className='card'>
-                  <Image 
-                      src="/images/prj3.jpg"
-                      alt="Kisii University"
-                      width={1200}
-                      height={600}
-                  />
-                  <div className="card_dsc">
-                    <div className='heading'>Rearch</div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                <section>
+                  <div className="content _2nd">
+                    Through workshops, academic programs, and industry collaborations, the University is shaping
+                    a new generation of tech professionals who are not only skilled in technology but also aware
+                    of its societal and environmental implications.
                   </div>
                 </section>
               </div>
+              <div className="cards_container">
+                <div className="minicardcont">
+                  <section className='cardcont master'>
+                      <Image 
+                          src="/images/prj1.jpg"
+                          alt="Kisii University"
+                          width={1200}
+                          height={600}
+                      />
+                    </section>
+                    <section className='cardcont'>
+                      <Image 
+                          src="/images/prj2.jpeg"
+                          alt="Kisii University"
+                          width={1200}
+                          height={600}
+                      />
+                      <div className="card_dsc">
+                        <div className='heading'>Rearch</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                      </div>
+                    </section>
+                    <section className='cardcont'>
+                      <Image 
+                          src="/images/prj3.jpg"
+                          alt="Kisii University"
+                          width={1200}
+                          height={600}
+                      />
+                      <div className="card_dsc">
+                        <div className='heading'>Rearch</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                      </div>
+                    </section>
+                  </div>
+                  <div className="minicardcont">
+                    <section className='cardcont'>
+                      <Image 
+                          src="/images/prj2.jpeg"
+                          alt="Kisii University"
+                          width={1200}
+                          height={600}
+                      />
+                      <div className="card_dsc">
+                        <div className='heading'>Rearch</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                      </div>
+                    </section>
+                    <section className='cardcont'>
+                      <Image 
+                          src="/images/prj3.jpg"
+                          alt="Kisii University"
+                          width={1200}
+                          height={600}
+                      />
+                      <div className="card_dsc">
+                        <div className='heading'>Rearch</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                      </div>
+                    </section>
+                    <section className='cardcont master'>
+                      <Image 
+                          src="/images/prj1.jpg"
+                          alt="Kisii University"
+                          width={1200}
+                          height={600}
+                      />
+                    </section>
+                  </div>
+                </div>
+                
               <div className="wrkshp_cont">
-                <section className='card'>
-                  <Image 
-                      src="/images/prj2.jpeg"
-                      alt="Kisii University"
-                      width={1200}
-                      height={600}
-                  />
-                  <div className="card_dsc">
-                    <div className='heading'>Rearch</div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                  </div>
-                </section>
-                <section className='card'>
-                  <Image 
-                      src="/images/prj3.jpg"
-                      alt="Kisii University"
-                      width={1200}
-                      height={600}
-                  />
-                  <div className="card_dsc">
-                    <div className='heading'>Rearch</div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                  </div>
-                </section>
-                <section className='card master'>
-                  <Image 
-                      src="/images/prj4.jpg"
-                      alt="Kisii University"
-                      width={1200}
-                      height={600}
-                  />
-                </section>
             </div>
         </div>
         <button className="more_wrksp">More Workshops</button>
