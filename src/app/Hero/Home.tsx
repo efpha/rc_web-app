@@ -64,22 +64,25 @@ export default function Home() {
                   <MoveUpRight size={18}/>
                 </button>
             </section>
-            <section className="workshop">
+       <div/>      
+          </div>
+        </div>
+      </div>
+
+      {/* Workshop section */}
+      <section className="workshop">
+            <div className="workshop_container">
               <div className="workshop_ttle">
-                Workshop
+                Workshops
               </div>
               <div className="wrkshp_cont">
-                <section className='card'>
+                <section className='card master'>
                   <Image 
                       src="/images/prj1.jpg"
                       alt="Kisii University"
                       width={1200}
                       height={600}
                   />
-                  <div className="card_dsc">
-                    <div className='heading'>Rearch</div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                  </div>
                 </section>
                 <section className='card'>
                   <Image 
@@ -105,9 +108,11 @@ export default function Home() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                   </div>
                 </section>
+              </div>
+              <div className="wrkshp_cont">
                 <section className='card'>
                   <Image 
-                      src="/images/prj4.jpg"
+                      src="/images/prj2.jpeg"
                       alt="Kisii University"
                       width={1200}
                       height={600}
@@ -117,10 +122,32 @@ export default function Home() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                   </div>
                 </section>
-              </div>
-            </section>
+                <section className='card'>
+                  <Image 
+                      src="/images/prj3.jpg"
+                      alt="Kisii University"
+                      width={1200}
+                      height={600}
+                  />
+                  <div className="card_dsc">
+                    <div className='heading'>Rearch</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
+                  </div>
+                </section>
+                <section className='card master'>
+                  <Image 
+                      src="/images/prj4.jpg"
+                      alt="Kisii University"
+                      width={1200}
+                      height={600}
+                  />
+                </section>
+            </div>
+        </div>
+        <button className="more_wrksp">More Workshops</button>
+      </section>
 
-            <section className="img">
+            {/* <section className="img">
               <Image
                 src="/images/about.jpeg"
                 alt="Kisii University"
@@ -131,10 +158,7 @@ export default function Home() {
                     <div className='heading'>Rearch</div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                   </div>              
-            </section>
-          </div>
-        </div>
-      </div>
+            </section> */}
     </div>
   );
 }
