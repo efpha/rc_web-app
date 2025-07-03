@@ -20,34 +20,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="partn">
-        <div className="roll_cont">
-            <span className='roll'>
-
-              <span className="image_cont">
-                <Image
-                  src='/images/ksu.png'
-                  className='ksu_lg'
-                  alt='ksu logo'
-                  width={1020}
-                  height={600}
-                />
-                <label className='ksu_labl' htmlFor="ksu_lg">Kisii University</label>
-              </span>
-              
-              <span className="image_cont">
-                  <Image
-                    src='/images/mozilla.png'
-                    className='mozilla_lg'
-                    alt='mozilla foundation logo'
-                    width={1020}
-                    height={600}
-                  />
-                  <label className='moz_labl' htmlFor="mozilla_lg">Mozilla Foundation</label>
-              </span>
-          </span>
-        </div>
-      </div>
       <div className="about" id="about">
         <div className="card_cont">
           <div className="about_card">
@@ -146,7 +118,34 @@ export default function Home() {
         </div>
         <button className="more_wrksp">More Workshops</button>
       </section>
+      <div className="partn">
+        <div className="roll_cont">
+            <span className='roll'>
 
+              <span className="image_cont">
+                <Image
+                  src='/images/ksu.png'
+                  className='ksu_lg'
+                  alt='ksu logo'
+                  width={1020}
+                  height={600}
+                />
+                <label className='ksu_labl' htmlFor="ksu_lg">Kisii University</label>
+              </span>
+              
+              <span className="image_cont">
+                  <Image
+                    src='/images/mozilla.png'
+                    className='mozilla_lg'
+                    alt='mozilla foundation logo'
+                    width={1020}
+                    height={600}
+                  />
+                  <label className='moz_labl' htmlFor="mozilla_lg">Mozilla Foundation</label>
+              </span>
+          </span>
+        </div>
+      </div>
             {/* <section className="img">
               <Image
                 src="/images/about.jpeg"
