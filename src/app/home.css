@@ -23,7 +23,7 @@
     margin-top: 12em;
     background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
-        url('/images/home.jpeg') center/cover no-repeat;
+        url('/images/home.jpeg') left no-repeat;
     transform: translateY(-50%);
     display: flex;
     align-items: flex-end;
@@ -63,7 +63,7 @@
 
 .card-text {
     color: var(--primary-text);
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     text-align: left;
     display: inline;
@@ -142,7 +142,7 @@
     white-space: nowrap;
     color: #000;
     position: absolute;
-    top: 3.5em;
+    top: 2.5em;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 4px;
@@ -305,29 +305,6 @@
     transform: scale(1.01);
 }
 
-
-
-/*
-.wrkshp_cont .master{
-    width: 41em;
-}
-.cardcont:hover img, .card_dsc{
-    transform: scale(1.03);
-    transition: transform 0.3s ease;
-    color: var(--primary-color);
-}
-
-
-.cardcont .card_dsc{
-    height: 10em;
-    padding: 10px;
-}
-
-.cardcont .card_dsc .heading{
-    color: maroon;
-    font-weight: bold;
-} */
-
 .more_wrksp{
     padding: 10px;
     background-color: var(--primary-color);
@@ -343,12 +320,129 @@
 .more_wrksp:hover{
     background-color: #06121f;
 }
-
-
-
-
-
 .about_card section img{
     width: 100%;
     height: auto;
+}
+@media (max-width: 600px) {
+  .card-container {
+    height: auto;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0);
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+    padding: 1em 0.5em;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .card-text h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .card-text h2 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .action-start {
+    font-size: 0.8em;
+    padding: 1em 2em;
+    margin: 1em auto;
+    display: block;
+  }
+
+  .partn {
+    height: auto;
+    top: 0;
+    padding: 1em 0;
+  }
+
+  .roll_cont {
+    width: 90%;
+    height: 6em;
+  }
+
+  .roll {
+    gap: 10em;
+  }
+
+  .partn .roll img {
+    width: 3em;
+  }
+
+  .about {
+    top: 0;
+  }
+
+  .card_cont {
+    width: 95%;
+  }
+
+  .about_card {
+    margin: 2em auto;
+  }
+
+  .content_card {
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+
+  .content_more {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .workshop {
+    top: 0;
+    padding-bottom: 1em;
+  }
+
+  .wrkshp_cont {
+    width: 95%;
+  }
+
+  .workshop_ttle {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .minicardcont {
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+  }
+
+  .cardcont {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardcont.master {
+    width: 100%;
+  }
+
+  .more_wrksp {
+    left: 0;
+    display: block;
+    margin: 1em auto;
+  }
+
+  .about_card section img {
+    width: 100%;
+  }
 }
