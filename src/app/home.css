@@ -194,7 +194,7 @@
     margin: 5em auto;
 }
 .content_card{
-    background: linear-gradient(to right, #1f456e, #010e1d);
+    /* background: linear-gradient(to right, #1f456e, #010e1d); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2em;
     margin: 3em;
@@ -204,9 +204,10 @@
 .content {
     width: 100%;
     margin: auto;
-    color: var(--primary-text);
+    color: var(--primary-color);
     font-size: 24px;
     font-weight: 100;
+    text-align: center;
 }
 
 .content._2nd{
