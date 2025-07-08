@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Responsible computing",
-  description: "", //website description
+  description: "", //wesite description
 };
 
 export default function RootLayout({
