@@ -1,14 +1,6 @@
 
 :root {
     --white-primary: var(--primary-text);  
-    --purple-accent: #D580FF;      /* Lavender Neon - accents, backgrounds */
-    --purple-background: #E6CCFF;  /* Light Lavender - light sections */
-    --purple-dark: #6F2DA8;        /* Grape Purple - buttons, headers */
-    --purple-royal: #7851A9;       /* Royal Purple - text, icons */
-    --purple-orchid: #9932CC;      /* Deep Orchid - call-to-actions */
-    --purple-violet: #9F00FF;      /* Vivid Violet - headings, emphasis */
-    --purple-amethyst: #9966CC;    /* Amethyst - hover states, details */
-
     --primary-color: #1f456e;
     --primary-text: #fff;
     --link-color: var(--purple-orchid);
