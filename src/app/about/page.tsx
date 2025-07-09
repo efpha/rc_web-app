@@ -5,12 +5,12 @@ import '@/app/about/page.css'
 
 export default function About(){
     return(
-        <div className="about" id="about">
-            <div className="card_cont shadowed">
+        <div className="about page" id="about">
+            <div className="card_cont page">
 
-                <div className="about_card">
+                <div className="about_card page">
                     <section className="content_card noshadow">
-                    <div className="content">
+                    <div className="content page">
                         The Responsible Computing Challenge aims to embed ethical computing practices into academic
                         curricula and professional practices. Faculty and students are being trained to navigate
                         ethical concerns such as data privacy, cybersecurity, and algorithmic bias.

@@ -391,8 +391,8 @@
     margin: 2em auto;
   }
 
-  .content_card {
-    margin: 1em;
+.content_card.shadowed {
+    margin: .1em;
     padding: 1em;
   }
 
