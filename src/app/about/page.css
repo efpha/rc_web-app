@@ -20,6 +20,9 @@
     padding: 2em;
     margin: 3em;
     border-radius: 10px;
+    /* background-color: red; */
+    position: relative;
+    top: 15em;
 }
 
 .content {
