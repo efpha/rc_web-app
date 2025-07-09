@@ -15,7 +15,7 @@
     margin-top: 12em;
     background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
-        url('/images/home.jpeg') left no-repeat;
+        url('/images/home.jpg') left/cover no-repeat;
     transform: translateY(-50%);
     display: flex;
     align-items: flex-end;
