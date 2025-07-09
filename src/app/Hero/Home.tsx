@@ -1,12 +1,17 @@
+'use client';
+
 import Image from 'next/image';
+import Link from 'next/link'
+import '@/app/about/page'
 import '@/app/home.css'
 import { MoveUpRight } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div>
       <div className="card-container">
-        {/* <div className="left-border"></div> */}
         <div className="card">
           <div className="card-content">
             <div className="card-text">
@@ -23,16 +28,15 @@ export default function Home() {
       <div className="about" id="about">
         <div className="card_cont">
           <div className="about_card">
-            <section className="content_card">
+            <section className="content_card shadowed">
               <div className="content">
                 The Responsible Computing Challenge aims to embed ethical computing practices into academic
                 curricula and professional practices. Faculty and students are being trained to navigate
                 ethical concerns such as data privacy, cybersecurity, and algorithmic bias.
               </div>
-              {/* Through workshops, academic programs, and industry collaborations, the University is shaping
-              a new generation of tech professionals who are not only skilled in technology but also aware
-              of its societal and environmental implications. */}
-                <button className='content_more'>View More
+                <button className='content_more'
+                  onClick={() => router.push('/about')}
+                >View More
                   <MoveUpRight size={18}/>
                 </button>
             </section>
@@ -71,10 +75,10 @@ export default function Home() {
                           width={1200}
                           height={600}
                       />
-                      <div className="card_dsc">
-                        <div className='heading'>Rearch</div>
+                      <Link className="card_dsc" href="#">
+                        <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </div>
+                      </Link>
                     </section>
                     <section className='cardcont'>
                       <Image 
@@ -83,10 +87,10 @@ export default function Home() {
                           width={1200}
                           height={600}
                       />
-                      <div className="card_dsc">
-                        <div className='heading'>Rearch</div>
+                      <Link className="card_dsc" href="#">
+                        <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </div>
+                      </Link>
                     </section>
                   </div>
                   <div className="minicardcont">
@@ -97,10 +101,10 @@ export default function Home() {
                           width={1200}
                           height={600}
                       />
-                      <div className="card_dsc">
-                        <div className='heading'>Rearch</div>
+                      <Link className="card_dsc" href="#">
+                        <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </div>
+                      </Link>
                     </section>
                     <section className='cardcont'>
                       <Image 
@@ -109,10 +113,10 @@ export default function Home() {
                           width={1200}
                           height={600}
                       />
-                      <div className="card_dsc">
-                        <div className='heading'>Rearch</div>
+                      <Link className="card_dsc" href="#">
+                        <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </div>
+                      </Link>
                     </section>
                     <section className='cardcont master'>
                       <Image 

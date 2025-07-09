@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Logs, X, MoveUpRight} from 'lucide-react';
 import Link from 'next/link';
 import '@/components/header.css';
+import '@/app/about/page'
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Header() {
               <X />
             </button>
             <nav>
-              <Link href="/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link>
+              <Link href="/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link> {/*This link is not working. Why*/}
               <Link href="/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
               <Link href="/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>
               <Link href="/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>

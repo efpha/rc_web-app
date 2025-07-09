@@ -185,8 +185,7 @@
     width: 100%;
     margin: 5em auto;
 }
-.content_card{
-    /* background: linear-gradient(to right, #1f456e, #010e1d); */
+.content_card.shadowed{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2em;
     margin: 3em;
@@ -272,6 +271,8 @@
     border-radius: 5px;
     overflow: hidden;
     transition: box-shadow 0.4s ease; 
+    background-color: red;
+    justify-content: center;
 }
 
 .cardcont.master {
@@ -296,6 +297,10 @@
 
 .cardcont:hover img {
     transform: scale(1.01);
+}
+.card_dsc{
+  background-color: blue;
+  margin: auto;
 }
 
 .more_wrksp{
