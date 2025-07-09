@@ -5,5 +5,6 @@ export default function Home() {
     <div className="pg_cont">
       <Hero />
     </div>
+    
   );
 };
