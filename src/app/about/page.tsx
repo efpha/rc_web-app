@@ -1,5 +1,4 @@
-'use client'; // ✅ MUST be the first line
-
+'use client';
 import Image from 'next/image';
 import Link from 'next/link'
 import '@/app/home.css';
@@ -32,28 +31,29 @@ export default function About() {
 
                 {/* Section title */}
                 <span className="abtttle abt">
-                    WHO WE ARE
+                    <div>WHO WE</div>
+                    <div>ARE</div>
                 </span>
             </section>
             <div className="card_cont abt">
-                <div className="about_card abt">
-                    <section className="imgabt abt cardcont">
+                    <section className="rcimg abt">
                         <Image 
-                            src="/images/prj6.jpg"
+                            src="/images/ethic.jpg"
                             alt="Kisii University"
-                            width={1200}
+                            width={1000}
                             height={600}
                         />
                     </section>
+                <div className="about_card abt">
+                    <div className="rctgl abt"></div>
                     <section className="content_card noshadow">
                         <div className="content abt">
-                            Through the Responsible Computing Challenge, Kisii University is 
-                            molding a new wave of graduating technologists who will bring holistic 
-                            thinking to the design of new technologies, fueling an industry-wide culture shift. 
-                            The Challenge supports the conceptualization, development, and piloting of curricula 
-                            that empowers students to think about the social and political context of computing.
+                            We Kisii University led by Professor F. Mzee in partnership with the Mozilla Foundation are joining hands to
+                            empower a new wave of graduating technologists with ethical computing practices through 
+                            Responsible Computing Challenge. 
                         </div>
                     </section>
+
                 </div>
             </div>
         </div>
