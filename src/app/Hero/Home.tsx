@@ -5,6 +5,7 @@ import Link from 'next/link'
 import '@/app/about/page'
 import '@/app/home.css'
 import { MoveUpRight } from 'lucide-react';
+import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
               </div>
                 <button className='content_more'
                   onClick={() => router.push('/about')}
-                >View More
+                >Learn More
                   <MoveUpRight size={18}/>
                 </button>
             </section>
