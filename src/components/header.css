@@ -21,11 +21,15 @@
   background-color: var(--background-color);
   border-bottom: 1px solid var(--primary-text);
 }
+.lgo-txt{
+  flex-direction: row;
+}
 
 .lgo-txt a {
   position: relative;
   left: 2em;
-  font-size: 1.5rem;
+  font-style: italic;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-text);
@@ -34,9 +38,9 @@
 .links {
   width: 40%;
   display: flex;
-  gap: 1rem;
+  gap: 5%;
   position: absolute;
-  left: 30%;
+  left: 25%;
 }
 
 .links a {
@@ -74,7 +78,7 @@
 .btn-cont {
   width: 30%;
   display: flex;
-  gap: 2rem;
+  gap: 10%;
 }
 
 .btn-cont button {

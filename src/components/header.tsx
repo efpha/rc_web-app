@@ -11,7 +11,9 @@ export default function Header() {
   return (
     <header className="nav-bar">
       <div className="lgo-txt">
-        <Link href="/">Logo</Link>
+        <Link href="/">
+          <div>RC Challenge</div>
+        </Link>
       </div>
 
       {/* Hamburger icon for mobile */}
