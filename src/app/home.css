@@ -65,6 +65,7 @@
     width: fit-content;
     margin: auto;
     font-size: 3.5rem;
+    font-weight: bold;
     color: var(--primary-text);
 }
 
@@ -246,6 +247,7 @@
     width: 90%;
     margin: auto;
     font-size: 3.5em;
+    font-weight: bold;
     text-align: center;
     /* background-color: rgb(30, 94, 62); */
     color: var(--primary-color);
