@@ -38,22 +38,57 @@ export default function About() {
             <div className="card_cont abt">
                     <section className="rcimg abt">
                         <Image 
-                            src="/images/ethic1.jpg"
+                            src="/images/prj5.jpeg"
                             alt="Kisii University"
                             width={1000}
                             height={600}
                         />
                     </section>
                 <div className="about_card abt">
-                    <div className="rctgl abt"></div>
                     <section className="content_card noshadow">
+                        <div className="rctgl abt"></div>
                         <div className="content abt">
                             We Kisii University led by Professor F. Mzee in partnership with the Mozilla Foundation are joining hands to
-                            empower a new wave of graduating technologists with ethical computing practices through 
+                            empower a new wave of graduands with ethical computing practices through 
                             Responsible Computing Challenge. 
                         </div>
-                    </section>
+                        <button className="content_more abt">Join the challenge</button>
 
+                    </section>
+                    <section className="socials">
+                        {/* <Link href="https://x.com/kisiuniofficial" className="x">
+                        <Image 
+                            src="/images/prj5.jpeg"
+                            alt="Kisii University"
+                            width={1000}
+                            height={600}
+                        />
+                        </Link>
+                        <Link href="#" className="facebook">
+                        <Image 
+                            src="/images/prj5.jpeg"
+                            alt="Kisii University"
+                            width={1000}
+                            height={600}
+                        />
+                        </Link>
+                        <Link href="#" className="instagram">
+                        <Image 
+                            src="/images/prj5.jpeg"
+                            alt="Kisii University"
+                            width={1000}
+                            height={600}
+                        />
+                        </Link>
+                        <Link href="#" className='linkeind'>
+                        <Image 
+                            src="/images/prj5.jpeg"
+                            alt="Kisii University"
+                            width={1000}
+                            height={600}
+                        />
+                        </Link> */}
+                    </section>
                 </div>
             </div>
         </div>
