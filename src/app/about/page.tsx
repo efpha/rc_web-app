@@ -38,7 +38,7 @@ export default function About() {
             <div className="card_cont abt">
                     <section className="rcimg abt">
                         <Image 
-                            src="/images/ethic.jpg"
+                            src="/images/ethic1.jpg"
                             alt="Kisii University"
                             width={1000}
                             height={600}
