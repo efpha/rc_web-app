@@ -79,7 +79,7 @@
     color: var(--primary-text);
 }
 
-.action-start {
+.action-start{
     font-size: .5em;
     font-weight: bold;
     background-color: var(--primary-text);
@@ -219,7 +219,6 @@
     background-color: var(--primary-text);
     color: var(--primary-color);
     border: none;
-    /* border-radius: 10px; */
     transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -483,7 +482,7 @@
   }
 
   .action-start {
-    margin: 1em auto;
+    /* margin: 1em auto; */
     display: block;
     padding: 12px 30px;
     font-size: 1rem;
