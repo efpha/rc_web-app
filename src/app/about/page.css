@@ -116,6 +116,7 @@
 .content_card.noshadow {
     position: relative;
     width: 100%;
+    margin: auto;
     margin-right: 1em;
     padding: 1rem;
 }
@@ -126,8 +127,10 @@
     font-size: 18px;
     font-weight: 300;
     text-align: left;
+    align-self: center;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin: auto;
+    /* margin-bottom: 1rem; */
 }
 
 .content._2nd.abt {
@@ -140,9 +143,7 @@
     .about.abt {
         width: 100%;
         top: 0;
-        /* min-height: 100vh; */
         padding: 1rem 0;
-        /* background-color: blue; */
     }
 
     .moreksu.abt {
@@ -159,12 +160,12 @@
         width: 100%;
         flex-direction: row;
         gap: .5rem;
-        align-items: center;
-        position: relative;
-        top: .3rem;
+        /* background-color: yellow; */
+
     }
     .moreksu.abt .ksu .ksu_labl{
       font-size: .8rem;
+
     }
     .moreksu.abt .border.abt {
       height: 80px;
@@ -176,7 +177,7 @@
     .moreksu.abt .image_cont {
         width: 100%;
         position: relative;
-        left: 4rem;
+        left: 3rem;
     }
 
     .moreksu.abt .image_cont img {
@@ -220,17 +221,14 @@
       border-radius: 10px;
     }
     .content.abt {
-        width: 110%;
+        width: 100%;
         font-size: 16px;
         font-weight: 400;
-        /* background-color: red; */
         margin: auto;
         align-self: center;
     }
 
     .content_card.noshadow {
         width: 100%;
-        /* padding: 0.5rem; */
-        /* background-color: blue; */
     }
 }
