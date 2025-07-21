@@ -4,6 +4,7 @@ import { Logs, X, MoveUpRight} from 'lucide-react';
 import Link from 'next/link';
 import '@/components/header.css';
 import '@/app/about/page'
+import '@/app/workshops/page'
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
