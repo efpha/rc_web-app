@@ -133,7 +133,10 @@ export default function Home() {
               <div className="wrkshp_cont">
             </div>
         </div>
-        <button className="more_wrksp">More Workshops</button>
+        <button className="more_wrksp"
+        onClick={() => router.push('/workshops')}
+        >More Workshops
+        </button>
       </section>
       <div className="partn">
         <div className="roll_cont">
