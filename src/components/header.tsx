@@ -5,6 +5,7 @@ import Link from 'next/link';
 import '@/components/header.css';
 import '@/app/about/page'
 import '@/app/workshops/page'
+import '@/app/hero/page'
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -28,9 +29,9 @@ export default function Header() {
 
       {/* Desktop links */}
       <nav className="links">
+        <Link href="/hero">Home</Link> {/* This link is not working. Why */}
         <Link href="/about">About</Link>
         <Link href="/workshops">Workshops</Link>
-        <Link href="/lorem">Lorem</Link>
         <Link href="/lorem">Lorem</Link>
       </nav>
 
@@ -51,9 +52,9 @@ export default function Header() {
               <X />
             </button>
             <nav>
+              <Link href="/hero" className='link' onClick={() => setSidebarOpen(false)}>Home<MoveUpRight size={16}/></Link>
               <Link href="/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link> {/*This link is not working. Why*/}
               <Link href="/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
-              <Link href="/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>
               <Link href="/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>
               <div className="sidebar-btns">
                 <button type="submit">Login</button>
