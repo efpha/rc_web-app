@@ -1,0 +1,34 @@
+.workshops{
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+.moreksu.wrk {
+    display: flex;
+    width: 60%;
+    height: 10rem;
+    gap: 2rem;
+    justify-content: center;
+    margin: auto;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    margin-top: 2em;
+}
+/* .contet.wrk {
+    width: 100%;
+    background-color: red;
+    padding: 2rem 0;
+    margin: auto;
+} */
+
+@media (max-width: 600px) {
+    .moreksu.wrk {
+        width: 90%;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        /* margin: 2% 5%; */
+        padding: 1rem;
+        box-shadow: none;
+    }
+}
