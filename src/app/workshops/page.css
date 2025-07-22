@@ -1,34 +1,50 @@
-.workshops{
-    /* background-color: aqua; */
-    width: 100%;
+@media (min-width: 900px) {
+    .workshops{
+        /* background-color: aqua; */
+        width: 100%;
+    }
+
+    .moreksu.wrk {
+        display: flex;
+        width: 60%;
+        height: 10rem;
+        gap: 2rem;
+        justify-content: center;
+        margin: auto;
+        border-radius: 8px;
+        margin-top: 2em;
+    }
+    .content.abt.wrk{
+        width: 100%;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-top: 2rem;
+    }
+    .border.wrk{
+      border-left: 6px solid var(--primary-color);
+      border-radius: 3px;
+    }
 }
 
-.moreksu.wrk {
-    display: flex;
-    width: 60%;
-    height: 10rem;
-    gap: 2rem;
-    justify-content: center;
-    margin: auto;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    margin-top: 2em;
-}
-/* .contet.wrk {
-    width: 100%;
-    background-color: red;
-    padding: 2rem 0;
-    margin: auto;
-} */
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .moreksu.wrk {
         width: 90%;
         height: auto;
         display: flex;
         gap: 1rem;
-        /* margin: 2% 5%; */
         padding: 1rem;
         box-shadow: none;
+    }
+    
+    .border.wrk{
+      height: 100px;
+      border-left: 6px solid var(--primary-color);
+      border-radius: 3px;
+    }
+
+    .abtttle.abt.wrk{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--primary-color);
     }
 }
