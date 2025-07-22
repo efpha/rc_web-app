@@ -24,9 +24,9 @@ export default function Workshops() {
                     </Link>
                     
                 </span>
-                <span className="border abt">
+                <span className="border wrk">
                 </span>
-                <span className="abtttle abt">
+                <span className="abtttle abt wrk">
                     <div>RESPONSIBLE COMPUTING</div>
                     <div>WORKSHOPS</div>
                 </span>
