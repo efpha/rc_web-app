@@ -36,8 +36,7 @@ export default function Header() {
       </nav>
 
       <div className="btn-cont">
-        <button type="submit">Login</button>
-        <button type="submit">Sign Up</button>
+        <button type="submit">Register</button>
       </div>
 
       {/* Sidebar overlay for mobile */}
@@ -57,8 +56,7 @@ export default function Header() {
               <Link href="/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
               <Link href="/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>
               <div className="sidebar-btns">
-                <button type="submit">Login</button>
-                <button type="submit">Sign Up</button>
+                <button type="submit">Register</button>
               </div>
             </nav>
           </aside>
