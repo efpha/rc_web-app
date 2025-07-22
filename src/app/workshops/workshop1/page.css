@@ -1,0 +1,103 @@
+@media (min-width: 990px) {
+.workshop1-page{
+        width: 100%;
+    }
+    .workshop1-page h3 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        margin: 1.5rem auto;
+        color: var(--primary-color);
+    }
+
+    .workshop1-page .date {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 10%;
+        color: var(--secondary-color);
+        font-weight: 600;
+    }
+    .content-cont{
+        display: flex;
+        margin: 2%;
+
+    }
+
+    .workshop1-page .rcimg {
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* margin-top: 2rem; */
+
+    }
+    .workshop1-page .rcimg img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .workshop_content{
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: 1.5rem;
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .socials{
+        display: flex;
+        gap: 1rem;
+        margin-top: 3rem;
+        width: 100%;
+        padding: 1rem;
+        float: inline-end;
+    }
+    .socials span{
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 990px) {
+    .workshop1-page{
+        width: 100%;
+    }
+    .workshop1-page h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+        margin: 1rem auto;
+        color: var(--primary-color);
+    }
+    .workshop1-page .date {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 10%;
+        color: var(--secondary-color);
+        font-weight: 600;
+    }
+
+    .workshop_content{
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 1rem;
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .socials{
+        display: flex;
+        gap: 1rem;
+        margin-top: 3rem;
+        width: 100%;
+        padding: 1rem;
+        background-color: #f3f3f3;
+    }
+
+    .socials img{
+        width: 30px;
+        height: auto;
+    }
+
+}
