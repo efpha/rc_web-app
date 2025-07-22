@@ -87,7 +87,7 @@
   border: none;
   cursor: pointer;
   font-weight: 500;
-  background-color: var(--link-hover-color);
+  background-color: var(--primary-text);
   color: var(--primary-color);
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
