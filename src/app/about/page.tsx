@@ -26,7 +26,7 @@ export default function About() {
                 </span>
 
                 {/* Left border */}
-                <span className="border abt">
+                <span className="border abt wrk">
                 </span>
 
                 {/* Section title */}
