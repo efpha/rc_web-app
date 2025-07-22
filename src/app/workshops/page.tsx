@@ -1,5 +1,6 @@
 import '@/app/workshops/page.css';
 import '@/app/about/page.css';
+import '@/app/workshops/workshop1/page';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -35,7 +36,7 @@ export default function Workshops() {
             </section>
             <section className="workshop-list">
                 <div className="minicardcont">
-                                    <section className='cardcont'>
+                                    <Link href='#' className='cardcont' >
                                       <Image 
                                           src="/images/prj2.jpeg"
                                           alt="Kisii University"
@@ -46,8 +47,8 @@ export default function Workshops() {
                                         <span className='heading'>Rearch</span>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                                       </Link>
-                                    </section>
-                                    <section className='cardcont'>
+                                    </Link>
+                                    <Link className='cardcont' href='#'>
                                       <Image 
                                           src="/images/prj3.jpg"
                                           alt="Kisii University"
@@ -58,26 +59,26 @@ export default function Workshops() {
                                         <span className='heading'>Rearch</span>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                                       </Link>
-                                    </section>
-                                    <section className='cardcont master'>
+                                    </Link>
+                                    <Link className='cardcont master' href='#'>
                                       <Image 
                                           src="/images/prj1.jpg"
                                           alt="Kisii University"
                                           width={1200}
                                           height={600}
                                       />
-                                    </section>
+                                    </Link>
                                   </div>
                                   <div className="minicardcont">
-                  <section className='cardcont master'>
+                  <Link className='cardcont master' href='#'>
                       <Image 
                           src="/images/prj1.jpg"
                           alt="Kisii University"
                           width={1200}
                           height={600}
                       />
-                    </section>
-                    <section className='cardcont'>
+                    </Link>
+                    <Link className='cardcont' href='#'>
                       <Image 
                           src="/images/prj2.jpeg"
                           alt="Kisii University"
@@ -88,10 +89,10 @@ export default function Workshops() {
                         <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                       </Link>
-                    </section>
-                    <section className='cardcont'>
+                    </Link>
+                    <Link className='cardcont' href='/workshops/workshop1'>
                       <Image 
-                          src="/images/prj3.jpg"
+                          src="/images/workshop1.jpg"
                           alt="Kisii University"
                           width={1200}
                           height={600}
@@ -100,7 +101,7 @@ export default function Workshops() {
                         <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                       </Link>
-                    </section>
+                    </Link>
                   </div>
                 {/* <div className="workshop-item">
                     <Image 
