@@ -107,22 +107,24 @@ export default function Home() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                       </Link>
                     </section>
-                    <section className='cardcont'>
-                      <Image 
-                          src="/images/prj3.jpg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
+                    <div className='cardcont'>
+                      <Link href='/workshops/workshop1'>
+                        <Image 
+                            src="/images/workshop1.jpg"
+                            alt="Kisii University"
+                            width={1200}
+                            height={600}
+                        />
+                      </Link>
                       <Link className="card_dsc" href="#">
                         <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                       </Link>
-                    </section>
+                    </div>
                     <section className='cardcont master'>
                       <Link className='cardcont' href='/workshops/workshop1'>
                       <Image 
-                          src="/images/workshop1.jpg"
+                          src="/images/prj3.jpg"
                           alt="Kisii University"
                           width={1200}
                           height={600}
@@ -172,18 +174,6 @@ export default function Home() {
           </span>
         </div>
       </div>
-            {/* <section className="img">
-              <Image
-                src="/images/about.jpeg"
-                alt="Kisii University"
-                width={1200}
-                height={600}
-              />
-                  <div className="card_dsc">
-                    <div className='heading'>Rearch</div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                  </div>              
-            </section> */}
     </div>
   );
 }
