@@ -1,0 +1,220 @@
+.row{
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        animation: scroll-left 30s linear infinite; 
+        width: max-content; 
+        }
+.row img{
+            width: 20%;
+            height: auto;
+        }
+.row:hover {
+            animation-play-state: paused;
+        }
+
+@media (min-width: 990px) {
+.workshop1-page{
+        width: 100%;
+    }
+    .workshop1-page h3 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        margin: 1.5rem auto;
+        color: var(--primary-color);
+
+    }
+
+    .workshop1-page .date {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 10%;
+        color: var(--primary-color);
+        font-weight: 600;
+
+    }
+
+    .content-cont{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .workshop1-page .rcimg.wrk{
+        width: 100%;
+        height: auto;
+        display: block;
+        display: flex;
+
+        /* margin-top: 2rem; */
+
+    }
+    .workshop1-page .rcimg.wrk img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .workshop_content{
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: 1.5rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+    .content-cont.second{
+        width: 100%;
+    }
+
+    .workshop_content.second{
+        display: block;
+        width: 100%;
+        background-color: #f3f3f3;
+    }
+    .rcimg.abt.second{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 7rem auto;
+        display: block;
+    }
+    .rcimg.abt.second img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        /* display: block; */
+    }
+
+    .rcimg.abt.second p{
+        border-top: 2rem solid var(--primary-color);
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        background-color: #f3f3f3;
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 2rem;
+        text-align: left;
+    }
+
+    .intro{
+        position: relative;
+        right: 4%;
+        top: 50%;
+        background-color: var(--primary-color);
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: fit-content;
+        padding: 2rem;
+        border-left: 4rem solid #f3f3f3;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: left;
+    }
+    .pictorials {
+        overflow: hidden; 
+        width: 95%;
+        margin: auto;
+    }
+    .pictorials_container{
+        text-align: center;
+        margin: 4rem auto;
+    }
+
+    .row {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        animation: scroll-left 40s linear infinite; 
+        width: max-content; 
+        }
+
+    .row img{
+            width: 20%;
+            height: auto;
+        }
+    .row:hover {
+            animation-play-state: paused;
+        }
+
+        .row img:hover {
+            transform: scale(1.01);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-90%);
+        }
+        }
+
+    .socials{
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            width: 100%;
+            padding: 1rem;
+            float: inline-end;
+        }
+    .socials span{
+            font-weight: 600;
+        }
+}
+
+
+@media (max-width: 990px) {
+    .workshop1-page{
+        width: 100%;
+    }
+    .workshop1-page h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+        margin: 1rem auto;
+        color: var(--primary-color);
+    }
+    .workshop1-page .date {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 10%;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    .workshop_content{
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 1rem;
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .socials{
+        display: flex;
+        gap: 1rem;
+        margin-top: 3rem;
+        width: 100%;
+        padding: 1rem;
+        background-color: #f3f3f3;
+    }
+
+    .socials img{
+        width: 30px;
+        height: auto;
+    }
+
+}

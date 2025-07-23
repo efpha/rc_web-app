@@ -78,30 +78,36 @@ export default function Workshops() {
                           height={600}
                       />
                     </Link>
-                    <Link className='cardcont' href='#'>
+
+                    <div className='cardcont'>
+                    <Link href='/workshops/workshop2'>
                       <Image 
-                          src="/images/prj2.jpeg"
+                          src="/images/prj1.jpg"
                           alt="Kisii University"
                           width={1200}
                           height={600}
                       />
+                    </Link>
                       <Link className="card_dsc" href="#">
                         <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                       </Link>
-                    </Link>
-                    <Link className='cardcont' href='/workshops/workshop1'>
-                      <Image 
-                          src="/images/workshop1.jpg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
+                    </div>
+
+                    <div className='cardcont'>
+                      <Link href='/workshops/workshop1'>
+                        <Image 
+                            src="/images/workshop1.jpg"
+                            alt="Kisii University"
+                            width={1200}
+                            height={600}
+                        />
+                      </Link>
                       <Link className="card_dsc" href="#">
                         <span className='heading'>Rearch</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
                       </Link>
-                    </Link>
+                    </div>
                   </div>
                 {/* <div className="workshop-item">
                     <Image 
