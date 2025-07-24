@@ -27,7 +27,7 @@
     }
 
     .workshop1-page .date {
-        font-size: 1.2rem;
+        font-size: .8rem;
         text-align: center;
         margin-left: 10%;
         color: var(--primary-color);
@@ -86,6 +86,10 @@
         height: auto;
         border-radius: 0;
         /* display: block; */
+        box-shadow: none;
+    }
+    .rcimg.abt.wrk img{
+        box-shadow: none;
     }
 
     .rcimg.abt.second p{
@@ -104,19 +108,16 @@
     }
 
     .intro{
-        position: relative;
-        right: 4%;
-        top: 50%;
-        background-color: var(--primary-color);
-        color: #fff;
-        font-size: 1.5rem;
+        background-color: #f3f3f3;
+        color: var(--primary-color);
+        font-size: 1.2rem;
         font-weight: 600;
-        height: fit-content;
+        height: auto;
         padding: 2rem;
-        border-left: 4rem solid #f3f3f3;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        text-align: left;
+        margin: 2rem auto;
+        border-left: 1rem solid var(--primary-color);
+        border-radius: 10px;
+        text-align: center;
     }
     .pictorials {
         overflow: hidden; 

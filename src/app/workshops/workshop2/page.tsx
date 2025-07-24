@@ -19,6 +19,12 @@ export default function WorkshopPage() {
         </span>
 
         <section className="content-cont">
+          <p className='intro'>
+                The faculty team from our School of Information Science and technology
+                set the ball rolling with a hot intuitive workshop session that marked
+                the beginning of the 2nd phase of the responsible computing challenge 
+                in Kisii University.
+          </p>
           <section className="rcimg abt wrk">
             <Image
               src="/images/67994201abe96.jpeg"
@@ -26,13 +32,8 @@ export default function WorkshopPage() {
               width={640}
               height={800}
             />
-            <p className='intro'>
-                The faculty team from our School of Information Science and technology
-                set the ball rolling with a hot intuitive workshop session that marked
-                the beginning of the 2nd phase of the responsible computing challenge 
-                in Kisii University.
-            </p>
           </section>
+          
         </section>
 
         <section className="content-cont second">
