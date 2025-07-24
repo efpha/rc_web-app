@@ -27,7 +27,6 @@ export default function WorkshopPage() {
               height={800}
             />
             <p className='intro'>
-                <span className='bordercontent'></span>
                 The faculty team from our School of Information Science and technology
                 set the ball rolling with a hot intuitive workshop session that marked
                 the beginning of the 2nd phase of the responsible computing challenge 
