@@ -74,25 +74,44 @@
         width: 100%;
         background-color: #f3f3f3;
     }
-    .rcimg.abt.second{
+    .rcimg.abt.second {
         width: 100%;
         height: auto;
         position: relative;
         margin: 7rem auto;
         display: block;
-    }
-    .rcimg.abt.second img {
+        }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        }
+
+    .image-container .main-image {
         width: 100%;
         height: auto;
-        border-radius: 0;
-        /* display: block; */
-        box-shadow: none;
-    }
-    .rcimg.abt.wrk img{
-        box-shadow: none;
-    }
+        display: block;
+        transition: filter 0.3s ease;
+        }
 
-    .rcimg.abt.second p{
+    .image-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.4); dark overlay */
+        z-index: 1;
+        pointer-events: none; /* allow hover to go to image */
+        }
+
+    .image-container:hover .main-image {
+        filter: blur(2px);
+
+        }
+
+    .rcimg.abt.second p {
         border-top: 2rem solid var(--primary-color);
         position: absolute;
         top: 50%;
@@ -105,7 +124,9 @@
         font-weight: 600;
         padding: 2rem;
         text-align: left;
-    }
+        z-index: 2;
+        }
+
 
     .intro{
         background-color: #f3f3f3;
@@ -135,21 +156,21 @@
         flex-direction: row;
         animation: scroll-left 40s linear infinite; 
         width: max-content; 
-        }
+    }
 
     .row img{
-            width: 20%;
-            height: auto;
-        }
+        width: 20%;
+        height: auto;
+    }
     .row:hover {
-            animation-play-state: paused;
-        }
+        animation-play-state: paused;
+    }
 
-        .row img:hover {
-            transform: scale(1.01);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
+    .row img:hover {
+        transform: scale(1.01);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
 
 
     @keyframes scroll-left {
@@ -185,13 +206,15 @@
         width: 100%;
         margin: 1rem auto;
         color: var(--primary-color);
+
     }
     .workshop1-page .date {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         text-align: center;
         margin-left: 10%;
         color: var(--primary-color);
         font-weight: 600;
+
     }
 
     .workshop_content{
@@ -202,6 +225,28 @@
         margin: auto;
         margin-top: 2rem;
         text-align: center;
+    }
+    .intro{
+        background-color: #f3f3f3;
+        color: var(--primary-color);
+        font-size: 1rem;
+        font-weight: 600;
+        height: auto;
+        padding: 1rem;
+        margin: 1rem auto;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .rcimg.abt.wrk{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .rcimg.abt.wrk img{
+        width: 95%;
+        box-shadow: none;
+        height: auto;
+        margin: auto;
+        display: block;
     }
 
     .socials{
