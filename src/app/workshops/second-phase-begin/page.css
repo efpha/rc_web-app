@@ -187,13 +187,13 @@
         color: var(--primary-color);
 
     }
-    .workshop1-page .date {
-        font-size: 0.7rem;
+    .workshop1-page .datewrapper {
+        font-size: 1rem;
         text-align: center;
-        color: var(--primary-color);
-        font-weight: 600;
+        color: maroon;
+        font-weight: 800;
         display: block;
-
+        background-color: red;
     }
 
     .workshop_content{

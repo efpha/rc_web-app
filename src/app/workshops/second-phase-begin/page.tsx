@@ -10,10 +10,12 @@ export default function page() {
     <div className="workshop-page-wrapper">
       <div className="workshop1-page">
         <h3>Mozilla Responsible Computing Project 2nd phase begins</h3>
-        <span className="date">
-          Date: Jan 28th, 2025 by{' '}
-          <Link href="https://kisiiuniversity.ac.ke/" target="_blank">
-            Kisii University
+        <span className="datewrapper">
+          <div className="date">
+              Date: Jan 28th, 2025 by{' '}
+          </div>
+            <Link href="https://kisiiuniversity.ac.ke/" target="_blank">
+              Kisii University
           </Link>
         </span>
         <span className="date">

@@ -2,6 +2,7 @@
 
 import '@/app/workshops/page.css';
 import '@/app/about/page.css';
+import '@/app/workshops/second-phase-begin/page.css';
 import '@/app/workshops/workshop1/page';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -85,13 +86,16 @@ export default function Workshops() {
                 className="news-img"
               />
             </Link>
-            <Link className="news-content" href={item.link}>
+            <div className="news-content">
               <span className="date">
                 {item.date}
               </span>
               <p className="news-tag">Project</p>
               <h4 className="news-title">{item.title}</h4>
-            </Link>
+              <Link className="viewlink" href={item.link} target="_blank">
+                View project on University Website  
+              </Link>
+            </div>
           </div>
         ))}
       </div>
