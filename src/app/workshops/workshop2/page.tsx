@@ -36,6 +36,11 @@ export default function WorkshopPage() {
         <section className="content-cont second">
           <div className="workshop_content second">
             <section className="rcimg abt second">
+              <p>
+                Bringing all these tech minds together provided a rich ground for
+                harvesting the right ideas to push forward the ethics agenda
+                through advocating for responsible computing.
+              </p>
               <div className="image-container">
                 <Image
                   src="/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg"
@@ -47,25 +52,52 @@ export default function WorkshopPage() {
                 <div className="overlay" />
               </div>
 
-              <p>
-                Bringing all these tech minds together provided a rich ground for
-                harvesting the right ideas to push forward the ethics agenda
-                through advocating for responsible computing.
-              </p>
+              
             </section>
             <section className="pictorials_container">
               <h2>Pictorials of The Day</h2>
               <div className="pictorials">
-                <div className="row">
+                <div className="scrolling-track">
                   {[...Array(2)].map((_, i) => (
                     <React.Fragment key={i}>
-                      <Image src="/images/67994201a3d1b.jpeg" alt="Kisii University" width={640} height={800} />
-                      <Image src="/images/67994201abe96.jpeg" alt="Kisii University" width={640} height={800} />
-                      <Image src="/images/67994201c4b52.jpeg" alt="Kisii University" width={640} height={800} />
-                      <Image src="/images/679942019b8b2.jpeg" alt="Kisii University" width={640} height={800} />
-                      <Image src="/images/6799420192c3e.jpeg" alt="Kisii University" width={640} height={800} />
+                      <Image
+                        src="/images/67994201a3d1b.jpeg"
+                        alt="Kisii University"
+                        width={640}
+                        height={800}
+                        className="scrolling-img"
+                      />
+                      <Image
+                        src="/images/67994201abe96.jpeg"
+                        alt="Kisii University"
+                        width={640}
+                        height={800}
+                        className="scrolling-img"
+                      />
+                      <Image
+                        src="/images/67994201c4b52.jpeg"
+                        alt="Kisii University"
+                        width={640}
+                        height={800}
+                        className="scrolling-img"
+                      />
+                      <Image
+                        src="/images/679942019b8b2.jpeg"
+                        alt="Kisii University"
+                        width={640}
+                        height={800}
+                        className="scrolling-img"
+                      />
+                      <Image
+                        src="/images/6799420192c3e.jpeg"
+                        alt="Kisii University"
+                        width={640}
+                        height={800}
+                        className="scrolling-img"
+                      />
                     </React.Fragment>
                   ))}
+
                 </div>
               </div>
             </section>
