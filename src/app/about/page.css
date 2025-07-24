@@ -200,9 +200,9 @@
 
     .abtttle.abt{
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: 800;
         color: var(--primary-color);
-        margin-top: .5rem;
+        margin-top: 1rem;
     }
     .moreksu.abt .image_cont {
         width: 100%;
