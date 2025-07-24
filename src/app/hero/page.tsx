@@ -122,9 +122,9 @@ export default function Home() {
                       </Link>
                     </div>
                     <section className='cardcont master'>
-                      <Link className='cardcont' href='/workshops/workshop1'>
+                      <Link className='cardcont' href='/workshops/workshop2'>
                       <Image 
-                          src="/images/prj3.jpg"
+                          src="/images/67994201a3d1b.jpeg"
                           alt="Kisii University"
                           width={1200}
                           height={600}

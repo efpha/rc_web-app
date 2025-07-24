@@ -21,7 +21,7 @@ export default function WorkshopPage() {
         <section className="content-cont">
           <section className="rcimg abt wrk">
             <Image
-              src="/images/workshop2_prj2.jpeg"
+              src="/images/67994201abe96.jpeg"
               alt="Kisii University"
               width={640}
               height={800}
