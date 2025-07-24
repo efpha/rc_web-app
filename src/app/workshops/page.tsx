@@ -1,3 +1,5 @@
+'use client';
+
 import '@/app/workshops/page.css';
 import '@/app/about/page.css';
 import '@/app/workshops/workshop1/page';
@@ -5,133 +7,83 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Workshops() {
-    return (
-        <div className="workshops">
-            <section className="moreksu abt wrk">
-                {/* Logo and Label */}
-                <span className="ksu abt">
-                    <Link href="https://kisiiuniversity.ac.ke/">
-                        <span className="image_cont">
-                            <Image
-                            src='/images/ksu.png'
-                            className='ksu_lg'
-                            alt='ksu logo'
-                            width={1020}
-                            height={600}
-                            />
-                            <label className='ksu_labl' htmlFor="ksu_lg">Kisii University</label>
-                        </span>
-                    </Link>
-                    
-                </span>
-                <span className="border wrk">
-                </span>
-                <span className="abtttle abt wrk">
-                    <div>RESPONSIBLE COMPUTING</div>
-                    <div>WORKSHOPS</div>
-                </span>
-            </section>
-            <section className="workshops-header">
-                <div className="content abt wrk">Join our workshops know more about ethical computing practices and their impacts to the environment and the society.</div>
-            </section>
-            <section className="workshop-list">
-                <div className="minicardcont">
-                                    <Link href='#' className='cardcont' >
-                                      <Image 
-                                          src="/images/prj2.jpeg"
-                                          alt="Kisii University"
-                                          width={1200}
-                                          height={600}
-                                      />
-                                      <Link className="card_dsc" href="#">
-                                        <span className='heading'>Rearch</span>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                                      </Link>
-                                    </Link>
-                                    <Link className='cardcont' href='#'>
-                                      <Image 
-                                          src="/images/prj3.jpg"
-                                          alt="Kisii University"
-                                          width={1200}
-                                          height={600}
-                                      />
-                                      <Link className="card_dsc" href="#">
-                                        <span className='heading'>Rearch</span>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                                      </Link>
-                                    </Link>
-                                    <Link className='cardcont master' href='#'>
-                                      <Image 
-                                          src="/images/prj1.jpg"
-                                          alt="Kisii University"
-                                          width={1200}
-                                          height={600}
-                                      />
-                                    </Link>
-                                  </div>
-                                  <div className="minicardcont">
-                  <Link className='cardcont master' href='#'>
-                      <Image 
-                          src="/images/prj1.jpg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                    </Link>
+  const newsItems = [
+    {
+      title: 'Students from School of Information Science & Technology overwhelmingly embraced tutelage in matters ethics',
+      image: '/images/OYYviaxMG7P0lNXUCHGSe4hlvrkIHHNZeg0AkMVc.jpg',
+      link: 'https://kisiiuniversity.ac.ke/blog/mozilla-foundation-responsible-computing-challenge',
+      date: 'Jan 29th, 2025'
+    },
+    {
+      title: 'Faculty team from School of Information Science and technology set the ball rolling',  
+      image: '/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg',
+      link: '/workshops/second-phase-begin',
+      date: 'Jan 28th, 2025'
+    },
+    {
+      title: 'Pre-Project Workshop',
+      image: '/images/Bzw1uag6HA1zAFz5eCpy8CggmDOweknQNT7rAdRk.jpg',
+      link: '/workshops/workshop1',
+      date: 'Jan 27th, 2025'
+    }
+];
 
-                    <div className='cardcont'>
-                    <Link href='/workshops/workshop2'>
-                      <Image 
-                          src="/images/prj1.jpg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                    </Link>
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </div>
+  return (
+    <div className="workshops">
+      <section className="moreksu abt wrk">
+        <span className="ksu abt">
+          <Link href="https://kisiiuniversity.ac.ke/">
+            <span className="image_cont">
+              <Image
+                src="/images/ksu.png"
+                className="ksu_lg"
+                alt="ksu logo"
+                width={1020}
+                height={600}
+              />
+              <label className="ksu_labl" htmlFor="ksu_lg">
+                Kisii University
+              </label>
+            </span>
+          </Link>
+        </span>
+        <span className="border wrk"></span>
+        <span className="abtttle abt wrk">
+          <div>RESPONSIBLE COMPUTING</div>
+          <div>WORKSHOPS</div>
+        </span>
+      </section>
 
-                    <div className='cardcont'>
-                      <Link href='/workshops/workshop1'>
-                        <Image 
-                            src="/images/workshop1.jpg"
-                            alt="Kisii University"
-                            width={1200}
-                            height={600}
-                        />
-                      </Link>
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </div>
-                  </div>
-                {/* <div className="workshop-item">
-                    <Image 
-                        src="/images/prj5.jpeg"
-                        alt="Workshop 1"
-                        width={500}
-                        height={300}
-                    />
-                    <h2>Workshop Title 1</h2>
-                    <p>Description of Workshop 1.</p>
-                    <Link href="/workshops/workshop1" className="workshop-link">Learn More</Link>
-                </div> */}
-                {/* <div className="workshop-item">
-                    <Image 
-                        src="/images/workshop2.jpg"
-                        alt="Workshop 2"
-                        width={500}
-                        height={300}
-                    />
-                    <h2>Workshop Title 2</h2>
-                    <p>Description of Workshop 2.</p>
-                    <Link href="/workshops/workshop2" className="workshop-link">Learn More</Link>
-                </div> */}
-            </section>
+      <section className="workshops-header">
+        <div className="content abt wrk">
+          Join our workshops to learn more about ethical computing practices and their impacts on the environment and society.
         </div>
-    );
+      </section>
+
+      <section className="news-section">
+      <div className="news-grid">
+        {newsItems.filter(Boolean).map((item, index) => (
+          <div className="news-card" key={index}>
+            <Link className="news-img-wrapper" href={item.link}>
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={400}
+                height={220}
+                className="news-img"
+              />
+            </Link>
+            <Link className="news-content" href={item.link}>
+              <span className="date">
+                Date: Jan 27th, 2025
+              </span>
+              <p className="news-tag">Project</p>
+              <h4 className="news-title">{item.title}</h4>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </section>
+    </div>
+  );
 }
