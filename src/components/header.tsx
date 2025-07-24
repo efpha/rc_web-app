@@ -32,7 +32,7 @@ export default function Header() {
         <Link href="/hero">Home</Link> {/* This link is not working. Why */}
         <Link href="/about">About</Link>
         <Link href="/workshops">Workshops</Link>
-        <Link href="/lorem">Lorem</Link>
+        <Link href="/Upcoming-events">Upcoming Events</Link>
       </nav>
 
       <div className="btn-cont">

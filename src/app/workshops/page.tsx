@@ -9,6 +9,18 @@ import Link from 'next/link';
 export default function Workshops() {
   const newsItems = [
     {
+      title: 'Vice Chancellor receive and awarde the winning projects from the Responsible Computing Innovation Day',
+      image: '/images/abs9pxPPxlRK8NsOsKsSGcTZWBuRg8UoYLPd2jG5.jpg',
+      link: 'https://kisiiuniversity.ac.ke/blog/responsible-computing-innovation-day-awards',
+      date: 'Apr 24th, 2025'
+    },
+    {
+      title: 'Students from the School of Information Science & Technology present their innovations',
+      image: '/images/QqD8ha1koXoJQES9sCBN6ZE5h6h49I4ehpUyNl1c.jpg',
+      link: 'https://kisiiuniversity.ac.ke/blog/mozilla-sponsored-responsible-computing-innovation-day',
+      date: 'Apr 24th, 2025'
+    },
+    {
       title: 'Students from School of Information Science & Technology overwhelmingly embraced tutelage in matters ethics',
       image: '/images/OYYviaxMG7P0lNXUCHGSe4hlvrkIHHNZeg0AkMVc.jpg',
       link: 'https://kisiiuniversity.ac.ke/blog/mozilla-foundation-responsible-computing-challenge',
@@ -75,7 +87,7 @@ export default function Workshops() {
             </Link>
             <Link className="news-content" href={item.link}>
               <span className="date">
-                Date: Jan 27th, 2025
+                {item.date}
               </span>
               <p className="news-tag">Project</p>
               <h4 className="news-title">{item.title}</h4>
