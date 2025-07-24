@@ -189,11 +189,10 @@
     }
     .workshop1-page .datewrapper {
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
         color: maroon;
         font-weight: 800;
         display: block;
-        background-color: red;
     }
 
     .workshop_content{
