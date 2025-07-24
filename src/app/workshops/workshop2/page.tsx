@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -33,30 +32,27 @@ export default function WorkshopPage() {
               height={800}
             />
           </section>
-          
         </section>
-
         <section className="content-cont second">
           <div className="workshop_content second">
             <section className="rcimg abt second">
+              <div className="image-container">
                 <Image
-                src="/images/prj1.jpg"
-                alt="Kisii University"
-                width={640}
-                height={800}
+                  src="/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg"
+                  alt="Kisii University"
+                  width={640}
+                  height={800}
+                  className="main-image"
                 />
-                <p>{/* I want this paragraph card to be on top of the above image  */}
-                    Bringing all these tech minds together provided a rich ground for
-                    harvesting the right ideas to push forward the ethics agenda
-                    through advocating for responsible computing.
-                </p>
-          </section>
-            
-            {/* <p>
-              This intuitive project has helped them to start asking the right
-              questions with regards to ethics in dealing with different
-              computer systems.
-            </p> */}
+                <div className="overlay" />
+              </div>
+
+              <p>
+                Bringing all these tech minds together provided a rich ground for
+                harvesting the right ideas to push forward the ethics agenda
+                through advocating for responsible computing.
+              </p>
+            </section>
             <section className="pictorials_container">
               <h2>Pictorials of The Day</h2>
               <div className="pictorials">
@@ -75,7 +71,6 @@ export default function WorkshopPage() {
             </section>
             <section className="socials">
               <span>Find Us on social media</span>
-
               <Link
                 href="https://x.com/kisiuniofficial"
                 className="social-link"
