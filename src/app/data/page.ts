@@ -23,7 +23,7 @@ export const newsItems = [
     },
     {
       title: 'Faculty team from School of Information Science and technology set the ball rolling',  
-      tag: 'Roll call',
+      tag: 'Project Kickoff',
       image: '/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg',
       link: '/workshops/second-phase-begin',
       date: 'Jan 28th, 2025'
