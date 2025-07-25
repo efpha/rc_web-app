@@ -40,6 +40,12 @@
   padding: 1rem;
   text-decoration: none;
 }
+.news-content .date{
+  font-size: 0.8rem;
+  position: relative;
+  float: inline-end;
+  color: maroon
+}
 
 .news-tag {
   color: var(--primary-color);
@@ -55,7 +61,14 @@
   line-height: 1.4;
   color: #000;
 }
-
+.viewlink{
+  color: #4d4dec;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.viewlink:hover{
+  text-decoration: underline;
+}
 
 @media (min-width: 900px) {
   .workshops {
