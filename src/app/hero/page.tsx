@@ -7,6 +7,7 @@ import '@/app/home.css'
 import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
+import { newsItems } from '@/app/workshops/page';
 
 export default function Home() {
   const router = useRouter();
@@ -59,87 +60,38 @@ export default function Home() {
                   </div>
                 </section>
               </div>
-              <div className="cards_container">
-                <div className="minicardcont">
-                  <section className='cardcont master'>
-                      <Image 
-                          src="/images/prj1.jpg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                    </section>
-                    <section className='cardcont'>
-                      <Image 
-                          src="/images/prj2.jpeg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </section>
-                    <section className='cardcont'>
-                      <Image 
-                          src="/images/prj3.jpg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </section>
-                  </div>
-                  <div className="minicardcont">
-                    <section className='cardcont'>
-                      <Image 
-                          src="/images/prj2.jpeg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </section>
-                    <div className='cardcont'>
-                      <Link href='/workshops/workshop1'>
-                        <Image 
-                            src="/images/workshop1.jpg"
-                            alt="Kisii University"
-                            width={1200}
-                            height={600}
-                        />
-                      </Link>
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </div>
-                    <section className='cardcont master'>
-                      <Link className='cardcont' href='/workshops/workshop2'>
-                      <Image 
-                          src="/images/67994201a3d1b.jpeg"
-                          alt="Kisii University"
-                          width={1200}
-                          height={600}
-                      />
-                      <Link className="card_dsc" href="#">
-                        <span className='heading'>Rearch</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit eveniet 
-                      </Link>
-                    </Link>
-                    </section>
-                  </div>
-                </div>
-                
-              <div className="wrkshp_cont">
+              <section className="news-section">
+        <div className="news-grid">
+          {/* Tryna get object from workshop page */}
+          {
+          newsItems.filter(Boolean).map((item, index) => (
+            <div className="news-card" key={index}>
+              <Link className="news-img-wrapper" href={item.link}>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={400}
+                  height={220}
+                  className="news-img"
+                />
+              </Link>
+              <div className="news-content">
+                <span className="date">
+                  {item.date}
+                </span>
+                <p className="news-tag">{item.tag}</p>
+                <h4 className="news-title">{item.title}</h4>
+                <Link className="viewlink" href={item.link} target="_blank">
+                  View project on University Website  <MoveUpRight size={14}/>
+                </Link>
+              </div>
             </div>
+          ))}
+        </div>
+    </section>
+                
+              {/* <div className="wrkshp_cont">
+            </div> */}
         </div>
         <button className="more_wrksp"
         onClick={() => router.push('/workshops')}
