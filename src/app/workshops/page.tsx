@@ -6,41 +6,47 @@ import '@/app/workshops/second-phase-begin/page.css';
 import '@/app/workshops/workshop1/page';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MoveUpRight } from 'lucide-react';
 
-export default function Workshops() {
-  const newsItems = [
+export const newsItems = [
     {
-      title: 'Vice Chancellor receive and awarde the winning projects from the Responsible Computing Innovation Day',
+      title: 'Vice Chancellor receive and award the winning projects from the Responsible Computing Innovation Day',
+      tag: 'Project Award',
       image: '/images/abs9pxPPxlRK8NsOsKsSGcTZWBuRg8UoYLPd2jG5.jpg',
       link: 'https://kisiiuniversity.ac.ke/blog/responsible-computing-innovation-day-awards',
       date: 'Apr 24th, 2025'
     },
     {
       title: 'Students from the School of Information Science & Technology present their innovations',
+      tag: "Innovation",
       image: '/images/QqD8ha1koXoJQES9sCBN6ZE5h6h49I4ehpUyNl1c.jpg',
       link: 'https://kisiiuniversity.ac.ke/blog/mozilla-sponsored-responsible-computing-innovation-day',
       date: 'Apr 24th, 2025'
     },
     {
       title: 'Students from School of Information Science & Technology overwhelmingly embraced tutelage in matters ethics',
+      tag: "Tutelage",
       image: '/images/OYYviaxMG7P0lNXUCHGSe4hlvrkIHHNZeg0AkMVc.jpg',
       link: 'https://kisiiuniversity.ac.ke/blog/mozilla-foundation-responsible-computing-challenge',
       date: 'Jan 29th, 2025'
     },
     {
       title: 'Faculty team from School of Information Science and technology set the ball rolling',  
+      tag: 'Roll call',
       image: '/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg',
       link: '/workshops/second-phase-begin',
       date: 'Jan 28th, 2025'
     },
     {
       title: 'Pre-Project Workshop',
+      tag: 'Research',
       image: '/images/Bzw1uag6HA1zAFz5eCpy8CggmDOweknQNT7rAdRk.jpg',
       link: '/workshops/workshop1',
       date: 'Jan 27th, 2025'
     }
 ];
 
+export default function Workshops() {
   return (
     <div className="workshops">
       <section className="moreksu abt wrk">
@@ -74,31 +80,31 @@ export default function Workshops() {
       </section>
 
       <section className="news-section">
-      <div className="news-grid">
-        {newsItems.filter(Boolean).map((item, index) => (
-          <div className="news-card" key={index}>
-            <Link className="news-img-wrapper" href={item.link}>
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={400}
-                height={220}
-                className="news-img"
-              />
-            </Link>
-            <div className="news-content">
-              <span className="date">
-                {item.date}
-              </span>
-              <p className="news-tag">Project</p>
-              <h4 className="news-title">{item.title}</h4>
-              <Link className="viewlink" href={item.link} target="_blank">
-                View project on University Website  
+        <div className="news-grid">
+          {newsItems.filter(Boolean).map((item, index) => (
+            <div className="news-card" key={index}>
+              <Link className="news-img-wrapper" href={item.link}>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={400}
+                  height={220}
+                  className="news-img"
+                />
               </Link>
+              <div className="news-content">
+                <span className="date">
+                  {item.date}
+                </span>
+                <p className="news-tag">{item.tag}</p>
+                <h4 className="news-title">{item.title}</h4>
+                <Link className="viewlink" href={item.link} target="_blank">
+                  View project on University Website  <MoveUpRight size={14}/>
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
     </section>
     </div>
   );
