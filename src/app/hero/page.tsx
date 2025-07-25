@@ -7,7 +7,7 @@ import '@/app/home.css'
 import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
-import { newsItems } from '@/app/workshops/page';
+import { newsItems } from '@/app/data/page';
 
 export default function Home() {
   const router = useRouter();
@@ -63,6 +63,7 @@ export default function Home() {
               <section className="news-section">
         <div className="news-grid">
           {/* Tryna get object from workshop page */}
+          
           {
           newsItems.filter(Boolean).map((item, index) => (
             <div className="news-card" key={index}>
