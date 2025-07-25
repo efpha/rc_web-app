@@ -7,7 +7,7 @@ import '@/app/workshops/workshop1/page';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MoveUpRight } from 'lucide-react';
-import { newsItems } from '@/app/data/page';
+import { newsItems } from '@/app/data/newsData';
 
 export default function Workshops() {
   return (
