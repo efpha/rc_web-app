@@ -25,7 +25,7 @@ export const newsItems = [
       title: 'Faculty team from School of Information Science and technology set the ball rolling',  
       tag: 'Project Kickoff',
       image: '/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg',
-      link: '/workshops/second-phase-begin',
+      link: 'https://kisiiuniversity.ac.ke/blog/mozilla-responsible-computing-challenge-2nd-phase-begins',
       date: 'Jan 28th, 2025'
     },
     {
