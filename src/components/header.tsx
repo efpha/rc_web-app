@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Logs, X, MoveUpRight} from 'lucide-react';
 import Link from 'next/link';
 import '@/components/header.css';
@@ -10,6 +11,11 @@ import '@/app/register/page';
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const router = useRouter();
+
+  const handleSubscribe = () => {
+    router.push('/register');
+  };
 
   return (
     <header className="nav-bar">
@@ -37,7 +43,7 @@ export default function Header() {
       </nav>
 
       <div className="btn-cont">
-        <button type="submit">Subscribe</button>
+        <button type="submit" onClick={handleSubscribe}>Subscribe</button>
       </div>
 
       {/* Sidebar overlay for mobile */}
@@ -57,7 +63,7 @@ export default function Header() {
               <Link href="/hero/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
               <Link href="/hero/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>
               <div className="sidebar-btns">
-                <button type="submit">Register</button>
+                <button type="submit" onClick={handleSubscribe}>Register</button>
               </div>
             </nav>
           </aside>
