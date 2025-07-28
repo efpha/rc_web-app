@@ -6,6 +6,7 @@ import '@/components/header.css';
 import '@/app/hero/about/page'
 import '@/app/hero/workshops/page'
 import '@/app/hero/page'
+import '@/app/register/page';
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
