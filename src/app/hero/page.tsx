@@ -92,7 +92,7 @@ export default function Home() {
     </section>
   </div>
         <button className="more_wrksp"
-        onClick={() => router.push('/workshops')}
+        onClick={() => router.push('/hero/workshops')}
         >More Workshops
         </button>
       </section>
