@@ -11,7 +11,7 @@ export default function Register() {
       <p className="signup-intro">
         Get notified about upcoming events and workshops by registering below.
       </p>
-      <h2 className="signup-title">Sign Up</h2>
+      <h2 className="signup-title">Register</h2>
       <form className="signup-form">
         <div className="form-group">
           <label htmlFor="firstName">First Name<span className='star'>*</span></label>
