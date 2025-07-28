@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import '@/app/hero/register/page.css';
+import '@/app/register/page.css';
 import '@/app/globals.css';
 
 export default function register() {
