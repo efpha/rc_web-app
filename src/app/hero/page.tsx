@@ -2,12 +2,12 @@
 
 import Image from 'next/image';
 import Link from 'next/link'
-import '@/app/about/page'
+import '@/app/hero/about/page'
 import '@/app/home.css'
 import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
-import { newsItems } from '@/app/data/newsData';
+import { newsItems } from '@/app/hero/data/newsData';
 
 export default function Home() {
   const router = useRouter();
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="about" id="about">
+      <div className="about" id="about"> {/*vantajs in this About section */}
         <div className="card_cont">
           <div className="about_card">
             <section className="content_card shadowed">
@@ -37,15 +37,15 @@ export default function Home() {
                 ethical concerns such as data privacy, cybersecurity, and algorithmic bias.
               </div>
                 <button className='content_more'
-                  onClick={() => router.push('/about')}
+                  onClick={() => router.push('/hero/about')}
                 >Learn More
                   <MoveUpRight size={18}/>
                 </button>
             </section>
-       <div/>      
-          </div>
-        </div>
+        <div/>      
       </div>
+    </div>
+  </div>
 
       {/* Workshop section */}
       <section className="workshop">
@@ -90,10 +90,7 @@ export default function Home() {
           ))}
         </div>
     </section>
-                
-              {/* <div className="wrkshp_cont">
-            </div> */}
-        </div>
+  </div>
         <button className="more_wrksp"
         onClick={() => router.push('/workshops')}
         >More Workshops
