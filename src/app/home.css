@@ -11,7 +11,7 @@
 
 .card-container {
     width: 100%;
-    height: 41em;
+    height: 896px;
     margin-top: 12em;
     background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
@@ -173,35 +173,32 @@
 
 .about{
     width: 100%;
-    background-color: var(--primary-text);
     position: relative;
-    top: -15em;
+    top: -20rem;
+    /* background-color: thistle; */
 }
 
 .card_cont{
-    width: 80%;
-    margin: auto;
-    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .about_card{
     width: 100%;
-    margin: 5em auto;
 }
 .content_card.shadowed{
   width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 4em;
-    /* margin: 1em; */
     border-radius: 10px;
-    /* background-color: var(--primary-color); */
+
 }
 
 .content {
     width: 100%;
     margin: auto;
     color: var(--primary-color);
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
 }
