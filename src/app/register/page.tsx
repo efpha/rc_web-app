@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import '@/app/register/page.css';
 import '@/app/globals.css';
 
-export default function register() {
+export default function Register() {
   const [notify, setNotify] = useState(false);
     return (
     <div className="signup-container">
