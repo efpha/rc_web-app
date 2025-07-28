@@ -1,0 +1,125 @@
+.signup-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.signup-intro {
+  font-size: 1.2rem;
+  color: var(--pr);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    border-right: 3px solid var(--primary-color);
+}
+
+.signup-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.signup-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #00695c;
+  outline: none;
+}
+
+/* Checkbox group */
+/* Checkbox group */
+.form-group.checkbox-group {
+  margin-bottom: 1rem;
+  display: inline;
+}
+
+.checkbox-group input[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.checkbox-label {
+  font-size: 0.95rem;
+  color: #333;
+  vertical-align: middle;
+}
+
+/* Register button */
+.register-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+    display: block;
+}
+.star{
+    color: red;
+}
+
+@media (max-width: 600px) {
+  .signup-container {
+    margin: 2rem 1rem;
+    padding: 1rem;
+  }
+
+  .signup-title {
+    font-size: 1.5rem;
+  }
+
+  .signup-intro {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--primary-color);
+    border-right: 3px solid var(--primary-color);
+
+  }
+
+
+  /* Checkbox group */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.checkbox-label {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+
+}
