@@ -8,6 +8,13 @@ import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
 import { newsItems } from '@/app/hero/data/newsData';
+// import NET from 'vanta/dist/vanta.net.min';
+// import * as THREE from 'three';
+
+// declare module 'vanta/dist/vanta.net.min' {
+//   const NET: any;
+//   export default NET;
+// }
 
 export default function Home() {
   const router = useRouter();
