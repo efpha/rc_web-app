@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './page.css';
-import '@/app/about/page.css';
+import '@/app/hero/about/page.css';
 
 export default function page() {
   return (
@@ -12,7 +12,7 @@ export default function page() {
         <h3>Mozilla Responsible Computing Project 2nd phase begins</h3>
         <span className="datewrapper">
           <div className="date">
-              Date: Jan 28th, 2025 by{' '}
+              Date: Jan 28th, 2025 by
           </div>
             <Link href="https://kisiiuniversity.ac.ke/" target="_blank">
               Kisii University
