@@ -32,7 +32,7 @@ export const newsItems = [
       title: 'Pre-Project Workshop',
       tag: 'Research',
       image: '/images/Bzw1uag6HA1zAFz5eCpy8CggmDOweknQNT7rAdRk.jpg',
-      link: '/workshops/workshop1',
+      link: 'https://kisiiuniversity.ac.ke/blog/mozilla-responsible-computing-challenge-project',
       date: 'Jan 27th, 2025'
     }
 ];
