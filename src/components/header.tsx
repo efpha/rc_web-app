@@ -36,7 +36,7 @@ export default function Header() {
       </nav>
 
       <div className="btn-cont">
-        <button type="submit">Register</button>
+        <button type="submit">Subscribe</button>
       </div>
 
       {/* Sidebar overlay for mobile */}
