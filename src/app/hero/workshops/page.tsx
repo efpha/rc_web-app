@@ -38,7 +38,7 @@ export default function Workshops() {
 
       <section className="workshops-header">
         <div className="content abt wrk">
-          Join our workshops to learn more about ethical computing practices and their impacts on the environment and society.
+          Join our workshops to learn more about ethical computing practices and their impacts.
         </div>
       </section>
 
