@@ -12,8 +12,8 @@ import { newsItems } from '@/app/hero/data/newsData';
 export default function Home() {
   const router = useRouter();
   return (
-    <div>
-      <div className="card-container">
+    <div className="home">
+      <div className="card-container master">
         <div className="card">
           <div className="card-content">
             <div className="card-text">
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="roll_cont">
             <span className='roll'>
 
-              <span className="image_cont">
+              <span className="image_cont ksu">
                 <Image
                   src='/images/ksu.png'
                   className='ksu_lg'
