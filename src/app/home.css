@@ -68,7 +68,7 @@
   text-align: center;
   width: 100%;
   margin: auto;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primary-text);
 }
 
@@ -193,7 +193,7 @@
     width: 100%;
     margin: auto;
     color: var(--primary-text);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
 }

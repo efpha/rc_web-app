@@ -81,7 +81,9 @@ export default function Home() {
         <div className="card">
           <div className="card-content">
             <div className="card-text">
-              <h1>Responsible Computing Challenge</h1>
+              <h1>The</h1>
+              <h1>Mozilla Responsible</h1>
+              <h1>Computing Challenge</h1>
               <h2>
                 Championing for ethical computing practices and their impacts to
                 the environment and the society
@@ -96,7 +98,7 @@ export default function Home() {
           <div className="about_card">
             <section className="content_card shadowed">
               <div className="content">
-                The Responsible Computing Challenge aims to embed ethical computing practices into academic
+                Mozilla Responsible Computing Challenge aims to embed ethical computing practices into academic
                 curricula and professional practices. Faculty and students are being trained to navigate
                 ethical concerns such as data privacy, cybersecurity, and algorithmic bias.
               </div>
