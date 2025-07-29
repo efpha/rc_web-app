@@ -51,7 +51,7 @@
     font-weight: bold;
     display: inline;
     position: relative;
-    top: 4rem;
+    /* top: 4rem; */
 }
 
 .card-text h1 {
@@ -99,13 +99,14 @@
   height: 8em;
   /* background-color: var(--primary-text); */
   position: relative;
-  top: -10.5em;
+  /* top: -10.5em; */
   overflow: hidden; 
 
 }
+
 .roll_cont{
     background-color: var(--primary-text);
-    width: 60%;
+    width: 100%;
     height: 10em;
     margin: auto;
     border-radius: 10px;
@@ -202,7 +203,7 @@
 
 .content._2nd{
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .content_more {
@@ -365,10 +366,14 @@
 .desktop-break {
   display: none;
 }
-
-.subscribe-form {
+.subscribe-form-container{
+  display: block;
   background-color: #141424;
   padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.subscribe-form {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -389,7 +394,7 @@
 }
 
 .subscribe-button {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
   background-color: #9499ff;
   color: #000;
   font-weight: 600;
@@ -398,6 +403,8 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: relative;
+  top: .5rem;
 }
 
 .subscribe-button:hover {
@@ -415,7 +422,7 @@
   }
 
   .subscribe-button {
-    width: auto;
+    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -443,6 +450,7 @@
 
   .card-text {
     text-align: center;
+    margin-top: 0;
   }
 
   .card-text h1 {
@@ -454,6 +462,10 @@
     font-size: 0.9rem;
     width: 100%;
   }
+  .content._2nd{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
 
   .action-start {
     margin: 1em auto;
@@ -480,6 +492,28 @@
   .partn .roll img {
     width: 3em;
   }
+  .image_cont .ksu_labl {
+    white-space: nowrap;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image_cont .moz_labl{
+    white-space: nowrap;
+    color: #000;
+    position: absolute;
+    top: 1.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
   .about {
     top: 0;
@@ -549,15 +583,15 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .card-container {
-    height: auto; /* Adjust height for better fit */
-    margin-top: 0; /* Reduce top margin */
-    flex-direction: column; /* Stack content vertically */
+    height: auto;
+    margin-top: 0; 
+    flex-direction: column;
     align-items: center;
     transform: translateY(0);
   }
 
   .card {
-    width: 90%; /* Slightly wider */
+    width: 90%;
     flex-direction: column;
     top: 0;
     padding: 1em 1.5em;

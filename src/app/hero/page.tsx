@@ -140,11 +140,13 @@ export default function Page() {
           appertaining Responsible Computing.
         </p>
 
+      <section className="subscribe-form-container">
         <form className="subscribe-form">
           <input type="text" placeholder="Full Name" className="input-field" />
           <input type="email" placeholder="Email" className="input-field" />
-          <button type="submit" className="subscribe-button">Send</button>
         </form>
+        <button type="submit" className="subscribe-button">Send</button>
+      </section>
       </div>
     </div>
     </div>
