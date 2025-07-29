@@ -1,74 +1,158 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
 import '@/app/register/page.css';
 import '@/app/globals.css';
 
+type VantaEffectInstance = {
+  destroy: () => void;
+};
+
+declare global {
+  interface Window {
+    VANTA?: {
+      NET: (options: {
+        el: HTMLElement;
+        mouseControls: boolean;
+        touchControls: boolean;
+        gyroControls: boolean;
+        minHeight: number;
+        minWidth: number;
+        scale: number;
+        scaleMobile: number;
+        color: number;
+        backgroundColor: number;
+        points: number;
+        spacing: number;
+      }) => VantaEffectInstance;
+    };
+  }
+}
+
 export default function Register() {
   const [notify, setNotify] = useState(true);
-    return (
-    <div className="signup-container">
-      <p className="signup-intro">
-        Get notified about upcoming events and workshops by registering below.
-      </p>
-      <h2 className="signup-title">Register</h2>
-      <form className="signup-form">
-        <div className="form-group">
-          <label htmlFor="firstName">First Name<span className='star'>*</span></label>
-          <input
-            type="text"
-            id="firstName"
-            placeholder="John"
-            required
-          />
-        </div>
+  const [vantaEffect, setVantaEffect] = useState<VantaEffectInstance | null>(null);
+  const vantaRef = useRef<HTMLDivElement>(null);
 
-        <div className="form-group">
-          <label htmlFor="lastName">Last Name <span className='star'>*</span></label>
-          <input
-            type="text"
-            id="lastName"
-            placeholder="Doe"
-            required
-          />
-        </div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (
+        !vantaEffect &&
+        typeof window !== 'undefined' &&
+        window.VANTA?.NET &&
+        vantaRef.current
+      ) {
+        setVantaEffect(
+          window.VANTA.NET({
+            el: vantaRef.current,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0xffffff,
+            backgroundColor: 0x1f456e,
+            points: 14.0,
+            spacing: 20.0,
+          })
+        );
+        clearInterval(interval);
+      }
+    }, 100);
 
-        <div className="form-group">
-          <label htmlFor="email">Registration Number <span className='star'>*</span></label>
-          <input
-            type="text"
-            id="registrationNumber"
-            placeholder="e.g. inxx/xxxx/xx"
-            required
-          />
-        </div>
+    return () => {
+      clearInterval(interval);
+      vantaEffect?.destroy();
+    };
+  }, [vantaEffect]);
 
-        <div className="form-group">
-          <label htmlFor="email">Email <span className='star'>*</span></label>
-          <input
-            type="email"
-            id="email"
-            placeholder="e.g. johndoe@example.com"
-            required
-          />
-        </div>
+  return (
+    <>
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
+        strategy="beforeInteractive"
+      />
+      <div
+        ref={vantaRef}
+        style={{
+          width: '100%',
+          height: '100vh',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          zIndex: -1,
+        }}
+      />
+      <div className="signup-container" style={{ position: 'relative', zIndex: 1 }}>
+        <p className="signup-intro">
+          Get notified about upcoming events and workshops by registering below.
+        </p>
+        <h2 className="signup-title">Register</h2>
+        <form className="signup-form">
+          <div className="form-group">
+            <label htmlFor="firstName">First Name<span className='star'>*</span></label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="John"
+              required
+            />
+          </div>
 
-        <div className="form-group checkbox-group">
-          <input
-            type="checkbox"
-            id="notify"
-            checked={notify}
-            onChange={(e) => setNotify(e.target.checked)}
-          />
-          <label htmlFor="notify" className="checkbox-label">
-            Receive notification on up-coming events
-          </label>
-        </div>
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name <span className='star'>*</span></label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Doe"
+              required
+            />
+          </div>
 
-        <button type="submit" className="register-button">
-          Register
-        </button>
-      </form>
-    </div>
+          <div className="form-group">
+            <label htmlFor="email">Registration Number <span className='star'>*</span></label>
+            <input
+              type="text"
+              id="registrationNumber"
+              placeholder="e.g. inxx/xxxx/xx"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="email">Email <span className='star'>*</span></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="e.g. johndoe@example.com"
+              required
+            />
+          </div>
+
+          <div className="form-group checkbox-group">
+            <input
+              type="checkbox"
+              id="notify"
+              checked={notify}
+              onChange={(e) => setNotify(e.target.checked)}
+            />
+            <label htmlFor="notify" className="checkbox-label">
+              Receive notification on up-coming events
+            </label>
+          </div>
+
+          <button type="submit" className="register-button">
+            Register
+          </button>
+        </form>
+      </div>
+    </>
   );
 }

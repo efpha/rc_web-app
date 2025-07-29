@@ -75,7 +75,8 @@ export default function Home() {
           top: 0,
           left: 0,
           zIndex: -1,
-        }}
+        }
+      }
       />
       <div className="card-container master">
         <div className="card">
