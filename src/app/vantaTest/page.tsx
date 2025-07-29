@@ -12,8 +12,8 @@ declare global {
     VANTA?: {
       BIRDS: (options: {
         el: HTMLElement;
-        mouseControls: boolean;
-        touchControls: boolean;
+        mouseControls: true;
+        touchControls: true;
         gyroControls: boolean;
         backgroundColor: number;
         color1: number;
