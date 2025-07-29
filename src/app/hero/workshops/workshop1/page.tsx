@@ -28,35 +28,7 @@ export default function WorkshopPage() {
               in dealing with different computer systems
             </p>
             
-             <section className="socials">
-                
-                <span>Find Us on social media</span>
-
-                <Link href="https://x.com/kisiuniofficial" className="social-link">
-                  <Image 
-                    src="/images/twitter-x-logo.png"
-                    alt="Twitter"
-                    width={42}
-                    height={42}
-                  />
-                </Link>
-                <Link href="https://www.facebook.com/Kisiiuniversityofficial" className="social-link">
-                  <Image 
-                    src="/images/facebook-seeklogo.png"
-                    alt="Facebook"
-                    width={42}
-                    height={42}
-                  />
-                </Link>
-                <Link href="https://www.linkedin.com/company/kisiiuniversityofficial" className="social-link">
-                  <Image 
-                    src="/images/linkedin-black-logo.png"
-                    alt="LinkedIn"
-                    width={42}
-                    height={42}
-                  />
-                </Link>
-             </section>
+             
         </div>
       </section>
 

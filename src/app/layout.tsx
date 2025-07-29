@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-
+import VantaNetBackground from "./vantaTest/page";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/*Three.js globally for Vanta.js */}
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
           async
@@ -35,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`} 
       >
+        <VantaNetBackground />
         <Header />
         {children}
       </body>

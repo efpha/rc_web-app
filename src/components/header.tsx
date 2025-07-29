@@ -36,9 +36,10 @@ export default function Header() {
 
       {/* Desktop links */}
       <nav className="links">
-        <Link href="/hero">Home</Link> {/* This link is not working. Why */}
+        <Link href="/hero">Home</Link>
         <Link href="/hero/about">About</Link>
         <Link href="/hero/workshops">Workshops</Link>
+        <Link href="/hero/Upcoming-events">Insights</Link>
         <Link href="/hero/Upcoming-events">Upcoming Events</Link>
       </nav>
 
