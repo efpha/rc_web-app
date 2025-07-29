@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import '@/app/hero/about/page'
 import '@/app/home.css'
+import '@/app/register/page';
 import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
@@ -35,7 +36,7 @@ export default function Home() {
             scale: 1.0,
             scaleMobile: 1.0,
             color: 0xffffff,
-            backgroundColor: 0x1d0957,
+            backgroundColor: 0x1f456e,
             points: 14.0,
             spacing: 20.0,
           })
@@ -49,6 +50,10 @@ export default function Home() {
       vantaEffect?.destroy();
     };
   }, [vantaEffect]);
+
+  const handleSubscribe = () => {
+    router.push('/register');
+  };
 
   return (
     <>
@@ -81,12 +86,12 @@ export default function Home() {
                 Championing for ethical computing practices and their impacts to
                 the environment and the society
               </h2>
-              <button className="action-start">Get started</button>
+              <button className="action-start" onClick={handleSubscribe}>Get started <MoveUpRight size={14}/></button>
             </div>
           </div>
         </div>
       </div>
-      <div className="about" id="about"> {/*vantajs in this About section */}
+      <div className="about" id="about">
         <div className="card_cont">
           <div className="about_card">
             <section className="content_card shadowed">
@@ -98,7 +103,7 @@ export default function Home() {
                 <button className='content_more'
                   onClick={() => router.push('/hero/about')}
                 >Learn More
-                  <MoveUpRight size={18}/>
+                  <MoveUpRight size={14}/>
                 </button>
             </section>
         <div/>      
@@ -110,7 +115,7 @@ export default function Home() {
       <section className="workshop">
             <div className="wrkshp_cont">
               <div className="workshop_ttle">
-                Workshops
+                Our Workshops
                 <section>
                   <div className="content _2nd">
                     Through workshops, academic programs, and industry collaborations, the University is shaping
@@ -153,6 +158,7 @@ export default function Home() {
         <button className="more_wrksp"
         onClick={() => router.push('/hero/workshops')}
         >More Workshops
+        <MoveUpRight size={14}/>
         </button>
       </section>
       <div className="partn">
