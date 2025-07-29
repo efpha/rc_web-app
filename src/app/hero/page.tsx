@@ -130,6 +130,23 @@ export default function Page() {
           </span>
         </div>
       </div>
+       <div className="subscribe-container">
+      <div className="subscribe-content">
+        <p className="subscribe-intro">STAY IN THE LOOP</p>
+        <h2 className="subscribe-heading">Subscribe</h2>
+        <p className="subscribe-text">
+          Join our mailing list for insights, workshop and updates
+          <br className="desktop-break" />
+          appertaining Responsible Computing.
+        </p>
+
+        <form className="subscribe-form">
+          <input type="text" placeholder="Full Name" className="input-field" />
+          <input type="email" placeholder="Email" className="input-field" />
+          <button type="submit" className="subscribe-button">Send</button>
+        </form>
+      </div>
+    </div>
     </div>
   );
 }
