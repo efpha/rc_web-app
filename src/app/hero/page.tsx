@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link'
 import '@/app/hero/about/page'
@@ -8,18 +10,68 @@ import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css'
 import { useRouter } from 'next/navigation';
 import { newsItems } from '@/app/hero/data/newsData';
-// import NET from 'vanta/dist/vanta.net.min';
-// import * as THREE from 'three';
-
-// declare module 'vanta/dist/vanta.net.min' {
-//   const NET: any;
-//   export default NET;
-// }
 
 export default function Home() {
   const router = useRouter();
+  const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const vantaRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (
+        !vantaEffect &&
+        typeof window !== 'undefined' &&
+        window.VANTA?.NET &&
+        vantaRef.current
+      ) {
+        setVantaEffect(
+          window.VANTA.NET({
+            el: vantaRef.current,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0xffffff,
+            backgroundColor: 0x1d0957,
+            points: 14.0,
+            spacing: 20.0,
+          })
+        );
+        clearInterval(interval);
+      }
+    }, 100);
+
+    return () => {
+      clearInterval(interval);
+      vantaEffect?.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <div className="home">
+    <>
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
+        strategy="beforeInteractive"
+      />
+      <div
+        ref={vantaRef}
+        className="home"
+        style={{
+          width: '100%',
+          height: '100vh',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          zIndex: -1,
+        }}
+      />
       <div className="card-container master">
         <div className="card">
           <div className="card-content">
@@ -131,6 +183,6 @@ export default function Home() {
           </span>
         </div>
       </div>
-    </div>
+    </>
   );
 }
