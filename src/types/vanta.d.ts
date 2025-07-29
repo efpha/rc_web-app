@@ -1,4 +1,12 @@
-declare module 'vanta/dist/vanta.birds.min.js' {
-  const BIRDS: any;
-  export default BIRDS;
+// src/types/vanta.d.ts
+declare module 'vanta/dist/vanta.birds.min' {
+  import { VantaBase } from 'vanta/types';
+
+  const VANTA: {
+    BIRDS: (options: VantaBase & { el: HTMLElement }) => {
+      destroy: () => void;
+    };
+  };
+
+  export default VANTA;
 }

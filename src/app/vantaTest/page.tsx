@@ -3,27 +3,40 @@
 import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 
+type VantaEffectInstance = {
+  destroy: () => void;
+};
+
 declare global {
   interface Window {
-    VANTA?: any;
+    VANTA?: {
+      BIRDS: (options: {
+        el: HTMLElement;
+        mouseControls: boolean;
+        touchControls: boolean;
+        gyroControls: boolean;
+        backgroundColor: number;
+        color1: number;
+        color2: number;
+        birdSize: number;
+        quantity: number;
+      }) => VantaEffectInstance;
+    };
   }
 }
 
 export default function VantaBirdsBackground() {
-  const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const [vantaEffect, setVantaEffect] = useState<VantaEffectInstance | null>(null);
   const vantaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // @ts-ignore
       if (
         !vantaEffect &&
         typeof window !== 'undefined' &&
-        window.VANTA &&
-        window.VANTA.BIRDS &&
+        window.VANTA?.BIRDS &&
         vantaRef.current
       ) {
-        // @ts-ignore
         setVantaEffect(
           window.VANTA.BIRDS({
             el: vantaRef.current,
@@ -43,7 +56,7 @@ export default function VantaBirdsBackground() {
 
     return () => {
       clearInterval(interval);
-      if (vantaEffect) vantaEffect.destroy();
+      vantaEffect?.destroy();
     };
   }, [vantaEffect]);
 
