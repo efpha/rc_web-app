@@ -10,22 +10,25 @@ type VantaEffectInstance = {
 declare global {
   interface Window {
     VANTA?: {
-      BIRDS: (options: {
+      NET: (options: {
         el: HTMLElement;
-        mouseControls: true;
-        touchControls: true;
+        mouseControls: boolean;
+        touchControls: boolean;
         gyroControls: boolean;
+        minHeight: number;
+        minWidth: number;
+        scale: number;
+        scaleMobile: number;
+        color: number;
         backgroundColor: number;
-        color1: number;
-        color2: number;
-        birdSize: number;
-        quantity: number;
+        points: number;
+        spacing: number;
       }) => VantaEffectInstance;
     };
   }
 }
 
-export default function VantaBirdsBackground() {
+export default function VantaNetBackground() {
   const [vantaEffect, setVantaEffect] = useState<VantaEffectInstance | null>(null);
   const vantaRef = useRef<HTMLDivElement>(null);
 
@@ -34,20 +37,23 @@ export default function VantaBirdsBackground() {
       if (
         !vantaEffect &&
         typeof window !== 'undefined' &&
-        window.VANTA?.BIRDS &&
+        window.VANTA?.NET &&
         vantaRef.current
       ) {
         setVantaEffect(
-          window.VANTA.BIRDS({
+          window.VANTA.NET({
             el: vantaRef.current,
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            backgroundColor: 0x1f456e,
-            color1: 0xff9900,
-            color2: 0x00ffff,
-            birdSize: 1.5,
-            quantity: 3.0,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0xffffff,
+            backgroundColor: 0x1d0957,
+            points: 14.0,
+            spacing: 20.0,
           })
         );
         clearInterval(interval);
@@ -67,7 +73,7 @@ export default function VantaBirdsBackground() {
         strategy="beforeInteractive"
       />
       <Script
-        src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"
+        src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
         strategy="beforeInteractive"
       />
       <div
