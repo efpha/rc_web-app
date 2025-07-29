@@ -5,6 +5,8 @@ import '@/app/home.css';
 import '@/app/hero/about/page.css';
 import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
+import { MoveUpRight } from 'lucide-react';
+
 
 type VantaEffectInstance = {
   destroy: () => void;
@@ -120,27 +122,44 @@ export default function About() {
           </span>
         </section>
         <div className="card_cont abt">
-                <section className="rcimg abt">
+          <section className="wrapper-card">
+            <section className="rcimg abt">
                     <Image 
-                        src="/images/prj5.jpeg"
-                        alt="Kisii University"
-                        width={1000}
-                        height={600}
+                      src="/images/prj5.jpeg"
+                      alt="Kisii University"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      // style={{ width: '150%', height: 'auto' }}
                     />
-                </section>
-            <div className="about_card abt">
+
+            </section>
+            <section className="rcimg abt">
+                    <Image 
+                      src="/images/prj5.jpeg"
+                      alt="Kisii University"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      // style={{ width: '150%', height: 'auto' }}
+                    />
+
+            </section>
+              <div className="about_card abt">
                 <section className="content_card noshadow">
                     <div className="rctgl abt"></div>
                     <div className="content abt">
-                        We Kisii University led by Professor F. Mzee in partnership with the Mozilla Foundation are joining hands to
+                        We <Link href="https://kisiiuniversity.ac.ke/">Kisii University <MoveUpRight size={16} /></Link> led by Professor F. Mzee in partnership with the Mozilla Foundation are joining hands to
                         empower a new wave of graduands with ethical computing practices through 
                         Responsible Computing Challenge. 
-                    </div>
-                    <button className="content_more abt">Join the challenge</button>
-                </section>
-                <section className="socials">
+                    </div>                    
                 </section>
             </div>
+          </section>
+
+          <button className="learn-more">Join the challenge</button>
+          <section className="socials">
+          </section>
         </div>
       </div>
     </>
