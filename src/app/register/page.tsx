@@ -31,7 +31,7 @@ declare global {
 }
 
 export default function Register() {
-  const [notify, setNotify] = useState(true);
+  // const [notify, setNotify] = useState(true);
   const [vantaEffect, setVantaEffect] = useState<VantaEffectInstance | null>(null);
   const vantaRef = useRef<HTMLDivElement>(null);
 
