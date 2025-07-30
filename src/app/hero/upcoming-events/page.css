@@ -1,0 +1,85 @@
+.eventsSection {
+  padding: 2rem;
+  background-color: transparent;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.viewAll {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.underline {
+  height: 3px;
+  width: 100%;
+  max-width: 180px;
+  margin: 0.5rem 0 2rem;
+  background: linear-gradient(to right, #00ff99, #ffff00);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.details {
+  flex: 1;
+}
+
+.category {
+  color: red;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.details h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.datetime {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.noEvents {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  color: #ccc;
+  font-style: italic;
+}
