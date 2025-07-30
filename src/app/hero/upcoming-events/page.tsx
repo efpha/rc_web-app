@@ -44,7 +44,7 @@ export default function Events() {
       id: 5,
       category: 'Webinar',
       title: 'Privacy by Design: A Responsible Computing Approach',
-      image: '/images/privacy-webinar.jpg',
+      image: '/images/FnA5pAzqhMM.jpg',
       date: 'Sep 3',
       time: '11:00 AM',
     },
