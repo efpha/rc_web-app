@@ -199,7 +199,8 @@ button.learn-more {
         margin: 2% 5%;
         padding: 1rem;
         box-shadow: none;
-        /* background-color: red; */
+        background-color: #fff;
+        border-radius: 10px;
     }
 
     .moreksu.abt .ksu.abt {
@@ -262,8 +263,8 @@ button.learn-more {
     .card_cont.abt {
         width: 100%;
         text-align: center;
-        background-color: red;
-        border: 10px solid yellow;
+        /* background-color: red;
+        border: 10px solid yellow; */
     }
 
     .about_card.abt {
@@ -290,7 +291,9 @@ button.learn-more {
         font-size: 1.25rem;
         line-height: 1.6;
     }
-
+    .content.abt a{
+        color: skyblue;
+    }
 
     .content_card.noshadow {
         width: 100%;

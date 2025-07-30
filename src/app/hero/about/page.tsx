@@ -134,17 +134,6 @@ export default function About() {
                     />
 
             </section>
-            <section className="rcimg abt">
-                    <Image 
-                      src="/images/prj5.jpeg"
-                      alt="Kisii University"
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      // style={{ width: '150%', height: 'auto' }}
-                    />
-
-            </section>
               <div className="about_card abt">
                 <section className="content_card noshadow">
                     <div className="rctgl abt"></div>
@@ -157,7 +146,7 @@ export default function About() {
             </div>
           </section>
 
-          <button className="learn-more">Join the challenge</button>
+          {/* <button className="learn-more">Join the challenge</button> */}
           <section className="socials">
           </section>
         </div>
