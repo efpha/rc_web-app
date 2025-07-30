@@ -4,7 +4,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 import '@/app/register/page.css';
 import '@/app/globals.css';
+import '@/app/privacy-policy/page'
 import Footer from '@/components/footer'
+import Link from 'next/link';
 
 type VantaEffectInstance = {
   destroy: () => void;
@@ -93,7 +95,7 @@ export default function Register() {
       />
       <div className="signup-container" style={{ position: 'relative', zIndex: 1 }}>
         <p className="signup-intro">
-          By subscribing you accept to receive our emails on Responsible Computing insights and updates on upcoming workshops.
+          By subscribing you consent to our <Link href='/privacy-policy'>Privacy Policy</Link>
         </p>
         <h2 className="signup-title">Register</h2>
         <form className="signup-form">

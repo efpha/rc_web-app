@@ -150,7 +150,7 @@ export default function Page() {
             <input type="email" placeholder="Email" className="input-field" required/>
           </div>
           <p className="signup-info">
-            By subscribing you accept to receive our emails on Responsible Computing insights and updates on upcoming workshops.
+            By subscribing you consent to our <Link href='/privacy-policy'>Privacy Policy</Link>
           </p>
           <button type="submit" className="subscribe-button">Subscribe</button>
         </form>        

@@ -84,7 +84,6 @@
     border-radius: 8px;
   }
   .workshops-header{
-    color: var(--primary-text);
     align-items: center;
   }
   .content.abt.wrk {
@@ -135,8 +134,14 @@
   }
 
   .content.abt.wrk {
+    text-align: center;
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: var(--primary-color);
+    color: var(--primary-text);
+  }
+  .workshops-header{
+    width: 90%;
+    margin: auto;
+    text-align: center;
   }
 }

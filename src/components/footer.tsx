@@ -8,7 +8,16 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p className="footer-text">
-          &copy; { new Date().getFullYear()} Responsible Computing Project. All rights reserved.
+          &copy; {new Date().getFullYear()} Mozilla Responsible Computing Project —
+          A research initiative under{' '}
+          <a
+            href="https://www.kisiiuniversity.ac.ke"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            Kisii University
+          </a>
         </p>
         <Link href="/privacy-policy" className="footer-link">
           Privacy Policy

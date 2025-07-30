@@ -22,3 +22,8 @@
 .footer-link:hover {
   color: #ffffff;
 }
+
+.footer-text {
+  margin: 0;
+  line-height: 1.6;
+}
