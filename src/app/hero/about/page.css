@@ -133,11 +133,12 @@
 
 .wrapper-card {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100vh; 
   overflow: hidden;
   display: flex;
   border-radius: 10px;
+  margin: auto;
   margin-top: 5rem;
 }
 
