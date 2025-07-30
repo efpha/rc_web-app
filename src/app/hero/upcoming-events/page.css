@@ -23,13 +23,10 @@
   background: linear-gradient(to right, #00ff99, #ffff00);
 }
 
-.card-section{
+.grid {
   background: rgba(0, 0, 0, 0.5);
   width: 90%;
   margin: auto;
-}
-
-.grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -77,7 +74,7 @@
 .noEvents {
   text-align: center;
   margin-top: 3rem;
-  font-size: 1.25rem;
-  color: #ccc;
+  font-size: 1.5rem;
+  color: var(--primary-text);
   font-style: italic;
 }
