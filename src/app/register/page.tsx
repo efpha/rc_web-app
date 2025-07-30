@@ -5,7 +5,6 @@ import Script from 'next/script';
 import '@/app/register/page.css';
 import '@/app/globals.css';
 import '@/app/privacy-policy/page'
-import Footer from '@/components/footer'
 import Link from 'next/link';
 
 type VantaEffectInstance = {

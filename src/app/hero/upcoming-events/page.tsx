@@ -5,8 +5,6 @@ import '@/app/hero/upcoming-events/page.css';
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import Footer from '@/components/footer';
-// import { div } from 'three/tsl';
-import Link from 'next/link';
 import Register from '@/app/register/page';
 
 type Event = {
