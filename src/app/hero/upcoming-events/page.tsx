@@ -62,7 +62,7 @@ export default function Events() {
       <section className='card-section'>
         {events.length === 0 ? (
           <>
-          <h2 className="noEvents">No event scheduled. Subscribe to get notified when there's one.</h2>
+          <h2 className="noEvents">No event scheduled. Subscribe to get notified when there is one.</h2>
           <Register />
           </>
           
