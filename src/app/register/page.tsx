@@ -92,7 +92,7 @@ export default function Register() {
       />
       <div className="signup-container" style={{ position: 'relative', zIndex: 1 }}>
         <p className="signup-intro">
-          Get notified about upcoming events and workshops by registering below.
+          By subscribing you accept to receive about upcoming events and workshops by registering below.
         </p>
         <h2 className="signup-title">Register</h2>
         <form className="signup-form">

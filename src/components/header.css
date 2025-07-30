@@ -19,11 +19,11 @@
   top: 0;
   z-index: 100;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.7),  /* Top color - black with 70% opacity */
-    rgba(0, 0, 0, 0.3)   /* Bottom color - black with 30% opacity */
+    rgba(0, 0, 0, 0.7),  
+    rgba(0, 0, 0, 0.3)   
   );
-  backdrop-filter: blur(5px); /* Optional: for a frosted glass effect */
-  -webkit-backdrop-filter: blur(5px); /* Safari support */
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
 }
 .lgo-txt{
   flex-direction: row;
@@ -33,27 +33,26 @@
   position: relative;
   left: 2em;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-text);
 }
 
 .links {
-  width: 40%;
+  width: 60%;
   display: flex;
-  gap: 5%;
+  gap: 10%;
   position: absolute;
-  left: 25%;
+  left: 30%;
 }
 
 .links a {
-  width: fit-content;
   position: relative;
   text-decoration: none;
   color: var(--primary-text);
   font-weight: 500;
-  padding: .5rem;
+  padding: .1rem 1rem;
   transition: color 0.3s ease;
 }
 
