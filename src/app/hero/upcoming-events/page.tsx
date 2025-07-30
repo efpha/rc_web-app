@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import '@/app/hero/upcoming-events/page.css';
 import { ArrowUpRight } from 'lucide-react';
-import Image from 'next/image'; // ✅ Replaces <img> for optimization
+import Image from 'next/image';
+import Footer from '@/components/footer';
 
 type Event = {
   id: number;
@@ -51,7 +52,8 @@ export default function Events() {
   ]);
 
   return (
-    <section className='eventsSection'>
+    <>
+      <section className='eventsSection'>
       <div className='header'>
         <h2>Upcoming events</h2>
       </div>
@@ -86,5 +88,7 @@ export default function Events() {
         )}
       </section>
     </section>
+    <Footer />
+    </>
   );
 }

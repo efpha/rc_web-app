@@ -9,6 +9,8 @@ import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css';
 import { useRouter } from 'next/navigation';
 import { newsItems } from '@/app/hero/data/newsData';
+// import '@/components/footer.css'
+import Footer from '@/components/footer'
 
 export default function Page() {
   const router = useRouter();
@@ -133,7 +135,7 @@ export default function Page() {
        <div className="subscribe-container">
       <div className="subscribe-content">
         <p className="subscribe-intro">STAY IN THE LOOP</p>
-        <h2 className="subscribe-heading">Subscribe</h2>
+          <h2 className="subscribe-heading">Subscribe</h2>
         <p className="subscribe-text">
           Join our mailing list for insights, workshop and updates
           <br className="desktop-break" />
@@ -142,13 +144,20 @@ export default function Page() {
 
       <section className="subscribe-form-container">
         <form className="subscribe-form">
-          <input type="text" placeholder="Full Name" className="input-field" required/>
-          <input type="email" placeholder="Email" className="input-field" required/>
-        </form>
-        <button type="submit" className="subscribe-button">Send</button>
+          <div className="input-section">
+            <input type="text" placeholder="First Name" className="input-field" required/>
+            <input type="text" placeholder="Last Name" className="input-field" required/>
+            <input type="email" placeholder="Email" className="input-field" required/>
+          </div>
+          <p className="signup-info">
+            By subscribing you accept to receive our emails on Responsible Computing insights and updates on upcoming workshops.
+          </p>
+          <button type="submit" className="subscribe-button">Subscribe</button>
+        </form>        
       </section>
       </div>
     </div>
+    <Footer />
     </div>
   );
 }

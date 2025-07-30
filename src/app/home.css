@@ -352,6 +352,9 @@
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
+.signup-info{
+  font-size: .8rem;
+}
 
 .subscribe-heading {
   font-size: 2.5rem;
@@ -376,7 +379,8 @@
   border-radius: 10px;
 }
 
-.subscribe-form {
+
+.input-section{
   border-radius: 10px;
   display: flex;
   flex-direction: column;

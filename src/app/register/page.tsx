@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 import '@/app/register/page.css';
 import '@/app/globals.css';
+import Footer from '@/components/footer'
 
 type VantaEffectInstance = {
   destroy: () => void;
@@ -130,6 +131,7 @@ export default function Register() {
           </button>
         </form>
       </div>
+      <Footer/>
     </>
   );
 }

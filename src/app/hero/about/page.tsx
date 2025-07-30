@@ -6,7 +6,7 @@ import '@/app/hero/about/page.css';
 import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 import { MoveUpRight } from 'lucide-react';
-
+import Footer from '@/components/footer'
 
 type VantaEffectInstance = {
   destroy: () => void;
@@ -151,6 +151,7 @@ export default function About() {
           </section>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
