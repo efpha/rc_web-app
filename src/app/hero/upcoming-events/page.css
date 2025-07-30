@@ -15,21 +15,16 @@
   font-weight: 700;
 }
 
-.viewAll {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
-}
-
 .underline {
   height: 3px;
   width: 100%;
   max-width: 180px;
   margin: 0.5rem 0 2rem;
   background: linear-gradient(to right, #00ff99, #ffff00);
+}
+
+.card-section{
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .grid {
@@ -56,7 +51,7 @@
 }
 
 .category {
-  color: red;
+  color: skyblue;
   font-weight: 600;
   font-size: 0.875rem;
   margin-bottom: 0.25rem;
