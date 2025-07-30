@@ -192,12 +192,13 @@ button.learn-more {
     }
 
     .moreksu.abt {
-        width: 90%;
+        width: 80%;
         height: auto;
         display: flex;
         gap: 1rem;
-        margin: 2% 5%;
-        padding: 1rem;
+        /* margin: 2% 5%; */
+        margin: 1rem auto;
+        padding: .5rem;
         box-shadow: none;
         background-color: #fff;
         border-radius: 10px;
@@ -281,7 +282,7 @@ button.learn-more {
     }
 
     .rcimg.abt img {
-        width: 50%;
+        width: 90%;
         height: auto;
         margin: auto;
         border-radius: 3px;

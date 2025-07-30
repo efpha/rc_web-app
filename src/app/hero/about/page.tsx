@@ -136,7 +136,7 @@ export default function About() {
             </section>
               <div className="about_card abt">
                 <section className="content_card noshadow">
-                    <div className="rctgl abt"></div>
+                    {/* <div className="rctgl abt"></div> */}
                     <div className="content abt">
                         We <Link href="https://kisiiuniversity.ac.ke/">Kisii University <MoveUpRight size={16} /></Link> led by Professor F. Mzee in partnership with the Mozilla Foundation are joining hands to
                         empower a new wave of graduands with ethical computing practices through 
