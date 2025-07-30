@@ -48,11 +48,12 @@
 }
 
 .links a {
+  width: fit-content;
   position: relative;
   text-decoration: none;
   color: var(--primary-text);
   font-weight: 500;
-  padding: 10px 20px;
+  padding: .5rem;
   transition: color 0.3s ease;
 }
 

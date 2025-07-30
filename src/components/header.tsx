@@ -32,9 +32,9 @@ export default function Header() {
       <nav className="links">
         <Link href="/hero">Home</Link>
         <Link href="/hero/about">About</Link>
+        <Link href="/hero/insights">Insights</Link>
         <Link href="/hero/workshops">Workshops</Link>
-        <Link href="/hero/Upcoming-events">Insights</Link>
-        <Link href="/hero/Upcoming-events">Upcoming Events</Link>
+        <Link href="/hero/upcoming-events">Upcoming Events</Link>
       </nav>
 
       {/* Sidebar overlay for mobile */}
@@ -51,10 +51,9 @@ export default function Header() {
             <nav>
               <Link href="/hero" className='link' onClick={() => setSidebarOpen(false)}>Home<MoveUpRight size={16}/></Link>
               <Link href="/hero/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link> {/*This link is not working. Why*/}
+              <Link href="/hero/insights" className='link' onClick={() => setSidebarOpen(false)}>Insights <MoveUpRight size={16}/></Link>
               <Link href="/hero/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
-              <Link href="/hero/lorem" className='link' onClick={() => setSidebarOpen(false)}>Lorem <MoveUpRight size={16}/></Link>
-              <div className="sidebar-btns">
-              </div>
+              <Link href="/hero/upcoming-events" className='link' onClick={() => setSidebarOpen(false)}>Upcoming Events <MoveUpRight size={16}/></Link>
             </nav>
           </aside>
         </div>
