@@ -152,7 +152,7 @@
     font-size: 3rem;
     font-weight: 600;
     text-align: left;
-    align-self: center;
+    align-self: left;
     line-height: 1.4;
     margin: auto;
 }
@@ -271,7 +271,7 @@ button.learn-more {
     .about_card.abt {
         display: block;
         margin: 0;
-        width: 100%;
+        width: 90%;
     }
 
     .rctgl.abt {
@@ -291,12 +291,13 @@ button.learn-more {
     .content.abt {
         font-size: 1.25rem;
         line-height: 1.6;
+        text-align: left;
     }
     .content.abt a{
         color: skyblue;
     }
 
     .content_card.noshadow {
-        width: 100%;
+        width: 90%;
     }
 }
