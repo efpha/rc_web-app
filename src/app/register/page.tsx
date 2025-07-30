@@ -92,7 +92,7 @@ export default function Register() {
       />
       <div className="signup-container" style={{ position: 'relative', zIndex: 1 }}>
         <p className="signup-intro">
-          By subscribing you accept to receive about upcoming events and workshops by registering below.
+          By subscribing you accept to receive our emails on Responsible Computing insights and updates on upcoming workshops.
         </p>
         <h2 className="signup-title">Register</h2>
         <form className="signup-form">
@@ -117,16 +117,6 @@ export default function Register() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="email">Registration Number <span className='star'>*</span></label>
-            <input
-              type="text"
-              id="registrationNumber"
-              placeholder="e.g. inxx/xxxx/xx"
-              required
-            />
-          </div>
-
-          <div className="form-group">
             <label htmlFor="email">Email <span className='star'>*</span></label>
             <input
               type="email"
@@ -135,21 +125,8 @@ export default function Register() {
               required
             />
           </div>
-
-          <div className="form-group checkbox-group">
-            <input
-              type="checkbox"
-              id="notify"
-              checked={notify}
-              onChange={(e) => setNotify(e.target.checked)}
-            />
-            <label htmlFor="notify" className="checkbox-label">
-              Receive notification on up-coming events
-            </label>
-          </div>
-
           <button type="submit" className="register-button">
-            Register
+            Subscribe
           </button>
         </form>
       </div>
