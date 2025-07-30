@@ -30,7 +30,7 @@ export default function Page() {
                 Advocates for ethical computing practices and their global impacts.
               </h2>
               <button className="action-start" onClick={handleSubscribe}>
-                Get started <MoveUpRight size={14} />
+                Subscribe <MoveUpRight size={14} />
               </button>
             </div>
           </div>
@@ -142,8 +142,8 @@ export default function Page() {
 
       <section className="subscribe-form-container">
         <form className="subscribe-form">
-          <input type="text" placeholder="Full Name" className="input-field" />
-          <input type="email" placeholder="Email" className="input-field" />
+          <input type="text" placeholder="Full Name" className="input-field" required/>
+          <input type="email" placeholder="Email" className="input-field" required/>
         </form>
         <button type="submit" className="subscribe-button">Send</button>
       </section>
