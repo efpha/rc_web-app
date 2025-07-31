@@ -20,6 +20,29 @@
     align-items: flex-end;
 }
 
+.status{
+  width: fit-content;
+  background-color: rgb(59, 117, 59);
+  color: #f3f3f3;
+  padding: .5rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .card {
     width: 80%;
     padding: 1em;
