@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import '@/app/hero/about/page';
+import '@/app/hero/insights/page'
 import '@/app/home.css';
 import '@/app/register/page';
 import { MoveUpRight } from 'lucide-react';
@@ -31,8 +32,11 @@ export default function Page() {
               <h2>
                 Advocates for ethical computing practices and their global impacts.
               </h2>
-              <button className="action-start" onClick={handleSubscribe}>
-                Subscribe <MoveUpRight size={14} />
+              <button
+                className="content_more"
+                onClick={() => router.push('/hero/insights')}
+              >
+                Learn More <MoveUpRight size={14} />
               </button>
             </div>
           </div>
@@ -48,11 +52,8 @@ export default function Page() {
                 curricula and professional practices. Faculty and students are being trained to navigate
                 ethical concerns such as data privacy, cybersecurity, and algorithmic bias.
               </div>
-              <button
-                className="content_more"
-                onClick={() => router.push('/hero/about')}
-              >
-                Learn More <MoveUpRight size={14} />
+              <button className="action-start" onClick={handleSubscribe}>
+                Subscribe <MoveUpRight size={14} />
               </button>
             </section>
           </div>
