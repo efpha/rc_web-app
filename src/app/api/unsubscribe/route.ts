@@ -1,13 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
-import mysql from 'mysql2/promise';
+import mysql, { RowDataPacket } from 'mysql2/promise';
 
-// Configure your DB connection (use .env variables in production)
 const dbConfig = {
   host: process.env.DB_HOST!,
   user: process.env.DB_USER!,
   password: process.env.DB_PASS!,
   database: process.env.DB_NAME!
 };
+
+// Extend RowDataPacket to satisfy the constraint
+interface Subscriber extends RowDataPacket {
+  email: string;
+  first_name: string;
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -22,13 +27,13 @@ export async function POST(req: NextRequest) {
 
     const connection = await mysql.createConnection(dbConfig);
 
-    // Check if the user is already unsubscribed
-    const [existing] = await connection.execute(
+    // Cast the query result as Subscriber[]
+    const [existing] = await connection.execute<Subscriber[]>(
       'SELECT * FROM subscribers WHERE email = ? AND first_name = ?',
       [email, firstName]
     );
 
-    if ((existing as any[]).length === 0) {
+    if (existing.length === 0) {
       await connection.end();
       return NextResponse.json(
         { message: 'No active subscription found for this name and email.' },
@@ -36,7 +41,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Delete the user from the subscribers table
     await connection.execute(
       'DELETE FROM subscribers WHERE email = ? AND first_name = ?',
       [email, firstName]
