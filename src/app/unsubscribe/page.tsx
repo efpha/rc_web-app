@@ -34,7 +34,7 @@ export default function Unsubscribe() {
 
       const data = await res.json();
       setStatus(data.message);
-    } catch (_) {
+    } catch{
       setStatus('An error occurred. Please try again later.');
     } finally {
       setShowStatus(true);
