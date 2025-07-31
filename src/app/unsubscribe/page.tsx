@@ -1,12 +1,12 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import '@/app/unsubscribe/page.css';
 import '@/app/globals.css';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-export default function Unsubscribe() {
+function UnsubscribeForm() {
   const [status, setStatus] = useState('');
   const [showStatus, setShowStatus] = useState(false);
   const [firstName, setFirstName] = useState('');
@@ -34,7 +34,7 @@ export default function Unsubscribe() {
 
       const data = await res.json();
       setStatus(data.message);
-    } catch{
+    } catch {
       setStatus('An error occurred. Please try again later.');
     } finally {
       setShowStatus(true);
@@ -96,5 +96,13 @@ export default function Unsubscribe() {
         Want to resubscribe? <Link href="/register">Click here</Link>
       </p>
     </div>
+  );
+}
+
+export default function UnsubscribePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <UnsubscribeForm />
+    </Suspense>
   );
 }
