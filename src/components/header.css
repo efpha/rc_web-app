@@ -146,7 +146,7 @@
 
 /* Sidebar drawer */
 .sidebar {
-  background: var(--background-color);
+  background: var(--primary-color);
   width: 70vw;
   max-width: 50%;
   height: 100%;
