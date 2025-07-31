@@ -1,137 +1,88 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
-import Script from 'next/script';
+import React, { useState, useEffect } from 'react';
 import '@/app/register/page.css';
 import '@/app/globals.css';
-import '@/app/privacy-policy/page'
 import Link from 'next/link';
-
-type VantaEffectInstance = {
-  destroy: () => void;
-};
-
-declare global {
-  interface Window {
-    VANTA?: {
-      NET: (options: {
-        el: HTMLElement;
-        mouseControls: boolean;
-        touchControls: boolean;
-        gyroControls: boolean;
-        minHeight: number;
-        minWidth: number;
-        scale: number;
-        scaleMobile: number;
-        color: number;
-        backgroundColor: number;
-        points: number;
-        spacing: number;
-      }) => VantaEffectInstance;
-    };
-  }
-}
+import { subscribeUser } from '@/app/utils/subscribeUser';
 
 export default function Register() {
-  // const [notify, setNotify] = useState(true);
-  const [vantaEffect, setVantaEffect] = useState<VantaEffectInstance | null>(null);
-  const vantaRef = useRef<HTMLDivElement>(null);
+  const [status, setStatus] = useState('');
+  const [showStatus, setShowStatus] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const firstName = (form.querySelector('#firstName') as HTMLInputElement).value;
+    const lastName = (form.querySelector('#lastName') as HTMLInputElement).value;
+    const email = (form.querySelector('#email') as HTMLInputElement).value;
+
+    try {
+      const res = await subscribeUser({ firstName, lastName, email });
+      setStatus(res.message);
+      setShowStatus(true);
+      form.reset(); // Optional: Clear form after success
+    } catch (err: unknown) {
+      const error = err as { message: string };
+      setStatus(error.message || 'An unexpected error occurred.');
+      setShowStatus(true);
+    }
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (
-        !vantaEffect &&
-        typeof window !== 'undefined' &&
-        window.VANTA?.NET &&
-        vantaRef.current
-      ) {
-        setVantaEffect(
-          window.VANTA.NET({
-            el: vantaRef.current,
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            scaleMobile: 1.0,
-            color: 0xffffff,
-            backgroundColor: 0x1f456e,
-            points: 14.0,
-            spacing: 20.0,
-          })
-        );
-        clearInterval(interval);
-      }
-    }, 100);
-
-    return () => {
-      clearInterval(interval);
-      vantaEffect?.destroy();
-    };
-  }, [vantaEffect]);
+    if (showStatus) {
+      const timer = setTimeout(() => {
+        setShowStatus(false);
+        setStatus('');
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [showStatus]);
 
   return (
-    <>
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"
-        strategy="beforeInteractive"
-      />
-      <div
-        ref={vantaRef}
-        style={{
-          width: '100%',
-          height: '100vh',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          zIndex: -1,
-        }}
-      />
-      <div className="signup-container" style={{ position: 'relative', zIndex: 1 }}>
-        <p className="signup-intro">
-          By subscribing you consent to our <Link href='/privacy-policy'>Privacy Policy</Link>
-        </p>
-        <h2 className="signup-title">Register</h2>
-        <form className="signup-form">
-          <div className="form-group">
-            <label htmlFor="firstName">First Name<span className='star'>*</span></label>
-            <input
-              type="text"
-              id="firstName"
-              placeholder="John"
-              required
-            />
-          </div>
+    <div className="signup-container">
+      <p className="signup-intro">
+        By subscribing you consent to our <Link href='/privacy-policy'>Privacy Policy</Link>
+      </p>
+      <h2 className="signup-title">Register</h2>
 
-          <div className="form-group">
-            <label htmlFor="lastName">Last Name <span className='star'>*</span></label>
-            <input
-              type="text"
-              id="lastName"
-              placeholder="Doe"
-              required
-            />
-          </div>
+      <form className="signup-form" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="firstName">First Name<span className='star'>*</span></label>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="John"
+            required
+          />
+        </div>
 
-          <div className="form-group">
-            <label htmlFor="email">Email <span className='star'>*</span></label>
-            <input
-              type="email"
-              id="email"
-              placeholder="e.g. johndoe@example.com"
-              required
-            />
-          </div>
-          <button type="submit" className="register-button">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </>
+        <div className="form-group">
+          <label htmlFor="lastName">Last Name <span className='star'>*</span></label>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Doe"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email <span className='star'>*</span></label>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. johndoe@example.com"
+            required
+          />
+        </div>
+
+        <button type="submit" className="register-button">
+          Subscribe
+        </button>
+
+        {showStatus && <p className='status'>{status}</p>}
+      </form>
+    </div>
   );
 }

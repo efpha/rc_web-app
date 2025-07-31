@@ -2,17 +2,19 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { MoveUpRight } from 'lucide-react';
+
 import '@/app/hero/about/page';
 import '@/app/hero/insights/page';
 import '@/app/home.css';
 import '@/app/register/page';
-import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css';
-import { useRouter } from 'next/navigation';
+
 import { newsItems } from '@/app/hero/data/newsData';
 import Footer from '@/components/footer';
 import { subscribeUser } from '@/app/utils/subscribeUser';
-import { useState, useEffect } from 'react';
 
 export default function Page() {
   const router = useRouter();
@@ -30,20 +32,19 @@ export default function Page() {
       const res = await subscribeUser({ firstName, lastName, email });
       setStatus(res.message);
       setShowStatus(true);
-    } catch (err: any) {
-      setStatus(err.message);
+    } catch (err: unknown) {
+      const error = err as { message: string };
+      setStatus(error.message || 'An unexpected error occurred.');
       setShowStatus(true);
     }
   };
 
-  //display subscription alert for 5 sec
   useEffect(() => {
     if (showStatus) {
       const timer = setTimeout(() => {
         setShowStatus(false);
         setStatus('');
       }, 5000);
-
       return () => clearTimeout(timer);
     }
   }, [showStatus]);
