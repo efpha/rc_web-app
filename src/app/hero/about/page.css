@@ -91,6 +91,7 @@
 }
 
 .about_card.abt {
+    margin: auto;
   position: relative;
   z-index: 3;
   display: flex;
@@ -265,13 +266,11 @@ button.learn-more {
     .card_cont.abt {
         width: 100%;
         text-align: center;
-        /* background-color: red;
-        border: 10px solid yellow; */
     }
 
     .about_card.abt {
         display: block;
-        margin: 0;
+        margin: auto;
         width: 90%;
     }
 
@@ -292,7 +291,7 @@ button.learn-more {
     .content.abt {
         font-size: 1.25rem;
         line-height: 1.6;
-        text-align: left;
+        margin: auto;
     }
     .content.abt a{
         color: skyblue;
@@ -300,5 +299,6 @@ button.learn-more {
 
     .content_card.noshadow {
         width: 90%;
+        margin: auto;
     }
 }

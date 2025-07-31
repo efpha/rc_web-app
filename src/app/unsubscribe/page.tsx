@@ -35,7 +35,6 @@ export default function Unsubscribe() {
       const data = await res.json();
       setStatus(data.message);
     } catch (err) {
-      console.error('Unsubscribe error:', err);
       setStatus('An error occurred. Please try again later.');
     } finally {
       setShowStatus(true);
@@ -55,7 +54,7 @@ export default function Unsubscribe() {
   return (
     <div className="unsubscribe-container">
       <p className="unsubscribe-intro">
-        We&apos;re sorry to see you go. You&apos;re always welcome back.
+        We're sorry to see you go. You're always welcome back.
       </p>
       <h2 className="unsubscribe-title">Unsubscribe</h2>
 
