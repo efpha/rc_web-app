@@ -143,11 +143,11 @@ export default function Page() {
         </p>
 
       <section className="subscribe-form-container">
-        <form className="subscribe-form">
+        <form className="subscribe-form" /*onSubmit={handleSubmit}*/>
           <div className="input-section">
-            <input type="text" placeholder="First Name" className="input-field" required/>
-            <input type="text" placeholder="Last Name" className="input-field" required/>
-            <input type="email" placeholder="Email" className="input-field" required/>
+            <input type="text" placeholder="First Name" className="input-field firstName" required />
+            <input type="text" placeholder="Last Name" className="input-field lastName" required />
+            <input type="email" placeholder="Email" className="input-field email" required />
           </div>
           <p className="signup-info">
             By subscribing you consent to our <Link href='/privacy-policy'>Privacy Policy</Link>
