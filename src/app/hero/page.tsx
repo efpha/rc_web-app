@@ -1,5 +1,4 @@
 'use client';
-// src\app\hero\page.tsx
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,11 +12,12 @@ import { useRouter } from 'next/navigation';
 import { newsItems } from '@/app/hero/data/newsData';
 import Footer from '@/components/footer';
 import { subscribeUser } from '@/app/utils/subscribeUser';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Page() {
   const router = useRouter();
   const [status, setStatus] = useState('');
+  const [showStatus, setShowStatus] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,26 +29,24 @@ export default function Page() {
     try {
       const res = await subscribeUser({ firstName, lastName, email });
       setStatus(res.message);
+      setShowStatus(true);
     } catch (err: any) {
       setStatus(err.message);
+      setShowStatus(true);
     }
   };
 
-  // const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   const form = e.currentTarget;
-  //   const formData = new FormData(form);
+  //display subscription alert for 5 sec
+  useEffect(() => {
+    if (showStatus) {
+      const timer = setTimeout(() => {
+        setShowStatus(false);
+        setStatus('');
+      }, 5000);
 
-  //   const data = {
-  //     firstName: formData.get('firstName') as string,
-  //     lastName: formData.get('lastName') as string,
-  //     email: formData.get('email') as string,
-  //   };
-
-  //   const message = await subscribeUser(data);
-  //   alert(message);
-  //   form.reset();
-  // };
+      return () => clearTimeout(timer);
+    }
+  }, [showStatus]);
 
   const handleSubscribeRedirect = () => {
     router.push('/register');
@@ -188,7 +186,7 @@ export default function Page() {
                 By subscribing you consent to our <a href='/privacy-policy'>Privacy Policy</a>
               </p>
               <button type="submit" className="subscribe-button">Subscribe</button>
-              {status && <p>{status}</p>}
+              {showStatus && <p className='status'>{status}</p>}
             </form>
           </section>
         </div>

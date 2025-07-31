@@ -25,7 +25,7 @@ export async function POST(req: Request) {
       database:process.env.DB_NAME!
     });
 
-    console.log('✅ Successfully connected to MySQL database.');
+    console.log('Successfully connected to MySQL database.');
 
     await connection.execute(
       'INSERT INTO subscribers (first_name, last_name, email) VALUES (?, ?, ?)',
