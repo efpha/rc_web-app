@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       database: process.env.DB_NAME!,
     });
 
-    console.log('✅ Successfully connected to MySQL database.');
+    console.log('Successfully connected to MySQL database.');
 
     try {
       await connection.execute(
@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     } catch (insertErr: any) {
       // Detect duplicate email error
       if (insertErr.code === 'ER_DUP_ENTRY' || insertErr.errno === 1062) {
-        console.warn('⚠️ Duplicate entry for email:', email);
+        console.warn('Duplicate entry for email:', email);
         return NextResponse.json({ message: 'User exists' }, { status: 409 });
       } else {
         throw insertErr;
@@ -59,7 +59,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ message: 'Subscribed successfully!' }, { status: 200 });
 
   } catch (err) {
-    console.error('❌ Error in /api/subscribe POST route:', err);
+    console.error('Error in /api/subscribe POST route:', err);
     return NextResponse.json({ message: 'Server error' }, { status: 500 });
   }
 }
