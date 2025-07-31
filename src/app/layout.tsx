@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Responsible computing",
+  title: "Mozilla Responsible Computing Challenge",
   description: "",
 };
 
