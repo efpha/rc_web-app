@@ -1,21 +1,56 @@
 'use client';
+// src\app\hero\page.tsx
 
 import Image from 'next/image';
 import Link from 'next/link';
 import '@/app/hero/about/page';
-import '@/app/hero/insights/page'
+import '@/app/hero/insights/page';
 import '@/app/home.css';
 import '@/app/register/page';
 import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css';
 import { useRouter } from 'next/navigation';
 import { newsItems } from '@/app/hero/data/newsData';
-import Footer from '@/components/footer'
+import Footer from '@/components/footer';
+import { subscribeUser } from '@/app/utils/subscribeUser';
+import { useState } from 'react';
 
 export default function Page() {
   const router = useRouter();
+  const [status, setStatus] = useState('');
 
-  const handleSubscribe = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const firstName = (form.querySelector('.firstName') as HTMLInputElement).value;
+    const lastName = (form.querySelector('.lastName') as HTMLInputElement).value;
+    const email = (form.querySelector('.email') as HTMLInputElement).value;
+
+    try {
+      const res = await subscribeUser({ firstName, lastName, email });
+      setStatus(res.message);
+    } catch (err: any) {
+      setStatus(err.message);
+    }
+  };
+
+  // const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const form = e.currentTarget;
+  //   const formData = new FormData(form);
+
+  //   const data = {
+  //     firstName: formData.get('firstName') as string,
+  //     lastName: formData.get('lastName') as string,
+  //     email: formData.get('email') as string,
+  //   };
+
+  //   const message = await subscribeUser(data);
+  //   alert(message);
+  //   form.reset();
+  // };
+
+  const handleSubscribeRedirect = () => {
     router.push('/register');
   };
 
@@ -51,7 +86,7 @@ export default function Page() {
                 curricula and professional practices. Faculty and students are being trained to navigate
                 ethical concerns such as data privacy, cybersecurity, and algorithmic bias.
               </div>
-              <button className="action-start" onClick={handleSubscribe}>
+              <button className="action-start" onClick={handleSubscribeRedirect}>
                 Subscribe <MoveUpRight size={14} />
               </button>
             </section>
@@ -59,7 +94,6 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Workshop section */}
       <section className="workshop">
         <div className="wrkshp_cont">
           <div className="workshop_ttle">
@@ -132,32 +166,35 @@ export default function Page() {
           </span>
         </div>
       </div>
-       <div className="subscribe-container">
-      <div className="subscribe-content">
-        <p className="subscribe-intro">STAY IN THE LOOP</p>
-          <h2 className="subscribe-heading">Subscribe</h2>
-        <p className="subscribe-text">
-          Join our mailing list for insights, workshop and updates
-          <br className="desktop-break" />
-          appertaining Responsible Computing.
-        </p>
 
-      <section className="subscribe-form-container">
-        <form className="subscribe-form" /*onSubmit={handleSubmit}*/>
-          <div className="input-section">
-            <input type="text" placeholder="First Name" className="input-field firstName" required />
-            <input type="text" placeholder="Last Name" className="input-field lastName" required />
-            <input type="email" placeholder="Email" className="input-field email" required />
-          </div>
-          <p className="signup-info">
-            By subscribing you consent to our <Link href='/privacy-policy'>Privacy Policy</Link>
+      <div className="subscribe-container">
+        <div className="subscribe-content">
+          <p className="subscribe-intro">STAY IN THE LOOP</p>
+          <h2 className="subscribe-heading">Subscribe</h2>
+          <p className="subscribe-text">
+            Join our mailing list for insights, workshop and updates
+            <br className="desktop-break" />
+            appertaining Responsible Computing.
           </p>
-          <button type="submit" className="subscribe-button">Subscribe</button>
-        </form>        
-      </section>
+
+          <section className="subscribe-form-container">
+            <form className="subscribe-form" onSubmit={handleSubmit}>
+              <div className="input-section">
+                <input type="text" placeholder="First Name" className="input-field firstName" required />
+                <input type="text" placeholder="Last Name" className="input-field lastName" required />
+                <input type="email" placeholder="Email" className="input-field email" required />
+              </div>
+              <p className="signup-info">
+                By subscribing you consent to our <a href='/privacy-policy'>Privacy Policy</a>
+              </p>
+              <button type="submit" className="subscribe-button">Subscribe</button>
+              {status && <p>{status}</p>}
+            </form>
+          </section>
+        </div>
       </div>
-    </div>
-    <Footer />
+
+      <Footer />
     </div>
   );
 }
