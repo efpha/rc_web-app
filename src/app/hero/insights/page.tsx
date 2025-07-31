@@ -1,7 +1,7 @@
 export default function Insights(){
     return(
         <>
-        Just a while
+        Take coffee... just a while
         </>
     )
 }
