@@ -10,7 +10,6 @@ import { MoveUpRight } from 'lucide-react';
 import '@/app/globals.css';
 import { useRouter } from 'next/navigation';
 import { newsItems } from '@/app/hero/data/newsData';
-// import '@/components/footer.css'
 import Footer from '@/components/footer'
 
 export default function Page() {
