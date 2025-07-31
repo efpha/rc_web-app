@@ -34,7 +34,7 @@ export default function Unsubscribe() {
 
       const data = await res.json();
       setStatus(data.message);
-    } catch (err) {
+    } catch (_) {
       setStatus('An error occurred. Please try again later.');
     } finally {
       setShowStatus(true);
@@ -54,13 +54,15 @@ export default function Unsubscribe() {
   return (
     <div className="unsubscribe-container">
       <p className="unsubscribe-intro">
-        We're sorry to see you go. You're always welcome back.
+        We&apos;re sorry to see you go. You&apos;re always welcome back.
       </p>
       <h2 className="unsubscribe-title">Unsubscribe</h2>
 
       <form className="unsubscribe-form" onSubmit={handleUnsubscribe}>
         <div className="form-group">
-          <label htmlFor="firstName">First Name <span className='star'>*</span></label>
+          <label htmlFor="firstName">
+            First Name <span className="star">*</span>
+          </label>
           <input
             type="text"
             id="firstName"
@@ -71,7 +73,9 @@ export default function Unsubscribe() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Email Address <span className='star'>*</span></label>
+          <label htmlFor="email">
+            Email Address <span className="star">*</span>
+          </label>
           <input
             type="email"
             id="email"
