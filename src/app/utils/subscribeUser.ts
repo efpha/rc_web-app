@@ -5,7 +5,7 @@ export async function subscribeUser(formData: {
   email: string;
 }) {
   try {
-    const res = await fetch('/api', { 
+    const res = await fetch('/api/subscribe', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
