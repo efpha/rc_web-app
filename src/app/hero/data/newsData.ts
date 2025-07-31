@@ -1,3 +1,5 @@
+//This is src\app\hero\data\newsData.ts
+
 // Add cards dynamically to pages
 export const newsItems = [
     {
