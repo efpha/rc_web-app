@@ -189,7 +189,7 @@
 /* Responsive rules */
 @media (max-width: 900px) {
   .sidebar{
-    background: #1f456e;
+    background-color: #1f456e;
   }
   .links, .btn-cont {
     display: none;
