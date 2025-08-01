@@ -11,14 +11,14 @@
 
 .privacy-policy h1 {
   font-size: 2rem;
-  color: #56ccf2;
+  color: var(--primary-color);
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .privacy-policy h2 {
   font-size: 1.25rem;
-  color: #ffffff;
+  color: var(--primary-color);
   margin-top: 1.8rem;
   margin-bottom: 0.75rem;
 }
