@@ -70,7 +70,7 @@ export default function AdminPage() {
             required
           />
           <button type="submit">Login</button>
-          {message && <p className="admin-message">{message}</p>}
+          {message && <p className="status">{message}</p>}
         </form>
       ) : (
         <form className="admin-form" onSubmit={handleSendEmail}>
@@ -89,7 +89,7 @@ export default function AdminPage() {
             required
           />
           <button type="submit">Send Email</button>
-          {message && <p className="admin-message">{message}</p>}
+          {message && <p className="status">{message}</p>}
         </form>
       )}
     </div>

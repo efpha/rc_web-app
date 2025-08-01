@@ -2,18 +2,41 @@
 'use client';
 
 import './page.css';
+import { useState } from 'react';
+import { subscribeUser } from '@/app/utils/subscribeUser';
+import Footer from '@/components/footer';
 
 export default function InsightsPage() {
+    const [status, setStatus] = useState('');
+    const [showStatus, setShowStatus] = useState(false);
+  
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      const form = e.currentTarget;
+      const firstName = (form.querySelector('.firstName') as HTMLInputElement).value;
+      const lastName = (form.querySelector('.lastName') as HTMLInputElement).value;
+      const email = (form.querySelector('.email') as HTMLInputElement).value;
+  
+      try {
+        const res = await subscribeUser({ firstName, lastName, email });
+        setStatus(res.message);
+        setShowStatus(true);
+      } catch (err: unknown) {
+        const error = err as { message: string };
+        setStatus(error.message || 'An unexpected error occurred.');
+        setShowStatus(true);
+      }
+    };
   return (
-    <main className="landing-bg">
+
+    <>
+      <main className="landing-bg">
       <div className="insights-container">
         <section className="intro-hero">
           <div className="intro-overlay">
             <div className="intro-text">
               <h1>Responsible Computing Insights</h1>
               <p className="tagline">Deepening Our Understanding of Responsible Computing</p>
-              {/* Optional Button */}
-              {/* <a href="#content" className="learn-more-btn">Learn more</a> */}
             </div>
           </div>
         </section>
@@ -90,14 +113,36 @@ export default function InsightsPage() {
           </p>
         </section>
 
-        <section className="insights-section final-thought">
-          <h2>Final Thought</h2>
-          <p>
-            Responsible Computing isn&rsquo;t a destination. It&rsquo;s a journey of reflection, growth, 
-            and meaningful change. Let&rsquo;s code the future <strong>responsibly</strong>.
+              <div className="subscribe-container">
+        <div className="subscribe-content">
+          <p className="subscribe-intro">STAY IN THE LOOP</p>
+          <h2 className="subscribe-heading">Subscribe</h2>
+          <p className="subscribe-text">
+            Join our mailing list for insights, workshop and updates
+            <br className="desktop-break" />
+            appertaining Responsible Computing.
           </p>
-        </section>
+
+          <section className="subscribe-form-container">
+            <form className="subscribe-form" onSubmit={handleSubmit}>
+              <div className="input-section">
+                <input type="text" placeholder="First Name" className="input-field firstName" required />
+                <input type="text" placeholder="Last Name" className="input-field lastName" required />
+                <input type="email" placeholder="Email" className="input-field email" required />
+              </div>
+              <p className="signup-info">
+                By subscribing you consent to our <a href='/privacy-policy'>Privacy Policy</a>
+              </p>
+              <button type="submit" className="subscribe-button">Subscribe</button>
+              {showStatus && <p className='status'>{status}</p>}
+            </form>
+          </section>
+        </div>
+      </div>
       </div>
     </main>
+    <Footer />
+    </>
+    
   );
 }
