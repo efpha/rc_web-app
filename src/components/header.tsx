@@ -50,7 +50,7 @@ export default function Header() {
             </button>
             <nav>
               <Link href="/hero" className='link' onClick={() => setSidebarOpen(false)}>Home<MoveUpRight size={16}/></Link>
-              <Link href="/hero/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link> {/*This link is not working. Why*/}
+              <Link href="/hero/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link>
               <Link href="/hero/insights" className='link' onClick={() => setSidebarOpen(false)}>Insights <MoveUpRight size={16}/></Link>
               <Link href="/hero/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
               <Link href="/hero/upcoming-events" className='link' onClick={() => setSidebarOpen(false)}>Upcoming Events <MoveUpRight size={16}/></Link>
