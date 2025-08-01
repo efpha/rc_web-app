@@ -8,33 +8,33 @@ export default function InsightsPage() {
     <main className="landing-bg">
       <div className="insights-container">
         <section className="intro-hero">
-            <div className="intro-overlay">
-                <div className="intro-text">
-                <h1>Responsible Computing Insights</h1>
-                <p className="tagline">Deepening Our Understanding of Responsible Computing</p>
-                {/* Optional Button */}
-                {/* <a href="#content" className="learn-more-btn">Learn more</a> */}
-                </div>
+          <div className="intro-overlay">
+            <div className="intro-text">
+              <h1>Responsible Computing Insights</h1>
+              <p className="tagline">Deepening Our Understanding of Responsible Computing</p>
+              {/* Optional Button */}
+              {/* <a href="#content" className="learn-more-btn">Learn more</a> */}
             </div>
+          </div>
         </section>
 
-        <br/>
+        <br />
         <section className="insights-section">
           <h2>What is Responsible Computing?</h2>
           <p>
             Responsible Computing is the conscious and ethical use of technology, data, 
             and computing power to benefit individuals, communities, and the planet. 
-            It’s not just about writing code or building systems. It’s about building
+            It&rsquo;s not just about writing code or building systems. It&rsquo;s about building
             responsibility into every decision, from design to deployment.
 
-            In today’s rapidly advancing digital world, computing is everywhere from
+            In today&rsquo;s rapidly advancing digital world, computing is everywhere from
             mobile apps and AI to cloud infrastructure. While these innovations offer great 
             opportunities, they also raise important questions. Responsible Computing embeds 
             ethics, accountability, and sustainability into the very fabric of computing.
           </p>
         </section>
 
-        <br/>
+        <br />
         <section className="insights-section">
           <h2>Why Responsible Computing Matters</h2>
           <p>
@@ -44,7 +44,6 @@ export default function InsightsPage() {
           </p>
         </section>
 
-      
         <section className="insights-section">
           <h2>Core Principles of Responsible Computing</h2>
           <ul className="principles-list">
@@ -87,15 +86,15 @@ export default function InsightsPage() {
           <h2>Looking Ahead</h2>
           <p>
             The future of computing holds great promise and challenges. Responsible Computing helps 
-            us face the future with care and creativity. We don’t just build for efficiency—we build for ethics and impact.
+            us face the future with care and creativity. We don&rsquo;t just build for efficiency—we build for ethics and impact.
           </p>
         </section>
 
         <section className="insights-section final-thought">
           <h2>Final Thought</h2>
           <p>
-            Responsible Computing isn't a destination. It's a journey of reflection, growth, 
-            and meaningful change. Let's code the future <strong>responsibly</strong>.
+            Responsible Computing isn&rsquo;t a destination. It&rsquo;s a journey of reflection, growth, 
+            and meaningful change. Let&rsquo;s code the future <strong>responsibly</strong>.
           </p>
         </section>
       </div>
