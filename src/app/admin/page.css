@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #1f456e;
+  --primary-text: #fff;
+  --white-primary: var(--primary-text);
+  --link-hover-color: var(--primary-text);
+  --underline-color: var(--primary-text);
+}
+
+.admin-container {
+  min-height: 100vh;
+  /* background-color: var(--primary-color); */
+  color: var(--primary-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.admin-form {
+  background: rgba(119, 119, 119, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.admin-form h2 {
+  margin-bottom: 1.5rem;
+  color: var(--white-primary);
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--white-primary);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: var(--white-primary);
+  font-size: 1rem;
+}
+
+.admin-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.admin-form button {
+  background-color: var(--white-primary);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.admin-form button:hover {
+  background-color: var(--link-hover-color);
+  color: var(--primary-color);
+}
+
+.admin-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--white-primary);
+}
