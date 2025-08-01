@@ -1,0 +1,199 @@
+/* Root color variables */
+:root {
+  --primary-color: #1f456e;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --accent-color: #1f456e;
+  --heading-color: #1f456e;
+}
+
+/* Full landing background */
+.landing-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  box-sizing: border-box;
+}
+
+/* Main container with background overlay */
+.insights-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  /* padding: 2rem; */
+  border-radius: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  color: var(--text-color);
+  overflow-y: auto;
+  max-height: 90vh;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Hero Section */
+.intro-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/AMssSjUaTY4.jpg'); /* Change path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Overlay to darken background slightly */
+.intro-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+/* Text on the hero image */
+.intro-text {
+  color: #fff;
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.intro-text .tagline {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Optional button */
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #c00;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.learn-more-btn:hover {
+  background-color: #900;
+}
+
+/* Responsive text size */
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-text .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+
+.intro-section h1 {
+  font-size: 3rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Two-column layout for section content */
+.insights-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+/* Section titles span both columns */
+.insights-section h2 {
+  grid-column: span 2;
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs and lists */
+.insights-section p,
+.insights-section ul {
+  margin: 0;
+}
+
+.insights-section ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.insights-section li {
+  margin-bottom: 1.2rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid var(--accent-color);
+  line-height: 1.5;
+}
+
+/* Final section styling */
+.final-thought {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.final-thought h2 {
+  font-size: 2rem;
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+.final-thought p {
+  font-size: 1.1rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .insights-section {
+    grid-template-columns: 1fr;
+  }
+
+  .insights-section h2 {
+    grid-column: span 1;
+    text-align: left;
+  }
+
+  .intro-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .insights-container {
+    /* padding: 1rem; */
+    width: 100%;
+    max-height: none;
+    height: auto;
+  }
+
+  .landing-bg {
+    padding: 1rem;
+    height: auto;
+    align-items: flex-start;
+  }
+}
