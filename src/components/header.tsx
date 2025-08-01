@@ -41,20 +41,22 @@ export default function Header() {
       {sidebarOpen && (
         <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)}>
           <aside className="sidebar" onClick={e => e.stopPropagation()}>
-            <button
-              className="close-btn"
-              onClick={() => setSidebarOpen(false)}
-              aria-label="Close menu"
-            >
-              <X />
-            </button>
-            <nav>
-              <Link href="/hero" className='link' onClick={() => setSidebarOpen(false)}>Home<MoveUpRight size={16}/></Link>
-              <Link href="/hero/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link>
-              <Link href="/hero/insights" className='link' onClick={() => setSidebarOpen(false)}>Insights <MoveUpRight size={16}/></Link>
-              <Link href="/hero/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
-              <Link href="/hero/upcoming-events" className='link' onClick={() => setSidebarOpen(false)}>Upcoming Events <MoveUpRight size={16}/></Link>
-            </nav>
+            <section className='side-wrapper'>
+                <button
+                  className="close-btn"
+                  onClick={() => setSidebarOpen(false)}
+                  aria-label="Close menu"
+                >
+                  <X />
+                </button>
+                <nav>
+                  <Link href="/hero" className='link' onClick={() => setSidebarOpen(false)}>Home<MoveUpRight size={16}/></Link>
+                  <Link href="/hero/about" className='link' onClick={() => setSidebarOpen(false)}>About <MoveUpRight size={16}/></Link>
+                  <Link href="/hero/insights" className='link' onClick={() => setSidebarOpen(false)}>Insights <MoveUpRight size={16}/></Link>
+                  <Link href="/hero/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
+                  <Link href="/hero/upcoming-events" className='link' onClick={() => setSidebarOpen(false)}>Upcoming Events <MoveUpRight size={16}/></Link>
+                </nav>
+            </section>
           </aside>
         </div>
       )}
