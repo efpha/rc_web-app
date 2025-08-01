@@ -57,7 +57,7 @@ export default function InsightsPage() {
             </li>
             <li>
               <strong>Transparency and Accountability</strong><br />
-              Make systems understandable and own the consequences of computing choices.
+              Make systems undesrtandable and own the consequences of computing choices.
             </li>
             <li>
               <strong>Inclusivity and Accessibility</strong><br />
@@ -77,7 +77,7 @@ export default function InsightsPage() {
         <section className="insights-section">
           <h2>Responsible Computing in Practice</h2>
           <p>
-            Everyone has a role to play, from developers to educators and from companies to users. 
+            Everyone has a role to play, from devlopers to educators and from companies to users. 
             Together, we can shape technology that serves people, planet, and purpose.
           </p>
         </section>
