@@ -18,30 +18,30 @@ type Event = {
 
 export default function Events() {
   const [events] = useState<Event[]>([
-    // {
-    //   id: 1,
-    //   category: 'Workshop',
-    //   title: 'Responsible Computing: Ethical Tech in Practice',
-    //   image: '/images/fotis-fotopoulos-6sAl6aQ4OWI.jpg',
-    //   date: 'Aug 10',
-    //   time: '10:00 AM',
-    // }
-    // {
-    //   id: 3,
-    //   category: 'Seminar',
-    //   title: 'AI & Bias: A Responsible Computing Perspective',
-    //   image: '/images/0iV9LmPDn0.jpg',
-    //   date: 'Aug 18',
-    //   time: '2:00 PM',
-    // },
-    // {
-    //   id: 4,
-    //   category: 'Panel Discussion',
-    //   title: 'Tech for Good: Sustainability & Responsible Innovation',
-    //   image: '/images/CosHjyONRk8.jpg',
-    //   date: 'Aug 25',
-    //   time: '4:30 PM',
-    // },
+    {
+      id: 1,
+      category: 'Workshop',
+      title: 'Responsible Computing: Ethical Tech in Practice',
+      image: '/images/fotis-fotopoulos-6sAl6aQ4OWI.jpg',
+      date: 'Aug 10',
+      time: '10:00 AM',
+    },
+    {
+      id: 3,
+      category: 'Seminar',
+      title: 'AI & Bias: A Responsible Computing Perspective',
+      image: '/images/0iV9LmPDn0.jpg',
+      date: 'Aug 18',
+      time: '2:00 PM',
+    },
+    {
+      id: 4,
+      category: 'Panel Discussion',
+      title: 'Tech for Good: Sustainability & Responsible Innovation',
+      image: '/images/CosHjyONRk8.jpg',
+      date: 'Aug 25',
+      time: '4:30 PM',
+    },
     {
       id: 5,
       category: 'Webinar',
