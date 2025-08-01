@@ -178,7 +178,7 @@
   flex-direction: column;
   gap: 1.5rem;
   background-color: var(--primary-color);
-  width: 50vw;
+  width: 70vw;
 }
 .link{
   text-decoration: none;
