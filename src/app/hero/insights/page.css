@@ -116,10 +116,11 @@
 
 /* Two-column layout for section content */
 .insights-section {
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
   align-items: start;
 }
 

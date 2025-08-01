@@ -48,27 +48,27 @@ export default function InsightsPage() {
           <h2>Core Principles of Responsible Computing</h2>
           <ul className="principles-list">
             <li>
-              <strong>1. Ethics and Integrity</strong><br />
+              <strong>Ethics and Integrity</strong><br />
               Prioritize human well-being, avoid harm, and uphold fairness and honesty.
             </li>
             <li>
-              <strong>2. Privacy and Security</strong><br />
+              <strong>Privacy and Security</strong><br />
               Design for privacy by default, minimize data collection, and ensure strong protection.
             </li>
             <li>
-              <strong>3. Transparency and Accountability</strong><br />
+              <strong>Transparency and Accountability</strong><br />
               Make systems understandable and own the consequences of computing choices.
             </li>
             <li>
-              <strong>4. Inclusivity and Accessibility</strong><br />
+              <strong>Inclusivity and Accessibility</strong><br />
               Empower all people and design technology that leaves no one behind.
             </li>
             <li>
-              <strong>5. Environmental Sustainability</strong><br />
+              <strong>Environmental Sustainability</strong><br />
               Create energy-efficient systems and reduce e-waste.
             </li>
             <li>
-              <strong>6. Social Good and Civic Responsibility</strong><br />
+              <strong>Social Good and Civic Responsibility</strong><br />
               Apply computing to real-world challenges and promote digital literacy.
             </li>
           </ul>
