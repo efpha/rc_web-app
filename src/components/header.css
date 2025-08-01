@@ -146,7 +146,7 @@
 
 /* Sidebar drawer*/
 .sidebar {
-  background-color: #1f456e;
+  background-color: var(--background-color);
   width: 70vw;
   max-width: 50%;
   height: 100%;
@@ -189,7 +189,7 @@
 /* Responsive rules */
 @media (max-width: 900px) {
   .sidebar{
-    background-color: #1f456e;
+    background-color: var(--background-color);
   }
   .links, .btn-cont {
     display: none;
