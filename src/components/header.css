@@ -139,7 +139,7 @@
 .sidebar-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5); /*This is not showing when I push to vercel*/
+  background: rgba(0,0,0,0.5);
   z-index: 200;
   display: flex;
   justify-content: flex-END;
@@ -147,7 +147,7 @@
 
 /* Sidebar drawer*/
 .sidebar {
-  background-color: var(--background-color); /*This is also not showing when I push to vercel*/
+  background-color: var(--background-color);
   width: 70vw;
   max-width: 50%;
   height: 100%;
