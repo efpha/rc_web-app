@@ -18,7 +18,7 @@ export default function InsightsPage() {
             </div>
         </section>
 
-
+        <br/>
         <section className="insights-section">
           <h2>What is Responsible Computing?</h2>
           <p>
@@ -26,8 +26,7 @@ export default function InsightsPage() {
             and computing power to benefit individuals, communities, and the planet. 
             It’s not just about writing code or building systems. It’s about building
             responsibility into every decision, from design to deployment.
-          </p>
-          <p>
+
             In today’s rapidly advancing digital world, computing is everywhere from
             mobile apps and AI to cloud infrastructure. While these innovations offer great 
             opportunities, they also raise important questions. Responsible Computing embeds 
@@ -35,6 +34,7 @@ export default function InsightsPage() {
           </p>
         </section>
 
+        <br/>
         <section className="insights-section">
           <h2>Why Responsible Computing Matters</h2>
           <p>
@@ -44,6 +44,7 @@ export default function InsightsPage() {
           </p>
         </section>
 
+      
         <section className="insights-section">
           <h2>Core Principles of Responsible Computing</h2>
           <ul className="principles-list">
