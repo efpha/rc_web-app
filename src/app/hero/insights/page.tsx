@@ -77,7 +77,7 @@ export default function InsightsPage() {
         <section className="insights-section">
           <h2>Responsible Computing in Practice</h2>
           <p>
-            Everyone has a role to play—from developers to educators and from companies to users. 
+            Everyone has a role to play, from developers to educators and from companies to users. 
             Together, we can shape technology that serves people, planet, and purpose.
           </p>
         </section>
@@ -86,7 +86,7 @@ export default function InsightsPage() {
           <h2>Looking Ahead</h2>
           <p>
             The future of computing holds great promise and challenges. Responsible Computing helps 
-            us face the future with care and creativity. We don&rsquo;t just build for efficiency—we build for ethics and impact.
+            us face the future with care and creativity. We don&rsquo;t just build for efficiency. We build for ethics and impact.
           </p>
         </section>
 
