@@ -102,6 +102,9 @@
   background-color: var(--primary-color);
   color: var(--primary-text);
 }
+.sidebar{
+  background-color: #1f456e;
+}
 
 @media (max-width: 576px) {
 
@@ -147,11 +150,10 @@
 
 /* Sidebar drawer*/
 .sidebar {
-  background-color: var(--background-color);
   width: 70vw;
   max-width: 50%;
   height: 100%;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 3rem;
   box-shadow: 2px 0 8px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
@@ -173,7 +175,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
+  padding: 3rem;
 }
 .link{
   text-decoration: none;
@@ -190,9 +193,6 @@
 
 /* Responsive rules */
 @media (max-width: 900px) {
-  .sidebar{
-    background-color: var(--background-color);
-  }
   .links, .btn-cont {
     display: none;
   }
