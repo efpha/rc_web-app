@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
 import nodemailer from 'nodemailer';
 
+type Subscriber = {
+  email: string;
+};
+
 export async function POST(req: NextRequest) {
   try {
     const { subject, content } = await req.json();
@@ -20,15 +24,16 @@ export async function POST(req: NextRequest) {
 
     // Fetch subscribed users
     const [rows] = await connection.execute('SELECT email FROM subscribers');
-    const emails = Array.isArray(rows) ? rows.map((row: any) => row.email) : [];
+    const subscribers = rows as Subscriber[];
+    const emails = subscribers.map((row) => row.email);
 
-    if (!emails.length) {
+    if (emails.length === 0) {
       return NextResponse.json({ message: 'No subscribers found' }, { status: 404 });
     }
 
     // Setup email transport
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // or your provider
+      service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,

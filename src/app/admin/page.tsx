@@ -29,7 +29,7 @@ export default function AdminPage() {
 
       setLoggedIn(true);
       setMessage('');
-    } catch (error) {
+    } catch{
       setMessage('Something went wrong');
     }
   };
@@ -45,7 +45,7 @@ export default function AdminPage() {
 
       const data = await res.json();
       setMessage(data.message || 'Emails sent successfully.');
-    } catch (err) {
+    } catch{
       setMessage('Failed to send emails.');
     }
   };
