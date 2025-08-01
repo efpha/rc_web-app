@@ -158,7 +158,7 @@
 }
 
 .close-btn {
-  background: none;
+  background-color: var(--primary-text);
   border: none;
   color: var(--primary-text);
   font-size: 2rem;
