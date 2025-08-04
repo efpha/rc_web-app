@@ -4,9 +4,11 @@ import '@/app/hero/about/page.css';
 import { MoveUpRight, Quote } from 'lucide-react';
 import Link from 'next/link';
 import Footer from '@/components/footer';
-import router from 'next/router';
+import { useRouter } from 'next/navigation';
 
 export default function About() {
+  const router = useRouter();
+
   return (
     <main className="about-container">
       <section className="hero-section">
