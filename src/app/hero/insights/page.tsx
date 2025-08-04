@@ -105,15 +105,7 @@ export default function InsightsPage() {
           </p>
         </section>
 
-        <section className="insights-section">
-          <h2>Looking Ahead</h2>
-          <p>
-            The future of computing holds great promise and challenges. Responsible Computing helps 
-            us face the future with care and creativity. We don&rsquo;t just build for efficiency. We build for ethics and impact.
-          </p>
-        </section>
-
-              <div className="subscribe-container">
+        <div className="subscribe-container">
         <div className="subscribe-content">
           <p className="subscribe-intro">STAY IN THE LOOP</p>
           <h2 className="subscribe-heading">Subscribe</h2>
