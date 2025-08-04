@@ -7,9 +7,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MoveUpRight } from 'lucide-react';
 import { newsItems } from '@/app/hero/data/newsData';
+import { useRouter } from 'next/navigation';
+
 import Footer from '@/components/footer';
 
 export default function Workshops() {
+  const router = useRouter();
   return (
     <div className="workshops">
       <section className="moreksu abt wrk">
@@ -68,6 +71,12 @@ export default function Workshops() {
             </div>
           ))}
         </div>
+        <button
+              className="content_more"
+              onClick={() => router.push('/hero/insights')}
+            >
+              What&rsquo;s Responsible Computing <MoveUpRight size={14} />
+          </button>
       </section>
       <Footer />
     </div>
