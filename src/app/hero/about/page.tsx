@@ -28,7 +28,7 @@ export default function About() {
               className="content_more"
               onClick={() => router.push('/hero/insights')}
             >
-              What's Responsible Computing <MoveUpRight size={14} />
+              What&rsquo;s Responsible Computing <MoveUpRight size={14} />
           </button>
         </div>
       </section>
