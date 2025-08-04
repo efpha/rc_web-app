@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Footer from '@/components/footer';
 import router from 'next/router';
 
-
 export default function About() {
   return (
     <main className="about-container">
