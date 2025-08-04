@@ -9,6 +9,7 @@ export default function PrivacyPolicy() {
         information in connection with our Responsible Computing Project website.
       </p>
 
+    <div className="policy-content">
       <h2>Information We Collect</h2>
       <p>
         We only collect personal information that you voluntarily provide to us, such as your name and email
@@ -30,20 +31,14 @@ export default function PrivacyPolicy() {
       <h2>Unsubscribing</h2>
       <p>
         You can unsubscribe from our mailing list at any time by clicking the unsubscribe link in any of our
-        emails or by contacting us directly.
+        emails.
       </p>
 
       <h2>Data Retention</h2>
       <p>
         We retain your information only for as long as necessary to provide you with relevant updates and insights.
-        You can request deletion of your data by contacting us.
       </p>
-
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions about this Privacy Policy, please contact us via the website’s contact form
-        or email.
-      </p>
+    </div>
     </main>
   );
 }
