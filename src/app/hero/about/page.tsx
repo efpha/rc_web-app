@@ -87,7 +87,8 @@ export default function About() {
       <section className="content-section final-thought">
         <h2 className='quotes'><Quote /></h2>
         <p>
-          Responsible Computing isn&rsquo;t a destination. It&rsquo;s a journey of reflection, growth, and meaningful change. Let&rsquo;s code the future <strong>responsibly</strong>.
+          Responsible Computing isn&rsquo;t a destination. It&rsquo;s a journey of reflection, growth,
+          and meaningful change. Let&rsquo;s code the future <strong>responsibly</strong>.
         </p>
       </section>
       
