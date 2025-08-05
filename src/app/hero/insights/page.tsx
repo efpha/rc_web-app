@@ -45,7 +45,7 @@ export default function InsightsPage() {
         <section className="insights-section">
           <h2>What is Responsible Computing?</h2>
           <p>
-            Responsible Computing is the conscious and ethical use of technology, data, 
+            {/* Responsible Computing is the conscious and ethical use of technology, data, 
             and computing power to benefit individuals, communities, and the planet. 
             It&rsquo;s not just about writing code or building systems. It&rsquo;s about building
             responsibility into every decision, from design to deployment.
@@ -53,7 +53,25 @@ export default function InsightsPage() {
             In today&rsquo;s rapidly advancing digital world, computing is everywhere from
             mobile apps and AI to cloud infrastructure. While these innovations offer great 
             opportunities, they also raise important questions. Responsible Computing embeds 
-            ethics, accountability, and sustainability into the very fabric of computing.
+            ethics, accountability, and sustainability into the very fabric of computing. */}
+
+            In an era defined by transformative digital acceleration, where technology governs
+            everything from business operations to societal infrastructure, the stakes have never
+            been higher. As enterprises rush to harness the power of artificial intelligence for 
+            efficiency and profit, a parallel discourse emerges; one that interrogates the deeper 
+            implications of innovation without conscience.
+
+            Recent legal challenges against technology companies underscore an unsettling reality:
+            the tools designed to improve lives can just as easily inflict harm when ethical foresight 
+            is absent. These developments invite critical reflection on the obligations of those who 
+            architect our digital future. It is no longer sufficient to marvel at what technology 
+            can do—we must ask what it should do.
+
+            Responsible computing is not a checkbox nor a static guideline it is a culture, a discipline
+            embedded into every facet of technological evolution. From system design to code deployment, 
+            it demands a deliberate integration of integrity, inclusivity, environmental stewardship, 
+            transparency, and security. It reframes computing not as a neutral instrument but as a profound 
+            force with ripple effects across human lives and ecosystems.
           </p>
         </section>
 
@@ -100,7 +118,7 @@ export default function InsightsPage() {
         <section className="insights-section">
           <h2>Responsible Computing in Practice</h2>
           <p>
-            Everyone has a role to play, from devlopers to educators and from companies to users. 
+            Everyone has a role to play, from developers to educators and from companies to users. 
             Together, we can shape technology that serves people, planet, and purpose.
           </p>
         </section>
