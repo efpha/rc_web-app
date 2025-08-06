@@ -3,6 +3,13 @@
 export const newsItems = [
   //START ADDING FROM HERE NOT FROM THE END
     {
+      title: 'Discussion with panel drawn from all over the globe on Mozilla Responsible Computing Project.',
+      tag: 'Industry Workshop',
+      image: '/images/GmTJ1JRb0AERhxU.jpg',
+      link: 'https://kisiiuniversity.ac.ke/blog/responsible-computing-innovation-day-awards',
+      date: 'Mar 18th, 2025'
+    },
+    {
       title: 'Vice Chancellor receive and award the winning projects from the Responsible Computing Innovation Day',
       tag: 'Project Award',
       image: '/images/abs9pxPPxlRK8NsOsKsSGcTZWBuRg8UoYLPd2jG5.jpg',
@@ -24,18 +31,11 @@ export const newsItems = [
       date: 'Jan 29th, 2025'
     },
     {
-      title: 'Faculty team from School of Information Science and technology set the ball rolling',  
+      title: 'Faculty team from School of Information Science and technology set the ball rolling for phase 2 of Mozilla Responsible computing',  
       tag: 'Faculty Meet',
-      image: '/images/547Nr9x1BkS7amVE7wMDg2i1KNG2sdhq1D7M2G2O.jpg',
+      image: '/images/GiEX5o5XkAA8U4y.jpg',
       link: 'https://kisiiuniversity.ac.ke/blog/mozilla-responsible-computing-challenge-2nd-phase-begins',
       date: 'Jan 28th, 2025'
-    },
-    {
-      title: 'Pre-Project Workshop',
-      tag: 'Research',
-      image: '/images/Bzw1uag6HA1zAFz5eCpy8CggmDOweknQNT7rAdRk.jpg',
-      link: 'https://kisiiuniversity.ac.ke/blog/mozilla-responsible-computing-challenge-project',
-      date: 'Jan 27th, 2025'
     },
     {
       title: 'The School of Information Science and Technology staff take a proactive role in embedding Responsible Computing practices into the curriculum of Computer Science courses',  
