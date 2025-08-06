@@ -108,7 +108,7 @@ export default function Page() {
 
           <section className="news-section">
             <div className="news-grid">
-              {newsItems.filter(Boolean).map((item, index) => (
+              {newsItems.filter(Boolean).slice(0,8).map((item, index) => (
                 <div className="news-card" key={index}>
                   <Link className="news-img-wrapper" href={item.link}>
                     <Image
@@ -124,7 +124,7 @@ export default function Page() {
                     <p className="news-tag">{item.tag}</p>
                     <h4 className="news-title">{item.title}</h4>
                     <Link className="viewlink" href={item.link} target="_blank">
-                      View project on University Website <MoveUpRight size={14} />
+                      View More<MoveUpRight size={14} />
                     </Link>
                   </div>
                 </div>
