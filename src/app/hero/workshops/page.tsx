@@ -41,7 +41,7 @@ export default function Workshops() {
 
       <section className="workshops-header">
         <div className="content abt wrk">
-          Join our workshops to learn more about ethical computing practices and their impacts.
+          Join our workshops to learn more about ethical computing practices and their imp
         </div>
       </section>
 
@@ -64,8 +64,8 @@ export default function Workshops() {
                 </span>
                 <p className="news-tag">{item.tag}</p>
                 <h4 className="news-title">{item.title}</h4>
-                <Link className="viewlink" href={item.link} target="_blank">
-                  View project on University Website <MoveUpRight size={14} />
+                <Link className="viewlink" href={item.link} target="_self">
+                  More details<MoveUpRight size={14} />
                 </Link>
               </div>
             </div>
