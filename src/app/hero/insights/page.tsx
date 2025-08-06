@@ -45,16 +45,6 @@ export default function InsightsPage() {
         <section className="insights-section">
           <h2>What is Responsible Computing?</h2>
           <p>
-            {/* Responsible Computing is the conscious and ethical use of technology, data, 
-            and computing power to benefit individuals, communities, and the planet. 
-            It&rsquo;s not just about writing code or building systems. It&rsquo;s about building
-            responsibility into every decision, from design to deployment.
-
-            In today&rsquo;s rapidly advancing digital world, computing is everywhere from
-            mobile apps and AI to cloud infrastructure. While these innovations offer great 
-            opportunities, they also raise important questions. Responsible Computing embeds 
-            ethics, accountability, and sustainability into the very fabric of computing. */}
-
             In an era defined by transformative digital acceleration, where technology governs
             everything from business operations to societal infrastructure, the stakes have never
             been higher. As enterprises rush to harness the power of artificial intelligence for 
@@ -79,9 +69,13 @@ export default function InsightsPage() {
         <section className="insights-section">
           <h2>Why Responsible Computing Matters</h2>
           <p>
-            Technology impacts how we learn, work, communicate, and live. But it can also 
-            reinforce bias, endanger privacy, and harm the environment. Responsible Computing 
-            ensures that innovation uplifts society, respects human dignity, and supports the planet.
+            Responsible computing addresses the ethical impacts of algorithms and artificial intelligence systems. 
+            These technologies, if not designed with care and oversight, can perpetuate existing biases, 
+            cause unfair outcomes, or threaten autonomous decision making. 
+            By adhering to principles of fairness, transparency, and accountability, responsible 
+            computing helps build trust in technology and ensures that innovations benefit 
+            all members of society rather than just a privileged few. This commitment is vital for 
+            maintaining public confidence and for preventing the exacerbation of social inequalities.
           </p>
         </section>
 

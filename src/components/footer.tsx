@@ -11,7 +11,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Mozilla Responsible Computing Project —
           A research initiative under{' '}
           <a
-            href="https://www.kisiiuniversity.ac.ke"
+            href="https://kisiiuniversity.ac.ke/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
