@@ -43,14 +43,14 @@ export default function Events() {
     //   date: 'Aug 25',
     //   time: '4:30 PM',
     // },
-    // {
-    //   id: 5,
-    //   category: 'Webinar',
-    //   title: 'Privacy by Design: A Responsible Computing Approach',
-    //   image: '/images/FnA5pAzqhMM.jpg',
-    //   date: 'Sep 3',
-    //   time: '11:00 AM',
-    // }
+    {
+      id: 5,
+      category: 'Webinar',
+      title: 'Privacy by Design: A Responsible Computing Approach',
+      image: '/images/FnA5pAzqhMM.jpg',
+      date: 'Sep 3',
+      time: '11:00 AM',
+    }
   ]);
 
   return (

@@ -19,7 +19,6 @@
 .news-card {
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
   overflow: hidden;
   transition: transform 0.3s ease;
   display: flex;

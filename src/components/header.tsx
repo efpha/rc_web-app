@@ -12,6 +12,7 @@ import '@/app/hero/about/page'
 import '@/app/hero/workshops/page'
 import '@/app/hero/page'
 import '@/app/register/page';
+import '@/app/hero/media/page'
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function Header() {
             </Link>          
           </div>
 
-          
+
         </div>
         
       </header>
@@ -71,7 +72,7 @@ export default function Header() {
             <Link href="/hero/insights">Insights</Link>
             <Link href="/hero/workshops">Workshops</Link>
             <Link href="/hero/upcoming-events">Upcoming Events</Link>
-            <Link href="/hero/upcoming-events">Media</Link>
+            <Link href="/hero/media">Media</Link>
           </nav>
 
           {/* Sidebar overlay for mobile */}
@@ -92,7 +93,7 @@ export default function Header() {
                       <Link href="/hero/insights" className='link' onClick={() => setSidebarOpen(false)}>Insights <MoveUpRight size={16}/></Link>
                       <Link href="/hero/workshops" className='link' onClick={() => setSidebarOpen(false)}>Workshops <MoveUpRight size={16}/></Link>
                       <Link href="/hero/upcoming-events" className='link' onClick={() => setSidebarOpen(false)}>Upcoming Events <MoveUpRight size={16}/></Link>
-                      <Link href="/hero/upcoming-events" className='link' onClick={() => setSidebarOpen(false)}>Media <MoveUpRight size={16}/></Link>
+                      <Link href="/hero/media" className='link' onClick={() => setSidebarOpen(false)}>Media <MoveUpRight size={16}/></Link>
 
                     </nav>
                 </section>

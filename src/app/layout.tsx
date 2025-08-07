@@ -32,10 +32,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`} 
+        className='layout' 
       >
         <Header />
-        {/* <VantaNetBackground /> */}
         {children}
       </body>
     </html>
