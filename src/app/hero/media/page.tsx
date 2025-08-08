@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import './page.css';
-import { newsItems } from '@/app/hero/data/newsData'; // Adjust the path as needed
+import { newsItems } from '@/app/hero/data/newsData';
 
 type MediaItem = {
   id: number;
@@ -11,14 +12,12 @@ type MediaItem = {
   title: string;
 };
 
-// Convert newsItems to mediaItems
 const generateMediaItems = (): MediaItem[] => {
   let idCounter = 1;
 
   return newsItems.flatMap((news) => {
     const items: MediaItem[] = [];
 
-    // Add main image
     if (news.image) {
       items.push({
         id: idCounter++,
@@ -28,7 +27,6 @@ const generateMediaItems = (): MediaItem[] => {
       });
     }
 
-    // Add pictures array if it exists
     if (news.pictures && Array.isArray(news.pictures)) {
       news.pictures.forEach((pic: string) => {
         items.push({
@@ -58,7 +56,7 @@ const MediaGallery: React.FC = () => {
   return (
     <div className="gallery-container">
       <div className="gallery-heading">
-        <h1 className="gallery-title">Workshop's Media Gallery</h1>
+        <h1 className="gallery-title">Workshop&apos;s Media Gallery</h1>
         <div className="gallery-filter">
           <label htmlFor="workshopSelect">Filter: </label>
           <select
@@ -79,7 +77,13 @@ const MediaGallery: React.FC = () => {
         {filteredItems.map((item) => (
           <div key={item.id} className="gallery-item">
             {item.type === 'image' ? (
-              <img src={item.src} alt={item.title} className="gallery-image" />
+              <Image
+                src={item.src}
+                alt={item.title}
+                className="gallery-image"
+                width={500}
+                height={300}
+              />
             ) : (
               <video className="gallery-video" controls>
                 <source src={item.src} />
