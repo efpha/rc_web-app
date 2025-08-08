@@ -12,9 +12,10 @@
 
 .card-container {
     width: 100%;
-    height: 896px;
+    height: 100vh;
     margin: auto;
     margin-top: 12em;
+    padding: 2rem;
     background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
         url('/images/home.jpg') center/cover no-repeat;
@@ -232,6 +233,19 @@
 .content._2nd{
     color: var(--primary-color);
     font-size: 2rem;
+}
+.student-nums{
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 8rem;
+  margin-bottom: 10rem;
+}
+.student-nums h1{
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+.student-nums p{
+  font-size: 2rem;
 }
 
 .content_more {
@@ -473,6 +487,23 @@
 }
 
 @media (max-width: 600px) {
+  .student-nums{
+  background-color: #f3f3f3;
+  text-align: center;
+  width: 100%;
+  padding: 3rem;
+  margin: 2rem auto;
+}
+.student-nums h1{
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.student-nums p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
   .card-container {
     height: auto;
     margin-top: 0;

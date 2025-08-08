@@ -137,6 +137,11 @@ export default function Page() {
           More Workshops <MoveUpRight size={14} />
         </button>
       </section>
+      <section className="student-nums">
+        <h1>Impact</h1>
+        <p>Over<strong> 1500+ </strong>undergraduate students from</p>
+        <p>Department of Computer Sciences</p>
+      </section>
 
       <div className="subscribe-container">
         <div className="subscribe-content">

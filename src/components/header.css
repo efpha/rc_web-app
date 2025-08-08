@@ -44,13 +44,14 @@
   display: flex;
   align-items: center;
   justify-content: center;  
-  width: 30%;
+  width: 15%;
   height: auto;
+  
 }
 
 .ksu-logo img{
-  width: 50%;
-  height: auto;
+  width: 30%;
+  height: auto;  
 }
 
 .nav-bar {
@@ -68,13 +69,10 @@
   backdrop-filter: blur(5px); 
   -webkit-backdrop-filter: blur(5px); 
 }
-.lgo-txt{
-  padding: 1rem;
-}
 
 .lgo-txt a {
   position: relative;
-  left: 1em;
+  left: 10%;
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
@@ -86,7 +84,7 @@
   display: flex;
   gap: 2%;
   position: absolute;
-  left: 30%;
+  left: 40%;
 }
 
 .links a {
@@ -158,10 +156,11 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.7),  
-    rgba(0, 0, 0, 0.3)   
-  );
+  background-color: var(--primary-color);
+}
+.lgo-txt a{
+  position: relative;
+  left: -5%;
 }
 
 }
@@ -176,7 +175,7 @@
   color: var(--primary-text);
   cursor: pointer;
   z-index: 101;
-  margin-left: 30%;
+  margin-left: 40%;
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -236,9 +235,18 @@
   gap: 1rem;
   margin-top: 2rem;
 }
+.ksu-logo img{
+  width: 100%;
+}
 
 /* Responsive rules */
 @media (max-width: 900px) {
+  .gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem;
+}
+
   .socials-media{
     display: none;
   }
