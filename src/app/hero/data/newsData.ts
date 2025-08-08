@@ -5,18 +5,21 @@ export const newsItems = [
     title: 'Discussion with panel drawn from all over the globe on Mozilla Responsible Computing Project.',
     tag: 'Industry Workshop',
     image: '/images/GmTJ1JRb0AERhxU.jpg',
-    pictures: [
-      '/images/GmTJ1JRb0AERhxU.jpg'
-    ],
     link: 'https://kisiiuniversity.ac.ke/blog/responsible-computing-innovation-day-awards',
     date: 'Mar 18th, 2025'
   },
   {
     title: 'Vice Chancellor receive and award the winning projects from the Responsible Computing Innovation Day',
-    tag: 'Project Award',
+    tag: 'Innovation Awards',
     image: '/images/abs9pxPPxlRK8NsOsKsSGcTZWBuRg8UoYLPd2jG5.jpg',
     pictures: [
-      '/images/abs9pxPPxlRK8NsOsKsSGcTZWBuRg8UoYLPd2jG5.jpg'
+      '/images/680a02be001dc.jpeg',
+      '/images/680a02be0790e.jpeg',
+      '/images/680a02be0d3a2.jpeg',
+      '/images/680a02be12d9c.jpeg',
+      '/images/680a02be18936.jpeg',
+      '/images/680a02be296c7.jpeg',
+      '/images/680a02be2f38b.jpeg'
     ],
     link: 'https://kisiiuniversity.ac.ke/blog/responsible-computing-innovation-day-awards',
     date: 'Apr 24th, 2025'
@@ -26,7 +29,14 @@ export const newsItems = [
     tag: 'Project Exhibition',
     image: '/images/QqD8ha1koXoJQES9sCBN6ZE5h6h49I4ehpUyNl1c.jpg',
     pictures: [
-      '/images/QqD8ha1koXoJQES9sCBN6ZE5h6h49I4ehpUyNl1c.jpg'
+      '/images/6809fb370071a.jpeg',
+      '/images/6809fb3705ee4.jpeg',
+      '/images/6809fb370c351.jpeg',
+      '/images/6809fb371229d.jpeg',
+      '/images/6809fb3718258.jpeg',
+      '/images/6809fb371df1c.jpeg',
+      '/images/6809fb3723805.jpeg',
+      '/images/6809fb37291a9.jpeg',
     ],
     link: 'https://kisiiuniversity.ac.ke/blog/mozilla-sponsored-responsible-computing-innovation-day',
     date: 'Apr 24th, 2025'
@@ -36,8 +46,15 @@ export const newsItems = [
     tag: 'Students Tutelage',
     image: '/images/OYYviaxMG7P0lNXUCHGSe4hlvrkIHHNZeg0AkMVc.jpg',
     pictures: [
-      '/images/OYYviaxMG7P0lNXUCHGSe4hlvrkIHHNZeg0AkMVc.jpg'
-    ],
+      '/images/6799fa68dc659.jpeg',
+      '/images/6799fa6925a65.jpeg',
+      '/images/6799fa692d697.jpeg',
+      '/images/6799fa6937159.jpeg',
+      '/images/6799fa694ac5d.jpeg',
+      '/images/6799fa6953230.jpeg',
+      '/images/6799fa695a964.jpeg',
+      '/images/6799fa6969c42.jpeg'
+      ],
     link: 'https://kisiiuniversity.ac.ke/blog/mozilla-foundation-responsible-computing-challenge',
     date: 'Jan 29th, 2025'
   },
