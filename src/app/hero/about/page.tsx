@@ -13,7 +13,7 @@ export default function About() {
     <main className="about-container">
       <section className="hero-section">
         <Image
-          src="/images/0iV9LmPDn0.jpg"
+          src="/images/F64Rir1XQAADbzp.jpg"
           alt="Responsible Computing Banner"
           width={1600}
           height={600}
@@ -22,8 +22,8 @@ export default function About() {
         <div className="hero-text">
           <h1>The Responsible Computing Project</h1>
           <p>
-            A research initiative by <strong><Link className='ksu-link' href="https://kisiiuniversity.ac.ke/">Kisii University <MoveUpRight size={16} />
-            </Link>{' '}</strong>in partnership with the <strong>Mozilla Foundation</strong>, led by <strong>Professor F. Mzee</strong>. We explore the principles of <strong>Responsible Computing</strong> to foster ethical, inclusive, and sustainable digital solutions.
+            A research initiative by <Link className='ksu-link' href="https://kisiiuniversity.ac.ke/">Kisii University <MoveUpRight size={16} />
+            </Link>{' '}in partnership with the <strong>Mozilla Foundation</strong>, led by Professor F. Mzee. We explore the principles of Responsible Computing to foster ethical, inclusive, and sustainable digital solutions.
           </p>
           <button
               className="content_more"
