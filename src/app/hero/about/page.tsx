@@ -62,7 +62,7 @@ export default function About() {
 
       
 
-      <section className="content-section">
+      <section className="content-section pi">
         <h2>Principal Investigator</h2>
 
         <div className="lead-profile">
