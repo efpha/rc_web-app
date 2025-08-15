@@ -259,7 +259,6 @@
     border: none;
     transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(182, 182, 182, 0.19);
 }
 
 .content_more:hover {
