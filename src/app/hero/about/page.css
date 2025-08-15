@@ -59,6 +59,7 @@
   align-items: center;   
   padding: 40px 20px;
   text-align: center;
+  line-height: 2;
 }
 
 .content-section h2 {
@@ -71,7 +72,7 @@
     color: skyblue;
 }
 
-.content-section p {
+.content-section p, .content-section.mission p{
   font-size: 1.5rem;
   line-height: 2;
   color: var(--primary-color);
@@ -115,6 +116,9 @@
 }
 .about-PI{
     text-align: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--primary-color);
 }
 
 .quotes{
@@ -181,6 +185,9 @@
   .content-section.mission{
     margin-top: -6rem;
   }
+  .content-section p, .content-section.mission p {
+    font-size: 0.95rem;
+  }
 
   .content-section h2 {
     font-size: 1.6rem;
@@ -190,6 +197,12 @@
     font-size: 1rem;
   }
 
+  .about-PI{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--primary-color);
+  }
   .lead-image {
     width: 150px;
     height: 150px;
@@ -213,7 +226,7 @@
     font-size: 1.4rem;
   }
 
-  .content-section p {
+  .content-section p, .content-section.mission p {
     font-size: 0.95rem;
   }
 
