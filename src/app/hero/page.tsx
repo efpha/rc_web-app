@@ -139,7 +139,7 @@ export default function Page() {
       </section>
       <section className="student-nums">
         <h1>Impact</h1>
-        <p>Over<strong> 1500+ </strong>undergraduate students from</p>
+        <p><strong> 1500+ </strong>undergraduate students from</p>
         <p>Department of Computer Sciences</p>
       </section>
 
