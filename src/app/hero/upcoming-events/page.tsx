@@ -56,10 +56,10 @@ export default function Events() {
   return (
     <>
       <section className='eventsSection'>
-      <div className='header'>
-        <h2>Upcoming events</h2>
-      </div>
-      <div className='underline'></div>
+        <div className='header'>
+          <h2>Upcoming events</h2>
+        </div>
+        <div className='underline'></div>
       <section className='card-section'>
         {events.length === 0 ? (
           <>
