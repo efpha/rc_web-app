@@ -52,13 +52,14 @@
 }
 
 .category {
-  color: skyblue;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: 0.875rem;
   margin-bottom: 0.25rem;
 }
 
 .details h3 {
+  color: #000;
   font-size: 1rem;
   font-weight: 700;
   display: flex;
