@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import './page.css';
 import { newsItems } from '@/app/hero/data/newsData';
+import Footer from '@/components/footer';
 
 type MediaItem = {
   id: number;
@@ -54,7 +55,8 @@ const MediaGallery: React.FC = () => {
     : mediaItems.filter(item => item.title === selectedTitle);
 
   return (
-    <div className="gallery-container">
+    <>
+        <div className="gallery-container">
       <div className="gallery-heading">
         <h1 className="gallery-title">Workshop&apos;s Media Gallery</h1>
         <div className="gallery-filter">
@@ -97,6 +99,8 @@ const MediaGallery: React.FC = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
