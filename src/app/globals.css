@@ -40,7 +40,6 @@
   font-style: normal;
 }
 
-/* Italics */
 @font-face {
   font-family: 'TitilliumWeb';
   src: url('/fonts/Titillium_Web_font/TitilliumWeb-Italic.ttf') format('truetype');
