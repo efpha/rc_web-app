@@ -200,7 +200,7 @@
     height: 100%;
     position: relative;
     top: -20rem;
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
 
 .card_cont{
@@ -224,13 +224,14 @@
     width: 100%;
     margin: auto;
     color: var(--primary-color);
-    background-color: #f3f3f3;
+    background-color: #fff;
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
 }
 
 .content._2nd{
+  background-color: #f3f3f3;
     color: var(--primary-color);
     font-size: 2rem;
 }
